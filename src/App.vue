@@ -1,264 +1,292 @@
 <template>
-  <div id="app">
-    <div class="hero-section">	
-		<div class="about-text hover-target">about</div>
-		<div class="contact-text hover-target">contact</div>
-		<div class="section-center">
-			<div class="container-fluid">
-				<div class="row justify-content-center">
-					<div class="col-12 text-center">
-						<h1>Christian Arete</h1>
-					</div>
-					<div class="col-12 text-center mb-2">
-						<div class="dancing">photography</div>
-					</div>
-					<div class="col-12 text-center mt-4 mt-lg-5">
-						<p>
-							<span class="travel hover-target">travel</span> 
-							<span class="wildlife hover-target">wildlife</span> 
-							<span class="nature hover-target">nature</span>
-						</p>
+	<div id="app">
+		<div class="hero-section">
+			<div class="about-text hover-target">about</div>
+			<div class="contact-text hover-target">contact</div>
+			<div class="section-center">
+				<div class="container-fluid">
+					<div class="row justify-content-center">
+						<header id="page-top">
+							<div class="container">
+								<div class="intro-text">
+									<div class="intro-lead-in">Guiando Sua Marca pela Estrada do Sucesso: Juntos,
+										Construímos o Caminho para o Impacto.</div>
+									<div class="intro-heading">IZTOIC MAKER</div>
+									<a href="" class="page-scroll btn btn-xl">Conheça nosso trabalho!</a>
+									<div class="col-12 text-center mt-4 mt-lg-5">
+										<p>
+											<span class="travel hover-target">travel</span>
+											<span class="wildlife hover-target">wildlife</span>
+											<span class="nature hover-target">nature</span>
+										</p>
+									</div>
+									<footer>
+            <div class="div-inferior container">
+                <div class="row">
+                    <div class="col-md-4">
+                        <span class="copyright">Copyright © Iztoic 2023</span>
+                    </div>
+                    <div class="col-md-4">
+                        <ul class="list-inline social-buttons">
+                            <li><a href="#"><i class="fa fa-twitter"></i></a>
+                            </li>
+                            <li><a href="#"><i class="fa fa-facebook"></i></a>
+                            </li>
+                            <li><a href="#"><i class="fa fa-linkedin"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-md-4">
+                        <ul class="list-inline quicklinks">
+                            <li><a href="#">Politica de Privacidade</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+								</div>
+							</div>
+						</header>
 					</div>
 				</div>
 			</div>
 		</div>
-	</div>	
-	
-	<div class="layerindex about-section">
-    <div class="about-close hover-target"></div>
-    <SectionAbout/>
-    <SectionTeam/>
-	</div>
-	
-	<div class="contact-section">	
-		<div class="contact-close hover-target"></div>
-		<div class="section-center">
+
+		<div class="layerindex about-section">
+			<div class="about-close hover-target"></div>
+			<SectionAbout />
+			<SectionTeam />
+		</div>
+
+		<div class="contact-section">
+			<div class="contact-close hover-target"></div>
+			<div class="section-center">
+				<div class="container">
+					<div class="row justify-content-center">
+						<div class="col-12 text-center">
+							<a href="#" class="hover-target">arete@photography.com</a>
+						</div>
+						<div class="col-12 text-center social mt-4">
+							<a href="#" class="hover-target">instagram</a>
+							<a href="#" class="hover-target">flickr</a>
+							<a href="#" class="hover-target">facebook</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="travel-section">
+			<div class="travel-close hover-target"></div>
 			<div class="container">
 				<div class="row justify-content-center">
 					<div class="col-12 text-center">
-						<a href="#" class="hover-target">arete@photography.com</a>
+						<h3>travel</h3>
 					</div>
-					<div class="col-12 text-center social mt-4">
-						<a href="#" class="hover-target">instagram</a>
-						<a href="#" class="hover-target">flickr</a>
-						<a href="#" class="hover-target">facebook</a>
+					<div class="col-12 mt-3 text-center">
+						<p><span>Canon PowerShot S95</span></p>
+					</div>
+					<div class="col-12 text-center">
+						<p>
+							focal length: 22.5mm<br>
+							aperture: ƒ/5.6<br>
+							exposure time: 1/1000<br>
+							ISO: 80
+						</p>
+					</div>
+					<div class="col-md-6 col-lg-4">
+						<img src="http://www.ivang-design.com/svg-load/portfolio/photo-p.jpg" alt="">
+					</div>
+					<div class="col-md-6 col-lg-4">
+						<img src="http://www.ivang-design.com/svg-load/portfolio/photo-p.jpg" alt="">
+					</div>
+					<div class="col-md-6 col-lg-4">
+						<img src="http://www.ivang-design.com/svg-load/portfolio/photo-p.jpg" alt="">
 					</div>
 				</div>
 			</div>
 		</div>
-	</div>
-	
-	<div class="travel-section">	
-		<div class="travel-close hover-target"></div>
-		<div class="container">
-			<div class="row justify-content-center">
-				<div class="col-12 text-center">
-					<h3>travel</h3>
-				</div>
-				<div class="col-12 mt-3 text-center">
-					<p><span>Canon PowerShot S95</span></p>
-				</div>
-				<div class="col-12 text-center">
-					<p>
-						focal length: 22.5mm<br>
-						aperture: ƒ/5.6<br>
-						exposure time: 1/1000<br>
-						ISO: 80
-					</p>
-				</div>
-				<div class="col-md-6 col-lg-4">
-					<img src="http://www.ivang-design.com/svg-load/portfolio/photo-p.jpg" alt="">
-				</div>
-				<div class="col-md-6 col-lg-4">
-					<img src="http://www.ivang-design.com/svg-load/portfolio/photo-p.jpg" alt="">
-				</div>
-				<div class="col-md-6 col-lg-4">
-					<img src="http://www.ivang-design.com/svg-load/portfolio/photo-p.jpg" alt="">
-				</div>
-			</div>
-		</div>
-	</div>
-	
-	<div class="wildlife-section">	
-		<div class="wildlife-close hover-target"></div>
-		<div class="container">
-			<div class="row justify-content-center">
-				<div class="col-12 text-center">
-					<h3>wildlife</h3>
-				</div>
-				<div class="col-12 mt-3 text-center">
-					<p><span>Canon PowerShot S95</span></p>
-				</div>
-				<div class="col-12 text-center">
-					<p>
-						focal length: 22.5mm<br>
-						aperture: ƒ/5.6<br>
-						exposure time: 1/1000<br>
-						ISO: 80
-					</p>
-				</div>
-				<div class="col-md-6 col-lg-4">
-					<img src="http://www.ivang-design.com/svg-load/portfolio/photo-p.jpg" alt="">
-				</div>
-				<div class="col-md-6 col-lg-4">
-					<img src="http://www.ivang-design.com/svg-load/portfolio/photo-p.jpg" alt="">
-				</div>
-				<div class="col-md-6 col-lg-4">
-					<img src="http://www.ivang-design.com/svg-load/portfolio/photo-p.jpg" alt="">
-				</div>
-			</div>
-		</div>
-	</div>
-	
-	<div class="nature-section">	
-		<div class="nature-close hover-target"></div>
-		<div class="container">
-			<div class="row justify-content-center">
-				<div class="col-12 text-center">
-					<h3>nature</h3>
-				</div>
-				<div class="col-12 mt-3 text-center">
-					<p><span>Canon PowerShot S95</span></p>
-				</div>
-				<div class="col-12 text-center">
-					<p>
-						focal length: 22.5mm<br>
-						aperture: ƒ/5.6<br>
-						exposure time: 1/1000<br>
-						ISO: 80
-					</p>
-				</div>
-				<div class="col-md-6 col-lg-4">
-					<img src="http://www.ivang-design.com/svg-load/portfolio/photo-p.jpg" alt="">
-				</div>
-				<div class="col-md-6 col-lg-4">
-					<img src="http://www.ivang-design.com/svg-load/portfolio/photo-p.jpg" alt="">
-				</div>
-				<div class="col-md-6 col-lg-4">
-					<img src="http://www.ivang-design.com/svg-load/portfolio/photo-p.jpg" alt="">
-				</div>
-			</div>
-		</div>
-	</div>
-	
-	<div class='cursor' id="cursor"></div>
-	<div class='cursor2' id="cursor2"></div>
-	<div class='cursor3' id="cursor3"></div>
 
-<!-- Link to page
-================================================== -->
+		<div class="wildlife-section">
+			<div class="wildlife-close hover-target"></div>
+			<div class="container">
+				<div class="row justify-content-center">
+					<div class="col-12 text-center">
+						<h3>wildlife</h3>
+					</div>
+					<div class="col-12 mt-3 text-center">
+						<p><span>Canon PowerShot S95</span></p>
+					</div>
+					<div class="col-12 text-center">
+						<p>
+							focal length: 22.5mm<br>
+							aperture: ƒ/5.6<br>
+							exposure time: 1/1000<br>
+							ISO: 80
+						</p>
+					</div>
+					<div class="col-md-6 col-lg-4">
+						<img src="http://www.ivang-design.com/svg-load/portfolio/photo-p.jpg" alt="">
+					</div>
+					<div class="col-md-6 col-lg-4">
+						<img src="http://www.ivang-design.com/svg-load/portfolio/photo-p.jpg" alt="">
+					</div>
+					<div class="col-md-6 col-lg-4">
+						<img src="http://www.ivang-design.com/svg-load/portfolio/photo-p.jpg" alt="">
+					</div>
+				</div>
+			</div>
+		</div>
 
-<a href="https://front.codes/" class="link-to-portfolio hover-target" target=”_blank”></a>
-  </div>
+		<div class="nature-section">
+			<div class="nature-close hover-target"></div>
+			<div class="container">
+				<div class="row justify-content-center">
+					<div class="col-12 text-center">
+						<h3>nature</h3>
+					</div>
+					<div class="col-12 mt-3 text-center">
+						<p><span>Canon PowerShot S95</span></p>
+					</div>
+					<div class="col-12 text-center">
+						<p>
+							focal length: 22.5mm<br>
+							aperture: ƒ/5.6<br>
+							exposure time: 1/1000<br>
+							ISO: 80
+						</p>
+					</div>
+					<div class="col-md-6 col-lg-4">
+						<img src="http://www.ivang-design.com/svg-load/portfolio/photo-p.jpg" alt="">
+					</div>
+					<div class="col-md-6 col-lg-4">
+						<img src="http://www.ivang-design.com/svg-load/portfolio/photo-p.jpg" alt="">
+					</div>
+					<div class="col-md-6 col-lg-4">
+						<img src="http://www.ivang-design.com/svg-load/portfolio/photo-p.jpg" alt="">
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class='cursor' id="cursor"></div>
+		<div class='cursor2' id="cursor2"></div>
+		<div class='cursor3' id="cursor3"></div>
+
+	</div>
 </template>
 
-
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+<script src="https://raw.githubusercontent.com/IronSummitMedia/startbootstrap/gh-pages/templates/agency/js/bootstrap.min.js"></script>
 <script>
 import SectionAbout from './components/section_about.vue';
 import SectionTeam from './components/section_team.vue';
 export default {
-  name: 'app',
-  components: {
-    SectionAbout,
-    SectionTeam,
-  },
-  
-  mounted() {
-    document.addEventListener("DOMContentLoaded", function () {
-        // Page cursors
-        var cursor = document.getElementById("cursor");
-        var cursor2 = document.getElementById("cursor2");
-        var cursor3 = document.getElementById("cursor3");
+	name: 'app',
+	components: {
+		SectionAbout,
+		SectionTeam,
+	},
 
-        document.body.addEventListener("mousemove", function (event) {
-            cursor.style.left = event.clientX + "px";
-            cursor.style.top = event.clientY + "px";
-            cursor2.style.left = event.clientX + "px";
-            cursor2.style.top = event.clientY + "px";
-            cursor3.style.left = event.clientX + "px";
-            cursor3.style.top = event.clientY + "px";
-        });
+	mounted() {
+		document.addEventListener("DOMContentLoaded", function () {
+			// Page cursors
+			var cursor = document.getElementById("cursor");
+			var cursor2 = document.getElementById("cursor2");
+			var cursor3 = document.getElementById("cursor3");
 
-        function addHover() {
-            cursor2.classList.add("hover");
-            cursor3.classList.add("hover");
-        }
+			document.body.addEventListener("mousemove", function (event) {
+				cursor.style.left = event.clientX + "px";
+				cursor.style.top = event.clientY + "px";
+				cursor2.style.left = event.clientX + "px";
+				cursor2.style.top = event.clientY + "px";
+				cursor3.style.left = event.clientX + "px";
+				cursor3.style.top = event.clientY + "px";
+			});
 
-        function removeHover() {
-            cursor2.classList.remove("hover");
-            cursor3.classList.remove("hover");
-        }
+			function addHover() {
+				cursor2.classList.add("hover");
+				cursor3.classList.add("hover");
+			}
 
-        removeHover();
+			function removeHover() {
+				cursor2.classList.remove("hover");
+				cursor3.classList.remove("hover");
+			}
 
-        var hoverTargets = document.querySelectorAll(".hover-target");
+			removeHover();
 
-        hoverTargets.forEach(function (element) {
-            element.addEventListener("mouseover", addHover);
-            element.addEventListener("mouseout", removeHover);
-        });
+			var hoverTargets = document.querySelectorAll(".hover-target");
 
-        // About page
-        var aboutText = document.querySelector(".about-text");
-        var aboutClose = document.querySelector(".about-close");
+			hoverTargets.forEach(function (element) {
+				element.addEventListener("mouseover", addHover);
+				element.addEventListener("mouseout", removeHover);
+			});
 
-        aboutText.addEventListener("click", function () {
-            document.body.classList.add("about-on");
-        });
+			// About page
+			var aboutText = document.querySelector(".about-text");
+			var aboutClose = document.querySelector(".about-close");
 
-        aboutClose.addEventListener("click", function () {
-            document.body.classList.remove("about-on");
-        });
+			aboutText.addEventListener("click", function () {
+				document.body.classList.add("about-on");
+			});
 
-        // Contact page
-        var contactText = document.querySelector(".contact-text");
-        var contactClose = document.querySelector(".contact-close");
+			aboutClose.addEventListener("click", function () {
+				document.body.classList.remove("about-on");
+			});
 
-        contactText.addEventListener("click", function () {
-            document.body.classList.add("contact-on");
-        });
+			// Contact page
+			var contactText = document.querySelector(".contact-text");
+			var contactClose = document.querySelector(".contact-close");
 
-        contactClose.addEventListener("click", function () {
-            document.body.classList.remove("contact-on");
-        });
+			contactText.addEventListener("click", function () {
+				document.body.classList.add("contact-on");
+			});
 
-        // Travel portfolio page
-        var travel = document.querySelector(".travel");
-        var travelClose = document.querySelector(".travel-close");
+			contactClose.addEventListener("click", function () {
+				document.body.classList.remove("contact-on");
+			});
 
-        travel.addEventListener("click", function () {
-            document.body.classList.add("travel-on");
-        });
+			// Travel portfolio page
+			var travel = document.querySelector(".travel");
+			var travelClose = document.querySelector(".travel-close");
 
-        travelClose.addEventListener("click", function () {
-            document.body.classList.remove("travel-on");
-        });
+			travel.addEventListener("click", function () {
+				document.body.classList.add("travel-on");
+			});
 
-        // Wildlife portfolio page
-        var wildlife = document.querySelector(".wildlife");
-        var wildlifeClose = document.querySelector(".wildlife-close");
+			travelClose.addEventListener("click", function () {
+				document.body.classList.remove("travel-on");
+			});
 
-        wildlife.addEventListener("click", function () {
-            document.body.classList.add("wildlife-on");
-        });
+			// Wildlife portfolio page
+			var wildlife = document.querySelector(".wildlife");
+			var wildlifeClose = document.querySelector(".wildlife-close");
 
-        wildlifeClose.addEventListener("click", function () {
-            document.body.classList.remove("wildlife-on");
-        });
+			wildlife.addEventListener("click", function () {
+				document.body.classList.add("wildlife-on");
+			});
 
-        // Nature portfolio page
-        var nature = document.querySelector(".nature");
-        var natureClose = document.querySelector(".nature-close");
+			wildlifeClose.addEventListener("click", function () {
+				document.body.classList.remove("wildlife-on");
+			});
 
-        nature.addEventListener("click", function () {
-            document.body.classList.add("nature-on");
-        });
+			// Nature portfolio page
+			var nature = document.querySelector(".nature");
+			var natureClose = document.querySelector(".nature-close");
 
-        natureClose.addEventListener("click", function () {
-            document.body.classList.remove("nature-on");
-        });
-    });
-  }
+			nature.addEventListener("click", function () {
+				document.body.classList.add("nature-on");
+			});
+
+			natureClose.addEventListener("click", function () {
+				document.body.classList.remove("nature-on");
+			});
+		});
+	}
 }
 </script>
 
@@ -266,8 +294,11 @@ export default {
 @import url('https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i');
 @import url('https://fonts.googleapis.com/css?family=Dancing+Script:400,700');
 @import url('https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css');
+@import url('https://startbootstrap.com/templates/agency/font-awesome-4.1.0/css/font-awesome.min.css');
+@import url('https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css');
+@import url('https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/themes/smoothness/jquery-ui.css');
 
-body{
+body {
 	font-family: 'Poppins', sans-serif;
 	font-weight: 300;
 	font-size: 15px;
@@ -280,16 +311,20 @@ body{
 	transition: all 300ms linear;
 	perspective: 800px;
 }
+
 a {
 	cursor: pointer;
 }
+
 a:hover {
 	text-decoration: none;
 }
+
 ::selection {
 	color: #c4c3ca;
 	background-color: #000;
 }
+
 ::-moz-selection {
 	color: #c4c3ca;
 	background-color: #000;
@@ -300,9 +335,9 @@ a:hover {
 
 .cursor,
 .cursor2,
-.cursor3{
+.cursor3 {
 	position: fixed;
-	border-radius: 50%;	
+	border-radius: 50%;
 	transform: translateX(-50%) translateY(-50%);
 	pointer-events: none;
 	left: -100px;
@@ -311,32 +346,40 @@ a:hover {
 	-webkit-transition: all 300ms linear;
 	transition: all 300ms linear;
 }
-.cursor{
+
+.cursor {
 	background-color: #fff;
 	height: 0;
 	width: 0;
 	z-index: 99999;
 }
-.cursor2,.cursor3{
+
+.cursor2,
+.cursor3 {
 	height: 36px;
 	width: 36px;
-	z-index:99998;
-	-webkit-transition:all 0.3s ease-out;
-	transition:all 0.3s ease-out
+	z-index: 99998;
+	-webkit-transition: all 0.3s ease-out;
+	transition: all 0.3s ease-out
 }
+
 .cursor2.hover,
-.cursor3.hover{
-	-webkit-transform:scale(2) translateX(-25%) translateY(-25%);
-	transform:scale(2) translateX(-25%) translateY(-25%);
-	border:none
+.cursor3.hover {
+	-webkit-transform: scale(2) translateX(-25%) translateY(-25%);
+	transform: scale(2) translateX(-25%) translateY(-25%);
+	border: none
 }
-.cursor2.hover{
-	background: rgba(255,255,255,1);
+
+.cursor2.hover {
+	background: rgba(255, 255, 255, 1);
 	border-color: transparent;
 }
 
-@media screen and (max-width: 1200px){
-	.cursor,.cursor2,.cursor3{
+@media screen and (max-width: 1200px) {
+
+	.cursor,
+	.cursor2,
+	.cursor3 {
 		display: none
 	}
 }
@@ -345,49 +388,54 @@ a:hover {
 ================================================== */
 
 .hero-section {
-    position: relative;
+	position: relative;
 	width: 100%;
 	display: block;
 	overflow: hidden;
 	height: 100vh;
-	background-image: url('http://www.ivang-design.com/svg-load/portfolio/photo.jpg');
+	background-image: url(https://unsplash.imgix.net/uploads%2F14115408840644deb16b0%2F2dc933e3?q=75&fm=jpg&auto=format&s=7f43646e4d26049c6c39890afb2e5ced);
 	background-size: cover;
 	background-position: center;
 	transform: scale(1) rotateX(0);
-	box-shadow: 0 0 40px rgba(0,0,0,0.2);
+	box-shadow: 0 0 40px rgba(0, 0, 0, 0.2);
 	-webkit-transition: all 300ms linear;
 	transition: all 300ms linear;
 	-webkit-transition-delay: 400ms;
 	transition-delay: 400ms;
 	transform-origin: center top;
 }
-.hero-section h1{
-    color: #fff;
+
+.hero-section h1 {
+	color: #fff;
 	font-size: 5vw;
 	line-height: 1;
 	font-weight: 900;
 }
-.hero-section .dancing{
-    font-family: 'Dancing Script', cursive;
+
+.hero-section .dancing {
+	font-family: 'Dancing Script', cursive;
 	letter-spacing: 1px;
 	color: #866BAF;
 	font-size: 26px;
 	line-height: 1;
 	font-weight: 700;
 }
-@media screen and (max-width: 580px){
-	.hero-section .dancing{
+
+@media screen and (max-width: 580px) {
+	.hero-section .dancing {
 		font-size: 18px;
 	}
 }
-.hero-section p{
+
+.hero-section p {
 	font-size: 15px;
 	line-height: 20px;
 	font-weight: 500;
 	color: #fff;
 	letter-spacing: 1px;
 }
-.hero-section p span{
+
+.hero-section p span {
 	margin-left: 15px;
 	margin-right: 15px;
 	position: relative;
@@ -395,6 +443,7 @@ a:hover {
 	cursor: pointer;
 	padding-bottom: 35px;
 }
+
 .hero-section p span:before {
 	position: absolute;
 	content: '';
@@ -412,6 +461,7 @@ a:hover {
 	-webkit-transition: all 200ms linear;
 	transition: all 200ms linear;
 }
+
 .hero-section p span:hover:before {
 	opacity: 1;
 	bottom: 5px;
@@ -422,28 +472,33 @@ body.about-on .hero-section {
 	-webkit-transition-delay: 0ms;
 	transition-delay: 0ms;
 }
+
 body.contact-on .hero-section {
 	transform: scale(0.75);
 	-webkit-transition-delay: 0ms;
 	transition-delay: 0ms;
 }
+
 body.travel-on .hero-section {
 	transform: rotateX(-10deg);
 	-webkit-transition-delay: 0ms;
 	transition-delay: 0ms;
 }
+
 body.wildlife-on .hero-section {
 	transform: rotateX(-10deg);
 	-webkit-transition-delay: 0ms;
 	transition-delay: 0ms;
 }
+
 body.nature-on .hero-section {
 	transform: rotateX(-10deg);
 	-webkit-transition-delay: 0ms;
 	transition-delay: 0ms;
 }
+
 .about-text {
-    position: absolute;
+	position: absolute;
 	font-size: 17px;
 	line-height: 20px;
 	font-weight: 700;
@@ -459,6 +514,7 @@ body.nature-on .hero-section {
 	-webkit-transition: all 200ms linear;
 	transition: all 200ms linear;
 }
+
 .about-text:before {
 	position: absolute;
 	content: '';
@@ -476,31 +532,35 @@ body.nature-on .hero-section {
 	-webkit-transition: all 200ms linear;
 	transition: all 200ms linear;
 }
+
 .about-text:hover:before {
 	opacity: 1;
 	left: -30px;
 }
+
 .about-section {
-    position: fixed;
+	position: fixed;
 	top: 0;
 	left: 0;
 	width: 100%;
 	display: block;
 	overflow: hidden;
 	height: 100vh;
-	background-color: rgba(31,32,41,1);
+	background-color: rgba(31, 32, 41, 1);
 	transform: translateX(-100%);
 	-webkit-transition: all 300ms linear;
 	transition: all 300ms linear;
 	z-index: 10;
 }
+
 body.about-on .about-section {
 	transform: translateX(0);
 	-webkit-transition-delay: 400ms;
 	transition-delay: 400ms;
 }
+
 .about-close {
-    position: absolute;
+	position: absolute;
 	top: 20px;
 	right: 20px;
 	width: 30px;
@@ -516,27 +576,31 @@ body.about-on .about-section {
 	cursor: pointer;
 	z-index: 11;
 }
+
 .about-close:hover {
-    transform: rotate(90deg);
+	transform: rotate(90deg);
 }
+
 .section-center {
-    position: absolute;
+	position: absolute;
 	width: 100%;
 	left: 0;
 	top: 50%;
 	transform: translateY(-50%);
 	z-index: 1;
 }
+
 .about-section img {
-    width: 100px;
+	width: 100px;
 	height: 100px;
 	border-radius: 4px;
 	display: block;
 	margin: 0 auto;
-	box-shadow: 0 0 20px rgba(0,0,0,0.15);
+	box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
 }
+
 .about-section p span {
-    font-family: 'Dancing Script', cursive;
+	font-family: 'Dancing Script', cursive;
 	letter-spacing: 1px;
 	color: #866BAF;
 	font-size: 25px;
@@ -544,7 +608,7 @@ body.about-on .about-section {
 }
 
 .contact-text {
-    position: absolute;
+	position: absolute;
 	font-size: 17px;
 	line-height: 20px;
 	font-weight: 700;
@@ -560,6 +624,7 @@ body.about-on .about-section {
 	-webkit-transition: all 200ms linear;
 	transition: all 200ms linear;
 }
+
 .contact-text:before {
 	position: absolute;
 	content: '';
@@ -577,31 +642,35 @@ body.about-on .about-section {
 	-webkit-transition: all 200ms linear;
 	transition: all 200ms linear;
 }
+
 .contact-text:hover:before {
 	opacity: 1;
 	left: -30px;
 }
+
 .contact-section {
-    position: fixed;
+	position: fixed;
 	top: 0;
 	left: 0;
 	width: 100%;
 	display: block;
 	overflow: hidden;
 	height: 100vh;
-	background-color: rgba(31,32,41,1);
+	background-color: rgba(31, 32, 41, 1);
 	transform: translateX(100%);
 	-webkit-transition: all 300ms linear;
 	transition: all 300ms linear;
 	z-index: 10;
 }
+
 body.contact-on .contact-section {
 	transform: translateX(0);
 	-webkit-transition-delay: 400ms;
 	transition-delay: 400ms;
 }
+
 .contact-close {
-    position: absolute;
+	position: absolute;
 	top: 20px;
 	right: 20px;
 	width: 30px;
@@ -617,30 +686,35 @@ body.contact-on .contact-section {
 	cursor: pointer;
 	z-index: 11;
 }
+
 .contact-close:hover {
-    transform: rotate(90deg);
+	transform: rotate(90deg);
 }
-.contact-section a{
-    margin: 0 auto;
+
+.contact-section a {
+	margin: 0 auto;
 	font-size: 32px;
 	font-weight: 900;
 	letter-spacing: 1px;
 	color: #fff;
-  display: inline-block;
+	display: inline-block;
 }
-.contact-section .social a{
-    margin-left: 8px;
+
+.contact-section .social a {
+	margin-left: 8px;
 	margin-right: 8px;
 	font-size: 15px;
 	font-weight: 600;
 	letter-spacing: 1px;
 	color: #866BAF;
 }
-@media screen and (max-width: 580px){
-	.contact-section a{
+
+@media screen and (max-width: 580px) {
+	.contact-section a {
 		font-size: 17px;
 	}
-	.contact-section .social a{
+
+	.contact-section .social a {
 		margin-left: 3px;
 		margin-right: 3px;
 		font-size: 13px;
@@ -651,7 +725,7 @@ body.contact-on .contact-section {
 .travel-section,
 .wildlife-section,
 .nature-section {
-    position: fixed;
+	position: fixed;
 	top: 100%;
 	left: 0;
 	padding: 100px 0;
@@ -660,15 +734,16 @@ body.contact-on .contact-section {
 	display: block;
 	overflow-x: hidden;
 	overflow-y: auto;
-	background-color: rgba(31,32,41,1);
+	background-color: rgba(31, 32, 41, 1);
 	-webkit-transition: all 300ms linear;
 	transition: all 300ms linear;
 	z-index: 10;
 }
+
 .travel-close,
 .wildlife-close,
 .nature-close {
-    position: absolute;
+	position: absolute;
 	top: 20px;
 	right: 20px;
 	width: 30px;
@@ -684,36 +759,42 @@ body.contact-on .contact-section {
 	cursor: pointer;
 	z-index: 11;
 }
+
 .travel-close:hover,
 .wildlife-close:hover,
 .nature-close:hover {
-    transform: rotate(90deg);
+	transform: rotate(90deg);
 }
+
 body.travel-on .travel-section {
 	top: 0;
 	-webkit-transition-delay: 400ms;
 	transition-delay: 400ms;
 }
+
 body.wildlife-on .wildlife-section {
 	top: 0;
 	-webkit-transition-delay: 400ms;
 	transition-delay: 400ms;
 }
+
 body.nature-on .nature-section {
 	top: 0;
 	-webkit-transition-delay: 400ms;
 	transition-delay: 400ms;
 }
+
 .travel-section img,
 .wildlife-section img,
 .nature-section img {
 	margin-top: 30px;
-    width: 100%;
+	width: 100%;
 	height: auto;
 	display: block;
 	border-radius: 4px;
-	box-shadow: 0 0 20px rgba(0,0,0,0.4);
+	box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
 }
+
 .travel-section h3,
 .wildlife-section h3,
 .nature-section h3 {
@@ -723,6 +804,7 @@ body.nature-on .nature-section {
 	letter-spacing: 1px;
 	color: #fff;
 }
+
 .travel-section p,
 .wildlife-section p,
 .nature-section p {
@@ -730,6 +812,7 @@ body.nature-on .nature-section {
 	line-height: 1.7;
 	letter-spacing: 1px;
 }
+
 .travel-section p span,
 .wildlife-section p span,
 .nature-section p span {
@@ -739,7 +822,174 @@ body.nature-on .nature-section {
 	color: #866BAF;
 }
 
-.layerindex{
-  overflow-y: auto;
+.layerindex {
+	overflow-y: auto;
+}
+
+header {
+	text-align: center;
+	color: #fff;
+	background-attachment: scroll;
+	background-position: center center;
+	background-repeat: none;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	background-size: cover;
+	-o-background-size: cover;
+}
+
+header .intro-text {
+	padding-top: 100px;
+	padding-bottom: 50px;
+}
+
+header .intro-text .intro-lead-in {
+	margin-bottom: 25px;
+	font-family: "Droid Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 22px;
+	font-style: italic;
+	line-height: 22px;
+}
+
+header .intro-text .intro-heading {
+	margin-bottom: 25px;
+	text-transform: uppercase;
+	font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 50px;
+	font-weight: 700;
+	line-height: 50px;
+}
+
+@media(min-width:768px) {
+	header .intro-text {
+		padding-top: 300px;
+		padding-bottom: 200px;
+	}
+
+	header .intro-text .intro-lead-in {
+		margin-bottom: 25px;
+		font-family: "Droid Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;
+		font-size: 40px;
+		font-style: italic;
+		line-height: 40px;
+	}
+
+	header .intro-text .intro-heading {
+		margin-bottom: 50px;
+		text-transform: uppercase;
+		font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
+		font-size: 75px;
+		font-weight: 700;
+		line-height: 75px;
+	}
+}
+
+.btn-xl {
+	padding: 20px 40px;
+	border-color: #1ee2e7;
+	border-radius: 3px;
+	text-transform: uppercase;
+	font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 18px;
+	font-weight: 700;
+	color: #fff;
+	background-color: #1ee2e7;
+}
+
+.btn-xl:hover,
+.btn-xl:focus,
+.btn-xl:active,
+.btn-xl.active,
+.open .dropdown-toggle.btn-xl {
+	border-color: #17d0d5;
+	color: #fff;
+	background-color: #17d0d5;
+}
+
+.btn-xl:active,
+.btn-xl.active,
+.open .dropdown-toggle.btn-xl {
+	background-image: none;
+}
+
+.btn-xl.disabled,
+.btn-xl[disabled],
+fieldset[disabled] .btn-xl,
+.btn-xl.disabled:hover,
+.btn-xl[disabled]:hover,
+fieldset[disabled] .btn-xl:hover,
+.btn-xl.disabled:focus,
+.btn-xl[disabled]:focus,
+fieldset[disabled] .btn-xl:focus,
+.btn-xl.disabled:active,
+.btn-xl[disabled]:active,
+fieldset[disabled] .btn-xl:active,
+.btn-xl.disabled.active,
+.btn-xl[disabled].active,
+fieldset[disabled] .btn-xl.active {
+	border-color: #1ee2e7;
+	background-color: #1ee2e7;
+}
+
+.btn-xl .badge {
+	color: #fed136;
+	background-color: #fff;
+}
+
+footer {
+    padding: 25px 0;
+    text-align: center;
+}
+
+footer span.copyright {
+    text-transform: uppercase;
+    text-transform: none;
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    line-height: 40px;
+}
+
+footer ul.quicklinks {
+    margin-bottom: 0;
+    text-transform: uppercase;
+    text-transform: none;
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    line-height: 40px;
+}
+
+ul.social-buttons {
+    margin-bottom: 0;
+}
+
+ul.social-buttons li a {
+    display: block;
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    font-size: 20px;
+    line-height: 40px;
+    outline: 0;
+    color: #fff;
+    background-color: #222;
+    -webkit-transition: all .3s;
+    -moz-transition: all .3s;
+    transition: all .3s;
+}
+
+ul.social-buttons li a:hover,
+ul.social-buttons li a:focus,
+ul.social-buttons li a:active {
+    background-color: #1ee2e7;
+}
+
+.btn:focus,
+.btn:active,
+.btn.active,
+.btn:active:focus {
+    outline: 0;
+}
+
+.div-inferior {
+    position: fixed;
+    bottom: 12vh;
 }
 </style>
