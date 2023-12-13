@@ -1,8 +1,8 @@
 <template>
 	<div id="app">
 		<div class="hero-section">
-			<div class="about-text hover-target">about</div>
-			<div class="contact-text hover-target">contact</div>
+			<div class="about-text hover-target">Sobre</div>
+			<div class="contact-text hover-target">Contato</div>
 			<div class="section-center">
 				<div class="container-fluid">
 					<div class="row justify-content-center">
@@ -12,39 +12,39 @@
 									<div class="intro-lead-in">Guiando Sua Marca pela Estrada do Sucesso: Juntos,
 										Construímos o Caminho para o Impacto.</div>
 									<div class="intro-heading">IZTOIC MAKER</div>
-									<a href="" class="page-scroll btn btn-xl">Conheça nosso trabalho!</a>
+									<a class="page-scroll">Conheça nosso trabalho!</a>
 									<div class="col-12 text-center mt-4 mt-lg-5">
 										<p>
-											<span class="travel hover-target">travel</span>
-											<span class="wildlife hover-target">wildlife</span>
-											<span class="nature hover-target">nature</span>
+											<span class="travel hover-target">Serviços</span>
+											<span class="wildlife hover-target">Planos</span>
+											<span class="nature hover-target">Portifólio</span>
 										</p>
 									</div>
 									<footer>
-            <div class="div-inferior container">
-                <div class="row">
-                    <div class="col-md-4">
-                        <span class="copyright">Copyright © Iztoic 2023</span>
-                    </div>
-                    <div class="col-md-4">
-                        <ul class="list-inline social-buttons">
-                            <li><a href="#"><i class="fa fa-twitter"></i></a>
-                            </li>
-                            <li><a href="#"><i class="fa fa-facebook"></i></a>
-                            </li>
-                            <li><a href="#"><i class="fa fa-linkedin"></i></a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="col-md-4">
-                        <ul class="list-inline quicklinks">
-                            <li><a href="#">Politica de Privacidade</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </footer>
+										<div class="div-inferior container">
+											<div class="row">
+												<div class="col-md-4">
+													<span class="copyright">Copyright © Iztoic 2023</span>
+												</div>
+												<div class="col-md-4">
+													<ul class="list-inline social-buttons">
+														<li><a href="#"><i class="fa fa-twitter"></i></a>
+														</li>
+														<li><a href="#"><i class="fa fa-facebook"></i></a>
+														</li>
+														<li><a href="#"><i class="fa fa-linkedin"></i></a>
+														</li>
+													</ul>
+												</div>
+												<div class="col-md-4">
+													<ul class="list-inline quicklinks">
+														<li><a href="#">Politica de Privacidade</a>
+														</li>
+													</ul>
+												</div>
+											</div>
+										</div>
+									</footer>
 								</div>
 							</div>
 						</header>
@@ -59,115 +59,25 @@
 			<SectionTeam />
 		</div>
 
-		<div class="contact-section">
+		<div class="layerindex contact-section">
 			<div class="contact-close hover-target"></div>
-			<div class="section-center">
-				<div class="container">
-					<div class="row justify-content-center">
-						<div class="col-12 text-center">
-							<a href="#" class="hover-target">arete@photography.com</a>
-						</div>
-						<div class="col-12 text-center social mt-4">
-							<a href="#" class="hover-target">instagram</a>
-							<a href="#" class="hover-target">flickr</a>
-							<a href="#" class="hover-target">facebook</a>
-						</div>
-					</div>
-				</div>
-			</div>
+			<SectionTestimonials/>
+			<SectionContact/>
 		</div>
 
 		<div class="travel-section">
 			<div class="travel-close hover-target"></div>
-			<div class="container">
-				<div class="row justify-content-center">
-					<div class="col-12 text-center">
-						<h3>travel</h3>
-					</div>
-					<div class="col-12 mt-3 text-center">
-						<p><span>Canon PowerShot S95</span></p>
-					</div>
-					<div class="col-12 text-center">
-						<p>
-							focal length: 22.5mm<br>
-							aperture: ƒ/5.6<br>
-							exposure time: 1/1000<br>
-							ISO: 80
-						</p>
-					</div>
-					<div class="col-md-6 col-lg-4">
-						<img src="http://www.ivang-design.com/svg-load/portfolio/photo-p.jpg" alt="">
-					</div>
-					<div class="col-md-6 col-lg-4">
-						<img src="http://www.ivang-design.com/svg-load/portfolio/photo-p.jpg" alt="">
-					</div>
-					<div class="col-md-6 col-lg-4">
-						<img src="http://www.ivang-design.com/svg-load/portfolio/photo-p.jpg" alt="">
-					</div>
-				</div>
-			</div>
+			<SectionServices/>
 		</div>
 
 		<div class="wildlife-section">
 			<div class="wildlife-close hover-target"></div>
-			<div class="container">
-				<div class="row justify-content-center">
-					<div class="col-12 text-center">
-						<h3>wildlife</h3>
-					</div>
-					<div class="col-12 mt-3 text-center">
-						<p><span>Canon PowerShot S95</span></p>
-					</div>
-					<div class="col-12 text-center">
-						<p>
-							focal length: 22.5mm<br>
-							aperture: ƒ/5.6<br>
-							exposure time: 1/1000<br>
-							ISO: 80
-						</p>
-					</div>
-					<div class="col-md-6 col-lg-4">
-						<img src="http://www.ivang-design.com/svg-load/portfolio/photo-p.jpg" alt="">
-					</div>
-					<div class="col-md-6 col-lg-4">
-						<img src="http://www.ivang-design.com/svg-load/portfolio/photo-p.jpg" alt="">
-					</div>
-					<div class="col-md-6 col-lg-4">
-						<img src="http://www.ivang-design.com/svg-load/portfolio/photo-p.jpg" alt="">
-					</div>
-				</div>
-			</div>
+			<SectionPlans/>
 		</div>
 
 		<div class="nature-section">
 			<div class="nature-close hover-target"></div>
-			<div class="container">
-				<div class="row justify-content-center">
-					<div class="col-12 text-center">
-						<h3>nature</h3>
-					</div>
-					<div class="col-12 mt-3 text-center">
-						<p><span>Canon PowerShot S95</span></p>
-					</div>
-					<div class="col-12 text-center">
-						<p>
-							focal length: 22.5mm<br>
-							aperture: ƒ/5.6<br>
-							exposure time: 1/1000<br>
-							ISO: 80
-						</p>
-					</div>
-					<div class="col-md-6 col-lg-4">
-						<img src="http://www.ivang-design.com/svg-load/portfolio/photo-p.jpg" alt="">
-					</div>
-					<div class="col-md-6 col-lg-4">
-						<img src="http://www.ivang-design.com/svg-load/portfolio/photo-p.jpg" alt="">
-					</div>
-					<div class="col-md-6 col-lg-4">
-						<img src="http://www.ivang-design.com/svg-load/portfolio/photo-p.jpg" alt="">
-					</div>
-				</div>
-			</div>
+			<SectionPortifolio/>
 		</div>
 
 		<div class='cursor' id="cursor"></div>
@@ -184,11 +94,21 @@
 <script>
 import SectionAbout from './components/section_about.vue';
 import SectionTeam from './components/section_team.vue';
+import SectionContact from './components/section_contact.vue';
+import SectionTestimonials from './components/section_testimonials.vue';
+import SectionServices from './components/section_services.vue';
+import SectionPlans from './components/section_plans.vue';
+import SectionPortifolio from './components/section_portifolio.vue';
 export default {
 	name: 'app',
 	components: {
 		SectionAbout,
 		SectionTeam,
+		SectionContact,
+		SectionTestimonials,
+		SectionServices,
+		SectionPortifolio,
+		SectionPlans,
 	},
 
 	mounted() {
@@ -728,12 +648,11 @@ body.contact-on .contact-section {
 	position: fixed;
 	top: 100%;
 	left: 0;
-	padding: 100px 0;
 	width: 100%;
 	height: 100vh;
-	display: block;
-	overflow-x: hidden;
-	overflow-y: auto;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 	background-color: rgba(31, 32, 41, 1);
 	-webkit-transition: all 300ms linear;
 	transition: all 300ms linear;
@@ -937,59 +856,59 @@ fieldset[disabled] .btn-xl.active {
 }
 
 footer {
-    padding: 25px 0;
-    text-align: center;
+	padding: 25px 0;
+	text-align: center;
 }
 
 footer span.copyright {
-    text-transform: uppercase;
-    text-transform: none;
-    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
-    line-height: 40px;
+	text-transform: uppercase;
+	text-transform: none;
+	font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
+	line-height: 40px;
 }
 
 footer ul.quicklinks {
-    margin-bottom: 0;
-    text-transform: uppercase;
-    text-transform: none;
-    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
-    line-height: 40px;
+	margin-bottom: 0;
+	text-transform: uppercase;
+	text-transform: none;
+	font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
+	line-height: 40px;
 }
 
 ul.social-buttons {
-    margin-bottom: 0;
+	margin-bottom: 0;
 }
 
 ul.social-buttons li a {
-    display: block;
-    width: 40px;
-    height: 40px;
-    border-radius: 100%;
-    font-size: 20px;
-    line-height: 40px;
-    outline: 0;
-    color: #fff;
-    background-color: #222;
-    -webkit-transition: all .3s;
-    -moz-transition: all .3s;
-    transition: all .3s;
+	display: block;
+	width: 40px;
+	height: 40px;
+	border-radius: 100%;
+	font-size: 20px;
+	line-height: 40px;
+	outline: 0;
+	color: #fff;
+	background-color: #222;
+	-webkit-transition: all .3s;
+	-moz-transition: all .3s;
+	transition: all .3s;
 }
 
 ul.social-buttons li a:hover,
 ul.social-buttons li a:focus,
 ul.social-buttons li a:active {
-    background-color: #1ee2e7;
+	background-color: #1ee2e7;
 }
 
 .btn:focus,
 .btn:active,
 .btn.active,
 .btn:active:focus {
-    outline: 0;
+	outline: 0;
 }
 
 .div-inferior {
-    position: fixed;
-    bottom: 12vh;
+	position: fixed;
+	bottom: 12vh;
 }
 </style>
