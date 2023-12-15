@@ -30,26 +30,26 @@
 				</div>
 			</div>
 			<div class="div-inferior">
-    <div class="container">
-      <div class="row justify-content-center">
-        <div class="col-md-4">
-          <span class="copyright">Copyright © Iztoic 2023</span>
-        </div>
-        <div class="col-md-4">
-          <ul class="list-inline social-buttons justify-content-center">
-            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-            <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-          </ul>
-        </div>
-        <div class="col-md-4">
-          <ul class="list-inline quicklinks">
-            <li><a href="#" class="white-and-bold">Politica de Privacidade</a></li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </div>
+				<div class="container">
+					<div class="row justify-content-center">
+						<div class="col-md-4">
+							<span class="copyright">Copyright © Iztoic 2023</span>
+						</div>
+						<div class="col-md-4">
+							<ul class="list-inline social-buttons justify-content-center">
+								<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+								<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+								<li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+							</ul>
+						</div>
+						<div class="col-md-4">
+							<ul class="list-inline quicklinks">
+								<li><a href="#" class="white-and-bold">Politica de Privacidade</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
 		</div>
 
 		<div class="layerindex about-section">
@@ -861,14 +861,15 @@ footer {
 	text-align: center;
 }
 
-footer span.copyright {
+span.copyright {
 	text-transform: uppercase;
 	text-transform: none;
 	font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
 	line-height: 40px;
+	color: #fff !important;
 }
 
-footer ul.quicklinks {
+ul.quicklinks {
 	margin-bottom: 0;
 	text-transform: uppercase;
 	text-transform: none;
@@ -908,37 +909,35 @@ ul.social-buttons li a:active {
 	outline: 0;
 }
 
-.row{
+.row {
 	align-items: center
 }
+
 .div-inferior {
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 20px;
-  z-index: 1000;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 20px;
+	z-index: 1000;
 }
 
 .social-buttons {
-  text-align: center;
+	text-align: center;
 }
+
 .div-inferior .container {
-  width: 100%;
+	width: 100%;
 }
-.col-md-4{
+
+.col-md-4 {
 	display: flex;
 	justify-content: center;
 }
+
 .white-and-bold {
-  color: #fff;
-  font-weight: bold;
-}
-.copyright, .quicklinks a {
-  color: #fff;
-  font-weight: bold;
-}
-</style>
+	color: #fff !important;
+}</style>
