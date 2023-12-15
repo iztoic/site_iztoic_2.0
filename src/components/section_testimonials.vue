@@ -1,5 +1,6 @@
 <template>
           <section id="section-testimonials">
+            <h1 class="credibility">Credibilidade</h1><br>
             <figure class="snip1386">
   <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sample18.jpg" alt="sample18" class="background" />
   <figcaption>
@@ -125,6 +126,10 @@ blockquote{
   -webkit-transform: translate(50%, -50%);
   transform: translate(50%, -50%);
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+}
+.credibility{
+  align-items: center;
+  display: flex;
 }
 
 </style>

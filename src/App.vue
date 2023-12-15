@@ -20,69 +20,69 @@
 											<span class="nature hover-target">Portifólio</span>
 										</p>
 									</div>
-									<footer>
-										<div class="div-inferior container">
-											<div class="row">
-												<div class="col-md-4">
-													<span class="copyright">Copyright © Iztoic 2023</span>
-												</div>
-												<div class="col-md-4">
-													<ul class="list-inline social-buttons">
-														<li><a href="#"><i class="fa fa-twitter"></i></a>
-														</li>
-														<li><a href="#"><i class="fa fa-facebook"></i></a>
-														</li>
-														<li><a href="#"><i class="fa fa-linkedin"></i></a>
-														</li>
-													</ul>
-												</div>
-												<div class="col-md-4">
-													<ul class="list-inline quicklinks">
-														<li><a href="#">Politica de Privacidade</a>
-														</li>
-													</ul>
-												</div>
-											</div>
-										</div>
-									</footer>
+
 								</div>
+
 							</div>
 						</header>
 					</div>
+
 				</div>
 			</div>
+			<div class="div-inferior">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-md-4">
+          <span class="copyright">Copyright © Iztoic 2023</span>
+        </div>
+        <div class="col-md-4">
+          <ul class="list-inline social-buttons justify-content-center">
+            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+            <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+          </ul>
+        </div>
+        <div class="col-md-4">
+          <ul class="list-inline quicklinks">
+            <li><a href="#" class="white-and-bold">Politica de Privacidade</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
 		</div>
 
 		<div class="layerindex about-section">
 			<div class="about-close hover-target"></div>
 			<SectionAbout />
+			<SectionTestimonials />
 			<SectionTeam />
 		</div>
 
 		<div class="layerindex contact-section">
 			<div class="contact-close hover-target"></div>
-			<SectionTestimonials/>
-			<SectionContact/>
+			<SectionContact />
 		</div>
 
 		<div class="travel-section">
 			<div class="travel-close hover-target"></div>
-			<SectionServices/>
+			<SectionServices />
 		</div>
 
 		<div class="wildlife-section">
 			<div class="wildlife-close hover-target"></div>
-			<SectionPlans/>
+			<SectionPlans />
 		</div>
 
 		<div class="nature-section">
 			<div class="nature-close hover-target"></div>
-			<SectionPortifolio/>
+			<SectionPortifolio />
 		</div>
 
 		<div class='cursor' id="cursor"></div>
 		<div class='cursor2' id="cursor2"></div>
 		<div class='cursor3' id="cursor3"></div>
+
 
 	</div>
 </template>
@@ -211,6 +211,7 @@ export default {
 </script>
 
 <style scoped>
+@import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
 @import url('https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i');
 @import url('https://fonts.googleapis.com/css?family=Dancing+Script:400,700');
 @import url('https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css');
@@ -907,8 +908,37 @@ ul.social-buttons li a:active {
 	outline: 0;
 }
 
+.row{
+	align-items: center
+}
 .div-inferior {
-	position: fixed;
-	bottom: 12vh;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  z-index: 1000;
+}
+
+.social-buttons {
+  text-align: center;
+}
+.div-inferior .container {
+  width: 100%;
+}
+.col-md-4{
+	display: flex;
+	justify-content: center;
+}
+.white-and-bold {
+  color: #fff;
+  font-weight: bold;
+}
+.copyright, .quicklinks a {
+  color: #fff;
+  font-weight: bold;
 }
 </style>
