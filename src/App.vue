@@ -88,7 +88,9 @@
 <!-- Loader -->
 <div v-if="loading" class="loading">
       <div class="loading-progress" :style="{ transform: 'translateX(' + progress + '%)' }"></div>
-      <h1 class="loading-title">Carregando</h1>
+      <div class="loading-title">
+	  <LoaderLogo/>
+	  </div>
     </div>
 
 	</div>
@@ -106,6 +108,7 @@ import SectionTestimonials from './components/section_testimonials.vue';
 import SectionServices from './components/section_services.vue';
 import SectionPlans from './components/section_plans.vue';
 import SectionPortifolio from './components/section_portifolio.vue';
+import LoaderLogo from './components/loader_logo.vue';
 export default {
 	name: 'app',
 	components: {
@@ -116,6 +119,7 @@ export default {
 		SectionServices,
 		SectionPortifolio,
 		SectionPlans,
+		LoaderLogo,
 	},
 
 	data() {
