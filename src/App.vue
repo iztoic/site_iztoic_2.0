@@ -85,13 +85,14 @@
 		<div class='cursor3' id="cursor3"></div>
 
 		
-<!-- Loader -->
-<div v-if="loading" class="loading">
+		<div @click="showHomepage">
+    <div v-if="loading" class="loading">
       <div class="loading-progress" :style="{ transform: 'translateX(' + progress + '%)' }"></div>
       <div class="loading-title">
-	  <LoaderLogo/>
-	  </div>
+        <LoaderLogo />
+      </div>
     </div>
+  </div>
 
 	</div>
 </template>
@@ -141,13 +142,16 @@ export default {
 
           // Adicione um pequeno atraso antes de esconder o loader
           setTimeout(() => {
-            this.loading = false;
-          }, 400);
+            this.showHomepage();
+          }, 7000);
         }
       }, this.getRandomArbitrary(100, 500));
     },
     getRandomArbitrary(min, max) {
       return Math.random() * (max - min) + min;
+    },
+    showHomepage() {
+      this.loading = false;
     },
   },
 
@@ -993,7 +997,7 @@ ul.social-buttons li a:active {
   left: 0;
   background: #000;
   transition: background-color 0.75s;
-  z-index: 1000; /* Ensure it's on top of other elements */
+  z-index: 1000;
 }
 
 .loading-title {
@@ -1012,6 +1016,6 @@ ul.social-buttons li a:active {
   bottom: 0;
   width: 100%;
   position: absolute;
-  transition: .45s;
+  transition: 0.45s;
 }
 </style>
