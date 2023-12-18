@@ -11,7 +11,8 @@
 								<div class="intro-text">
 									<div class="intro-lead-in">Guiando Sua Marca pela Estrada do Sucesso: Juntos,
 										Construímos o Caminho para o Impacto.</div>
-									<div class="intro-heading">IZTOIC MAKER</div>
+									<div class="intro-heading">IZTOIC</div>
+									<a class="page-scroll">Maximizar o crescimento de empresas com planos estratégicos de marketing personalizados e altamente eficazes.</a><br>
 									<a class="page-scroll">Conheça nosso trabalho!</a>
 									<div class="col-12 text-center mt-4 mt-lg-5">
 										<p>
@@ -38,7 +39,7 @@
 						<div class="col-md-4">
 							<ul class="list-inline social-buttons justify-content-center">
 								<li><a href="#"><i class="fa fa-twitter"></i></a></li>
-								<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+								<li><a href="https://www.instagram.com/iztoic/"><i class="fa fa-instagram"></i></a></li>
 								<li><a href="#"><i class="fa fa-linkedin"></i></a></li>
 							</ul>
 						</div>
@@ -83,6 +84,12 @@
 		<div class='cursor2' id="cursor2"></div>
 		<div class='cursor3' id="cursor3"></div>
 
+		
+<!-- Loader -->
+<div v-if="loading" class="loading">
+      <div class="loading-progress" :style="{ transform: 'translateX(' + progress + '%)' }"></div>
+      <h1 class="loading-title">Carregando</h1>
+    </div>
 
 	</div>
 </template>
@@ -111,7 +118,38 @@ export default {
 		SectionPlans,
 	},
 
+	data() {
+    return {
+      loading: true,
+      progress: 0,
+	  
+    };
+  },
+
+  methods: {
+    simulateLoader() {
+      const loaderInterval = setInterval(() => {
+        this.progress += this.getRandomArbitrary(10, 25);
+
+        if (this.progress >= 75) {
+          clearInterval(loaderInterval);
+          this.progress = 100;
+
+          // Adicione um pequeno atraso antes de esconder o loader
+          setTimeout(() => {
+            this.loading = false;
+          }, 400);
+        }
+      }, this.getRandomArbitrary(100, 500));
+    },
+    getRandomArbitrary(min, max) {
+      return Math.random() * (max - min) + min;
+    },
+  },
+
 	mounted() {
+		this.simulateLoader();
+
 		document.addEventListener("DOMContentLoaded", function () {
 			// Page cursors
 			var cursor = document.getElementById("cursor");
@@ -206,8 +244,10 @@ export default {
 				document.body.classList.remove("nature-on");
 			});
 		});
-	}
-}
+
+		
+	},
+};
 </script>
 
 <style scoped>
@@ -940,4 +980,34 @@ ul.social-buttons li a:active {
 
 .white-and-bold {
 	color: #fff !important;
-}</style>
+}
+.loading {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  top: 0px;
+  left: 0;
+  background: #000;
+  transition: background-color 0.75s;
+  z-index: 1000; /* Ensure it's on top of other elements */
+}
+
+.loading-title {
+  color: #fff;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.loading-progress {
+  height: 11px;
+  background: #0ae741;
+  top: 0px;
+  bottom: 0;
+  width: 100%;
+  position: absolute;
+  transition: .45s;
+}
+</style>
