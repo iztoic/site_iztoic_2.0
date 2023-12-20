@@ -12,7 +12,8 @@
 									<div class="intro-lead-in">Guiando Sua Marca pela Estrada do Sucesso: Juntos,
 										Construímos o Caminho para o Impacto.</div>
 									<div class="intro-heading">IZTOIC</div>
-									<a class="page-scroll">Maximizar o crescimento de empresas com planos estratégicos de marketing personalizados e altamente eficazes.</a><br>
+									<a class="page-scroll">Maximizar o crescimento de empresas com planos estratégicos de
+										marketing personalizados e altamente eficazes.</a><br>
 									<a class="page-scroll">Conheça nosso trabalho!</a>
 									<div class="col-12 text-center mt-4 mt-lg-5">
 										<p>
@@ -39,7 +40,8 @@
 						<div class="col-md-4">
 							<ul class="list-inline social-buttons justify-content-center">
 								<li><a href="#"><i class="fa fa-twitter"></i></a></li>
-								<li><a href="https://www.instagram.com/iztoic/"><i class="fa fa-instagram"></i></a></li>
+								<li><a onclick="window.open('https://www.instagram.com/iztoic', '_blank');">
+									<i class="fa fa-instagram"></i></a></li>
 								<li><a href="#"><i class="fa fa-linkedin"></i></a></li>
 							</ul>
 						</div>
@@ -85,15 +87,15 @@
 		<div class='cursor2' id="cursor2"></div>
 		<div class='cursor3' id="cursor3"></div>
 
-		
+
 		<div @click="showHomepage">
-    <div v-if="loading" class="loading">
-      <div class="loading-progress" :style="{ transform: 'translateX(' + progress + '%)' }"></div>
-      <div class="loading-title">
-        <LoaderLogo />
-      </div>
-    </div>
-  </div>
+			<div v-if="loading" class="loading">
+				<div class="loading-progress" :style="{ transform: 'translateX(' + progress + '%)' }"></div>
+				<div class="loading-title">
+					<LoaderLogo />
+				</div>
+			</div>
+		</div>
 
 	</div>
 </template>
@@ -993,33 +995,33 @@ ul.social-buttons li a:active {
 .white-and-bold {
 	color: #fff !important;
 }
+
 .loading {
-  position: fixed;
-  height: 100%;
-  width: 100%;
-  top: 0px;
-  left: 0;
-  background: #000;
-  transition: background-color 0.75s;
-  z-index: 1000;
+	position: fixed;
+	height: 100%;
+	width: 100%;
+	top: 0px;
+	left: 0;
+	background: #000;
+	transition: background-color 0.75s;
+	z-index: 1000;
 }
 
 .loading-title {
-  color: #fff;
-  margin: 0;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+	color: #fff;
+	margin: 0;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
 }
 
 .loading-progress {
-  height: 11px;
-  background: #0ae741;
-  top: 0px;
-  bottom: 0;
-  width: 100%;
-  position: absolute;
-  transition: 0.45s;
-}
-</style>
+	height: 11px;
+	background: #0ae741;
+	top: 0px;
+	bottom: 0;
+	width: 100%;
+	position: absolute;
+	transition: 0.45s;
+}</style>

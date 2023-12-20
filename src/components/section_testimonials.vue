@@ -1,6 +1,5 @@
 <template>
           <section id="section-testimonials">
-            <h1 class="credibility">Credibilidade</h1><br>
             <figure class="snip1386">
   <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sample18.jpg" alt="sample18" class="background" />
   <figcaption>
@@ -41,6 +40,7 @@ section{
 blockquote{
     padding: 0;
     border-left:0px;
+    
 }
 .snip1386 {
   font-family: 'Playfair Display', Arial, sans-serif;
@@ -88,6 +88,7 @@ blockquote{
   border-style: solid;
   border-width: 120px 0 120px 120px;
   border-color: transparent transparent transparent #ffffff;
+  margin-left: -1px;
 }
 .snip1386:after {
   position: absolute;
@@ -130,6 +131,32 @@ blockquote{
 .credibility{
   align-items: center;
   display: flex;
+}
+
+.snip1386:hover {
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
+  transform: scale(1.1);
+  transition: box-shadow 0.6s ease, transform 0.6s ease;
+}
+
+.snip1386:hover figcaption {
+  transition: padding 0.6s ease;
+}
+
+.snip1386 .background {
+  transition: opacity 0.3s ease;
+}
+
+.snip1386:hover .background {
+  opacity: 1;
+}
+.snip1386 .profile {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.snip1386:hover .profile {
+  transform: translate(50%, -50%) scale(1.1);
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
 }
 
 </style>

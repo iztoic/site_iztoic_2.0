@@ -11,19 +11,14 @@
                         <h2>We Are The Leader In <br> The Interiores</h2>
                     </div>
                     <div class="text">Somos uma agência criativa que trabalha com sua maior paixão: O desenvolvimento de soluções estratégicas para conectar sua marca com o consumidor de forma humanizada. <br> Somos uma equipe que traz o design e o marketing de um jeito unico para dar forma a um único objetivo: Tornar sua marca ainda mais relevante para as pessoas, ajudando a construir seu sonho.</div>
-                    <div class="email">Nos mande um e-mail: <span class="theme_color">contato@iztoic.com</span></div>
-                    <a href="" class="theme-btn btn-style-three">Leia Mais</a>
-                </div>
+                    </div>
             </div>
             
             <!--Image Column-->
             <div class="image-column col-md-6 col-sm-12 col-xs-12">
                 <div class="inner-column " data-wow-delay="0ms" data-wow-duration="1500ms">
                     <div class="image">
-                        <img src="https://i.ibb.co/vQbkKj7/about.jpg" alt="">
-                        <div class="overlay-box">
-                            <div class="year-box"><span class="number">5</span>Years <br> Experience <br> Working</div>
-                        </div>
+                        <img src="src/assets/portifolio/people_drone.jpg" alt="">
                     </div>
                 </div>
             </div>
