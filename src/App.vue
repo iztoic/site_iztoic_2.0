@@ -70,9 +70,10 @@
 			<SectionServices />
 		</div>
 
-		<div class="wildlife-section">
+		<div class="layerindex wildlife-section">
 			<div class="wildlife-close hover-target"></div>
 			<SectionPlans />
+			<SectionBooks />
 		</div>
 
 		<div class="nature-section">
@@ -109,6 +110,7 @@ import SectionTestimonials from './components/section_testimonials.vue';
 import SectionServices from './components/section_services.vue';
 import SectionPlans from './components/section_plans.vue';
 import SectionPortifolio from './components/section_portifolio.vue';
+import SectionBooks from './components/section_books.vue';
 import LoaderLogo from './components/loader_logo.vue';
 export default {
 	name: 'app',
@@ -120,6 +122,7 @@ export default {
 		SectionServices,
 		SectionPortifolio,
 		SectionPlans,
+		SectionBooks,
 		LoaderLogo,
 	},
 
@@ -700,7 +703,8 @@ body.contact-on .contact-section {
 	width: 100%;
 	height: 100vh;
 	display: flex;
-	justify-content: center;
+	flex-direction: column;
+	justify-content: flex-start;
 	align-items: center;
 	background-color: rgba(31, 32, 41, 1);
 	-webkit-transition: all 300ms linear;
