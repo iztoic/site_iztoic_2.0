@@ -20,6 +20,7 @@
 											<span class="travel hover-target">Serviços</span>
 											<span class="wildlife hover-target">Planos</span>
 											<span class="nature hover-target">Portifólio</span>
+											<span class="simpleport hover-target">Informações</span>
 										</p>
 									</div>
 
@@ -81,6 +82,10 @@
 		<div class="nature-section">
 			<div class="nature-close hover-target"></div>
 			<SectionPortifolio />
+		</div>
+
+		<div class="simpleport-section">
+			<div class="simpleport-close hover-target"></div>
 		</div>
 
 		<div class='cursor' id="cursor"></div>
@@ -255,6 +260,18 @@ export default {
 
 			natureClose.addEventListener("click", function () {
 				document.body.classList.remove("nature-on");
+			});
+
+			// simpleport portfolio page
+			var simpleport = document.querySelector(".simpleport");
+			var simpleportClose = document.querySelector(".simpleport-close");
+
+			simpleport.addEventListener("click", function () {
+				document.body.classList.add("simpleport-on");
+			});
+
+			simpleportClose.addEventListener("click", function () {
+				document.body.classList.remove("simpleport-on");
 			});
 		});
 
@@ -453,6 +470,13 @@ body.contact-on .hero-section {
 	transition-delay: 0ms;
 }
 
+
+body.simpleport-on .hero-section {
+	transform: scale(0.75);
+	-webkit-transition-delay: 0ms;
+	transition-delay: 0ms;
+}
+
 body.travel-on .hero-section {
 	transform: rotateX(-10deg);
 	-webkit-transition-delay: 0ms;
@@ -471,6 +495,12 @@ body.nature-on .hero-section {
 	transition-delay: 0ms;
 }
 
+
+body.simpleport-on .hero-section {
+	transform: rotateX(-10deg);
+	-webkit-transition-delay: 0ms;
+	transition-delay: 0ms;
+}
 .about-text {
 	position: absolute;
 	font-size: 17px;
@@ -698,6 +728,7 @@ body.contact-on .contact-section {
 
 .travel-section,
 .wildlife-section,
+.simpleport-section,
 .nature-section {
 	position: fixed;
 	top: 100%;
@@ -716,6 +747,7 @@ body.contact-on .contact-section {
 
 .travel-close,
 .wildlife-close,
+.simpleport-close,
 .nature-close {
 	position: absolute;
 	top: 20px;
@@ -736,6 +768,8 @@ body.contact-on .contact-section {
 
 .travel-close:hover,
 .wildlife-close:hover,
+
+.simpleport-close:hover,
 .nature-close:hover {
 	transform: rotate(90deg);
 }
@@ -758,8 +792,16 @@ body.nature-on .nature-section {
 	transition-delay: 400ms;
 }
 
+
+body.simpleport-on .simpleport-section {
+	top: 0;
+	-webkit-transition-delay: 400ms;
+	transition-delay: 400ms;
+}
+
 .travel-section img,
 .wildlife-section img,
+.simpleport-section img,
 .nature-section img {
 	margin-top: 30px;
 	width: 100%;
@@ -771,6 +813,7 @@ body.nature-on .nature-section {
 
 .travel-section h3,
 .wildlife-section h3,
+.simpleport-section h3,
 .nature-section h3 {
 	font-size: 44px;
 	line-height: 1.3;
@@ -781,6 +824,7 @@ body.nature-on .nature-section {
 
 .travel-section p,
 .wildlife-section p,
+.simpleport-section p,
 .nature-section p {
 	font-size: 14px;
 	line-height: 1.7;
@@ -789,6 +833,7 @@ body.nature-on .nature-section {
 
 .travel-section p span,
 .wildlife-section p span,
+.simpleport-section p span,
 .nature-section p span {
 	font-size: 20px;
 	line-height: 1.3;
