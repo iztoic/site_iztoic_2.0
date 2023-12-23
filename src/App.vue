@@ -59,7 +59,6 @@
 		<div class="layerindex about-section">
 			<div class="about-close hover-target"></div>
 			<SectionAbout />
-			<SectionTestimonials />
 			<SectionTeam />
 		</div>
 
@@ -84,8 +83,10 @@
 			<SectionPortifolio />
 		</div>
 
-		<div class="simpleport-section">
+		<div class="layerindex simpleport-section">
 			<div class="simpleport-close hover-target"></div>
+			<SectionTestimonials />
+			<SectionMap/>
 		</div>
 
 		<div class='cursor' id="cursor"></div>
@@ -94,16 +95,20 @@
 
 
 		<div @click="showHomepage">
-			<div v-if="loading" class="loading">
-				<div class="loading-progress" :style="{ transform: 'translateX(' + progress + '%)' }"></div>
-				<div class="loading-title">
-					<LoaderLogo />
-				</div>
-			</div>
-		</div>
+    <div v-if="loading" class="loading">
+        <div class="loading-overlay"></div>
+        <div class="loading-content">
+            <div class="loading-progress" :style="{ width: progress + '%' }"></div>
+            <div class="loading-title">
+                <LoaderLogo />
+            </div>
+        </div>
+    </div>
+</div>
 
 	</div>
 </template>
+
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js"></script>
@@ -118,6 +123,7 @@ import SectionServices from './components/section_services.vue';
 import SectionPlans from './components/section_plans.vue';
 import SectionPortifolio from './components/section_portifolio.vue';
 import SectionBooks from './components/section_books.vue';
+import SectionMap from './components/section_map.vue'
 import LoaderLogo from './components/loader_logo.vue';
 export default {
 	name: 'app',
@@ -130,6 +136,7 @@ export default {
 		SectionPortifolio,
 		SectionPlans,
 		SectionBooks,
+		SectionMap,
 		LoaderLogo,
 	},
 
@@ -274,6 +281,11 @@ export default {
 				document.body.classList.remove("simpleport-on");
 			});
 		});
+
+		setTimeout(() => {
+    // Exibir a div-inferior após 2 segundos
+    document.querySelector('.div-inferior').style.display = 'flex';
+  }, 500);
 
 		
 	},
@@ -1011,13 +1023,16 @@ ul.social-buttons li a:active {
 .row {
 	align-items: center
 }
+.copyright {
+  font-size: 14px;
+}
 
 .div-inferior {
 	position: fixed;
 	bottom: 0;
 	left: 0;
 	width: 100%;
-	display: flex;
+	display: none;
 	justify-content: center;
 	align-items: center;
 	padding: 20px;
@@ -1040,33 +1055,45 @@ ul.social-buttons li a:active {
 .white-and-bold {
 	color: #fff !important;
 }
+.quicklinks a {
+  color: #fff; /* Cor dos links rápidos */
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.quicklinks a:hover {
+  text-decoration: underline;
+}
 
 .loading {
-	position: fixed;
-	height: 100%;
-	width: 100%;
-	top: 0px;
-	left: 0;
-	background: #000;
-	transition: background-color 0.75s;
-	z-index: 1000;
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+    top: 0px;
+    left: 0;
+    z-index: 10000;
 }
 
-.loading-title {
-	color: #fff;
-	margin: 0;
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
+.loading-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.5)), url('src/assets/portifolio/wine_bar.jpg');
+    transition: background-color 0.75s;
+    z-index: 1;
 }
 
-.loading-progress {
-	height: 11px;
-	background: #0ae741;
-	top: 0px;
-	bottom: 0;
-	width: 100%;
-	position: absolute;
-	transition: 0.45s;
-}</style>
+.loading-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    text-align: center;
+    color: #fff;
+}
+
+
+</style>

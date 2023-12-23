@@ -51,15 +51,6 @@
       <span class="dot dot48 size-5"></span>
       <span class="dot dot49 size-5"></span>
       <span class="dot dot50 size-10"></span>
-      <!-- <span class="dot dot51 size-5"></span>
-      <span class="dot dot52 size-10"></span>
-      <span class="dot dot53 size-10"></span>
-      <span class="dot dot54 size-10"></span>
-      <span class="dot dot55 size-10"></span>
-      <span class="dot dot56 size-10"></span>
-      <span class="dot dot57 size-10"></span>
-      <span class="dot dot58 size-10"></span>
-      <span class="dot dot59 size-10"></span> -->
       <span class="dot dot60 size-10"></span>
       <span class="dot dot61 size-10"></span>
       <span class="dot dot62 size-10"></span>
@@ -136,7 +127,7 @@ body {
   width: 200px;
   height: 300px;
   position: relative;
-  background-image: linear-gradient(230deg, rgba(93, 93, 93, 0.03) 0%, rgba(93, 93, 93, 0.03) 50%,rgba(78, 78, 78, 0.03) 50%, rgba(78, 78, 78, 0.03) 100%),linear-gradient(107deg, rgba(55, 55, 55, 0.01) 0%, rgba(55, 55, 55, 0.01) 50%,rgba(170, 170, 170, 0.01) 50%, rgba(170, 170, 170, 0.01) 100%),linear-gradient(278deg, rgba(16, 16, 16, 0.03) 0%, rgba(16, 16, 16, 0.03) 50%,rgba(24, 24, 24, 0.03) 50%, rgba(24, 24, 24, 0.03) 100%),linear-gradient(205deg, rgba(116, 116, 116, 0.03) 0%, rgba(116, 116, 116, 0.03) 50%,rgba(0, 0, 0, 0.03) 50%, rgba(0, 0, 0, 0.03) 100%),linear-gradient(150deg, rgba(5, 5, 5, 0.03) 0%, rgba(5, 5, 5, 0.03) 50%,rgba(80, 80, 80, 0.03) 50%, rgba(80, 80, 80, 0.03) 100%),linear-gradient(198deg, rgba(231, 231, 231, 0.03) 0%, rgba(231, 231, 231, 0.03) 50%,rgba(26, 26, 26, 0.03) 50%, rgba(26, 26, 26, 0.03) 100%),linear-gradient(278deg, rgba(89, 89, 89, 0.03) 0%, rgba(89, 89, 89, 0.03) 50%,rgba(26, 26, 26, 0.03) 50%, rgba(26, 26, 26, 0.03) 100%),linear-gradient(217deg, rgba(28, 28, 28, 0.03) 0%, rgba(28, 28, 28, 0.03) 50%,rgba(202, 202, 202, 0.03) 50%, rgba(202, 202, 202, 0.03) 100%),linear-gradient(129deg, rgba(23, 23, 23, 0.03) 0%, rgba(23, 23, 23, 0.03) 50%,rgba(244, 244, 244, 0.03) 50%, rgba(244, 244, 244, 0.03) 100%),linear-gradient(135deg, rgb(1, 132, 255),rgb(198, 5, 91));
+  background-image: linear-gradient(230deg, rgba(90, 66, 66, 0.03) 0%, rgba(93, 93, 93, 0.03) 50%,rgba(78, 78, 78, 0.03) 50%, rgba(78, 78, 78, 0.03) 100%),linear-gradient(107deg, rgba(55, 55, 55, 0.01) 0%, rgba(55, 55, 55, 0.01) 50%,rgba(170, 170, 170, 0.01) 50%, rgba(170, 170, 170, 0.01) 100%),linear-gradient(278deg, rgba(16, 16, 16, 0.03) 0%, rgba(16, 16, 16, 0.03) 50%,rgba(24, 24, 24, 0.03) 50%, rgba(24, 24, 24, 0.03) 100%),linear-gradient(205deg, rgba(116, 116, 116, 0.03) 0%, rgba(116, 116, 116, 0.03) 50%,rgba(0, 0, 0, 0.03) 50%, rgba(0, 0, 0, 0.03) 100%),linear-gradient(150deg, rgba(5, 5, 5, 0.03) 0%, rgba(5, 5, 5, 0.03) 50%,rgba(80, 80, 80, 0.03) 50%, rgba(80, 80, 80, 0.03) 100%),linear-gradient(198deg, rgba(231, 231, 231, 0.03) 0%, rgba(231, 231, 231, 0.03) 50%,rgba(26, 26, 26, 0.03) 50%, rgba(26, 26, 26, 0.03) 100%),linear-gradient(278deg, rgba(89, 89, 89, 0.03) 0%, rgba(89, 89, 89, 0.03) 50%,rgba(26, 26, 26, 0.03) 50%, rgba(26, 26, 26, 0.03) 100%),linear-gradient(217deg, rgba(28, 28, 28, 0.03) 0%, rgba(28, 28, 28, 0.03) 50%,rgba(202, 202, 202, 0.03) 50%, rgba(202, 202, 202, 0.03) 100%),linear-gradient(129deg, rgba(23, 23, 23, 0.03) 0%, rgba(23, 23, 23, 0.03) 50%,rgba(244, 244, 244, 0.03) 50%, rgba(244, 244, 244, 0.03) 100%),linear-gradient(135deg, rgb(112, 47, 218),rgb(6, 116, 39));
   display: grid;
   place-content: center;
   border-radius: 20px;
@@ -320,15 +311,6 @@ body {
     .dot48 {left: 105px; top: 090px;}
     .dot49 {left: 105px; top: 83px;}
     .dot50 {left: 00px; top: 00px;}
-/*  .dot51 {left: 15px; top: 060px;}
-    .dot52 {left: 10px; top: 000px;}
-    .dot53 {left: 75px; top: 000px;}
-    .dot54 {left: 85px; top: 010px;}
-    .dot55 {left: 45px; top: 015px;}
-    .dot56 {left: 75px; top: 015px;}
-    .dot57 {left: 10px; top: 025px;}
-    .dot58 {left: 00px; top: 030px;}
-    .dot59 {left: 85px; top: 030px;}*/
     .dot60 {left: -09px; top: 041px;}
     .dot61 {left: 92px; top: 16px;}
     .dot62 {left: 80px; top: 000px;}

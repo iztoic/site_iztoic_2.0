@@ -31,7 +31,7 @@
             <div class="team-member">
               <h4>Kay Garland</h4>
               <p class="text-muted">Lead Designer</p>
-              <div class="card card0">
+              <div class="card card2">
                 <div class="border">
                   <h2>Al Pacino</h2>
                   <div class="icons">
@@ -48,7 +48,7 @@
             <div class="team-member">
               <h4>Kay Garland</h4>
               <p class="text-muted">Lead Designer</p>
-              <div class="card card0">
+              <div class="card card2">
                 <div class="border">
                   <h2>Al Pacino</h2>
                   <div class="icons">
@@ -170,12 +170,12 @@ section {
 
 /* Card 0 */
 .card0 {
-  background: url("https://i.pinimg.com/736x/8f/a0/51/8fa051251f5ac2d0b756027089fbffde--terry-o-neill-al-pacino.jpg") center center no-repeat;
+  background: url('src/assets/portifolio/perfil_keller.png') center center no-repeat;
   background-size: 300px;
 }
 
 .card0:hover {
-  background: url("https://i.pinimg.com/736x/8f/a0/51/8fa051251f5ac2d0b756027089fbffde--terry-o-neill-al-pacino.jpg") left center no-repeat;
+  background: url('src/assets/portifolio/perfil_keller.png') left center no-repeat;
   background-size: 600px;
 }
 
