@@ -12,11 +12,11 @@
         <div class="row">
           <div class="col-sm-4">
             <div class="team-member">
-              <h4>Kay Garland</h4>
-              <p class="text-muted">Lead Designer</p>
+              <h4>Jonatan Keller</h4>
+              <p class="text-muted">Developer</p>
               <div class="card card0">
                 <div class="border">
-                  <h2>Al Pacino</h2>
+                  <h2>Jonatan Keller</h2>
                   <div class="icons">
                     <i class="fa fa-linkedin" aria-hidden="true" onclick="window.open('')"></i>
                     <i class="fa fa-instagram" aria-hidden="true" onclick="window.open('')"></i>
@@ -170,14 +170,16 @@ section {
 
 /* Card 0 */
 .card0 {
-  background: url('src/assets/portifolio/perfil_keller.png') center center no-repeat;
+  background: url('src/assets/portifolio/perfil_keller2.png') center center no-repeat;
   background-size: 300px;
-}
+  filter: grayscale(90%) contrast(1.7) brightness(0.7); /* Ajuste a intensidade da escala de cinza e o contraste conforme necessário */
+  }
 
 .card0:hover {
-  background: url('src/assets/portifolio/perfil_keller.png') left center no-repeat;
+  background: url('src/assets/portifolio/perfil_keller2.png') left center no-repeat;
   background-size: 600px;
-}
+  filter: grayscale(90%) contrast(1.7) brightness(0.7); /* Ajuste a intensidade da escala de cinza e o contraste conforme necessário */
+  }
 
 .card0:hover h2,
 .card0:hover .fa {
@@ -186,12 +188,12 @@ section {
 
 /* Card 1 */
 .card1 {
-  background: url("https://i.pinimg.com/originals/28/d2/e6/28d2e684e7859a0dd17fbd0cea00f8a9.jpg") center center no-repeat;
+  background: url("src/assets/portifolio/perfil_keller2.png") center center no-repeat;
   background-size: 300px;
 }
 
 .card1:hover {
-  background: url("https://i.pinimg.com/originals/28/d2/e6/28d2e684e7859a0dd17fbd0cea00f8a9.jpg") left center no-repeat;
+  background: url("src/assets/portifolio/perfil_keller2.png") left center no-repeat;
   background-size: 600px;
 }
 
@@ -202,14 +204,16 @@ section {
 
 /* Card 2 */
 .card2 {
-  background: url("https://i.pinimg.com/originals/ee/85/08/ee850842e68cfcf6e3943c048f45c6d1.jpg") center center no-repeat;
+  background: url("src/assets/portifolio/perfil_keller2.png") center center no-repeat;
   background-size: 300px;
-}
+  filter: grayscale(90%) contrast(1.7) brightness(0.7); /* Ajuste a intensidade da escala de cinza e o contraste conforme necessário */
+  }
 
 .card2:hover {
-  background: url("https://i.pinimg.com/originals/ee/85/08/ee850842e68cfcf6e3943c048f45c6d1.jpg") left center no-repeat;
+  background: url("src/assets/portifolio/perfil_keller2.png") left center no-repeat;
   background-size: 600px;
-}
+  filter: grayscale(90%) contrast(1.7) brightness(0.7); /* Ajuste a intensidade da escala de cinza e o contraste conforme necessário */
+  }
 
 .card2:hover h2,
 .card2:hover .fa {
