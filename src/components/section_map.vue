@@ -296,10 +296,6 @@ export default {
 * {
   box-sizing: border-box;
 }
-#section-map {
-  display: flex;
-  flex-direction: row;
-}
 
 #map {
   top: 0;
@@ -345,7 +341,9 @@ export default {
 }
 
 #section-map {
+  padding-top: 3vh;
   width: 90vw;
+  height: 35vh;
   margin: 15px;
   display: flex;
   flex-direction: row-reverse;
@@ -353,15 +351,13 @@ export default {
 
 #map {
   flex: 1;
-  height: 55vh;
+  height: 45vh;
   border: 2px solid #ccc;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 #map-info {
-  width: 40vw;
-  padding: 20px;
   box-sizing: border-box;
 }
 

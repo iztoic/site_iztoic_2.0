@@ -32,6 +32,7 @@ export default {
 @import url(https://fonts.googleapis.com/css?family=Playfair+Display:400,900);
 
 section{
+  padding-top: 50px;
     width: 100%;
     display: flex;
     justify-content: space-evenly;

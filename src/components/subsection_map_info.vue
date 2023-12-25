@@ -33,7 +33,9 @@
   
   <style scoped>
   #map-info {
-    height: 70%;
+    height: 45vh;
+    width: 40vw;
+    margin-right: 2%;
     display: flex;
     overflow-y: scroll;
     flex-direction: column;
@@ -47,15 +49,15 @@
   
   .card {
     flex: 0 0 auto;
-    width: 100%;
+    width: 95%;
     margin: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    overflow: hidden;
     transition: width 0.3s; /* Adicionado para animação suave */
   }
   
   .card.expanded {
-    width: 100%;
+    width: 95%;
+    height: 70%;
   }
   
   .card-body {
@@ -70,7 +72,6 @@
   
   .card-text {
     font-size: 1rem;
-    overflow-y: auto;
     max-height: 100px; /* Defina a altura máxima desejada */
   }
   </style>
