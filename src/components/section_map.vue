@@ -1,12 +1,18 @@
 <template>
   <section id="section-map">
     <div id="map"></div>
+    <SubSectionMapInfo/>
   </section>
 </template>
 
+
 <script>
+import SubSectionMapInfo from '../components/subsection_map_info.vue'
 export default {
   name: "SectionMap",
+  components:{
+    SubSectionMapInfo,
+  },
   mounted() {
     this.initMapbox();
   },
@@ -27,9 +33,6 @@ export default {
         this.initMap(map);
       } catch (error) {
         console.error({ error });
-        const errorWrap = document.createElement('div');
-        errorWrap.innerHTML = "<h1>Uh Oh, houve um erro ao carregar o mapa 😭</h1>";
-        document.body.appendChild(errorWrap);
       }
     },
     initMap(map) {
@@ -293,6 +296,10 @@ export default {
 * {
   box-sizing: border-box;
 }
+#section-map {
+  display: flex;
+  flex-direction: row;
+}
 
 #map {
   top: 0;
@@ -336,4 +343,34 @@ export default {
   transform-origin: 50% 50%;
   text-anchor: middle;
 }
+
+#section-map {
+  width: 90vw;
+  margin: 15px;
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+#map {
+  flex: 1;
+  height: 55vh;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#map-info {
+  width: 40vw;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.info-box {
+  background-color: #fff;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
 </style>
