@@ -14,24 +14,51 @@
                     </div>
             </div>
             
-            <!--Image Column-->
-            <div class="image-column col-md-6 col-sm-12 col-xs-12">
-                <div class="inner-column " data-wow-delay="0ms" data-wow-duration="1500ms">
-                    <div class="image">
-                        <img src="src/assets/portifolio/people_drone.jpg" alt="">
-                    </div>
-                </div>
-            </div>
+            <!-- Image Column -->
+    <div class="image-column col-md-6 col-sm-12 col-xs-12">
+      <div class="inner-column " data-wow-delay="0ms" data-wow-duration="1500ms">
+        <div class="image">
+          <img :src="currentImage" alt="">
+        </div>
+      </div>
+    </div>
         </div>
     </div>
 </section>
 </template>
 
 <script>
-    export default {
-    name: "SectionAbout",
-        
-    }
+export default {
+  name: "SectionAbout",
+  data() {
+    return {
+      images: [
+        "src/assets/portifolio/people_drone.jpg",
+        "src/assets/portifolio/wine_bar.jpg",
+        "src/assets/portifolio/drone_tecnology.jpg",
+        "src/assets/portifolio/restaurant_drink.jpg",
+      ],
+      currentImageIndex: 0,
+    };
+  },
+  computed: {
+    currentImage() {
+      return this.images[this.currentImageIndex];
+    },
+  },
+  mounted() {
+    // Inicia a troca automática de imagens
+    this.startImageRotation();
+  },
+  methods: {
+    startImageRotation() {
+      // Troca a imagem a cada 5 segundos (5000 milissegundos)
+      setInterval(() => {
+        this.currentImageIndex = (this.currentImageIndex + 1) % this.images.length;
+      }, 5000);
+    },
+  },
+};
 </script>
 
 <style scoped>
@@ -90,6 +117,11 @@ border:2px solid #d7a449;
 
 .section-about .image-column .inner-column .image{
 position:relative;
+overflow: hidden; /* Garante que a imagem não ultrapasse a borda do contêiner */
+  border-radius: 10px; /* Borda arredondada para um visual mais suave */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Adiciona uma sombra sutil */
+  width: 100%; /* Definir a largura do contêiner da imagem */
+  height: 300px;
 }
 
 .section-about .image-column .inner-column .image:before{
@@ -100,11 +132,27 @@ bottom:-50px;
 width:299px;
 height:299px;
 }
+/* Adiciona estilos ao contêiner da imagem durante a transição */
+.section-about .image-column .inner-column .image img {
+  position: relative;
+  width: 100%;
+  display: block;
+  transition: opacity 1.5s ease-in-out, transform 1.5s ease-in-out; /* Adicione a transição de opacidade e transformação */
+  object-fit: cover;
+  border-radius: 10px;
+}
 
-.section-about .image-column .inner-column .image img{
-position:relative;
-width:100%;
-display:block;
+/* Define a transformação durante a transição */
+.section-about .image-column .inner-column .image img.fade-enter,
+.section-about .image-column .inner-column .image img.fade-leave-to {
+  opacity: 1;
+  transform: scale(1.9); /* Aumenta a escala para criar um efeito de distorção */
+}
+
+.section-about .image-column .inner-column .image img.fade-enter-active,
+.section-about .image-column .inner-column .image img.fade-leave-active {
+  opacity: 0;
+  transform: scale(1); /* Retorna à escala original durante a transição */
 }
 
 .section-about .image-column .inner-column .image .overlay-box{
@@ -164,6 +212,11 @@ text-transform: capitalize;
 border: 2px solid #d7a449;
 font-family: 'Arimo', sans-serif;
 }
+
+h2{
+  color:#d7a449;
+  text-shadow: 3px 3px 0 hsl(0, 0%, 0%, 0.25);
+}
 .sec-title2{
 color:#fff;
 }
@@ -174,6 +227,7 @@ padding-bottom: 40px;
 .sec-title .title {
 position: relative;
 color: #d7a449;
+text-shadow: 3px 3px 0 hsl(0, 0%, 0%, 0.25);
 font-size: 18px;
 font-weight: 700;
 padding-right: 50px;
@@ -190,5 +244,7 @@ width: 40px;
 height: 1px;
 background-color: #bbbbbb;
 }
+
+
 
 </style>

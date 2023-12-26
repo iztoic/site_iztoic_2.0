@@ -52,7 +52,7 @@
     width: 95%;
     margin: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: width 0.3s; /* Adicionado para animação suave */
+    transition: width 0.6s, height 0.6s, opacity 0.6s; /* Adicionado para animação suave */
   }
   
   .card.expanded {

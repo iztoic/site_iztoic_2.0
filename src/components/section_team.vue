@@ -5,7 +5,7 @@
         <div class="row">
           <div class="col-lg-12 text-center">
             <h3 class="section-subheading text-muted">
-              Equipe
+              Conheça nossa equipe
             </h3>
           </div>
         </div>
@@ -18,8 +18,8 @@
                 <div class="border">
                   <h2>Jonatan Keller</h2>
                   <div class="icons">
-                    <i class="fa fa-linkedin" aria-hidden="true" onclick="window.open('')"></i>
-                    <i class="fa fa-instagram" aria-hidden="true" onclick="window.open('')"></i>
+                    <i class="fa fa-linkedin" aria-hidden="true" onclick="window.open('https://www.linkedin.com/in/jonatankeller/', '_blank')"></i>
+                    <i class="fa fa-instagram" aria-hidden="true" onclick="window.open('https://www.instagram.com/kellerjonatan/', '_blank')"></i>
                     <i class="fa fa-twitter" aria-hidden="true" onclick="window.open('')"></i>
                     <i class="fa fa-facebook" aria-hidden="true" onclick="window.open('')"></i>
                   </div>
@@ -29,45 +29,11 @@
           </div>
           <div class="col-sm-4">
             <div class="team-member">
-              <h4>Kay Garland</h4>
-              <p class="text-muted">Lead Designer</p>
-              <div class="card card2">
-                <div class="border">
-                  <h2>Al Pacino</h2>
-                  <div class="icons">
-                    <i class="fa fa-linkedin" aria-hidden="true" onclick="window.open('')"></i>
-                    <i class="fa fa-instagram" aria-hidden="true" onclick="window.open('')"></i>
-                    <i class="fa fa-twitter" aria-hidden="true" onclick="window.open('')"></i>
-                    <i class="fa fa-facebook" aria-hidden="true" onclick="window.open('')"></i>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-sm-4">
-            <div class="team-member">
-              <h4>Kay Garland</h4>
-              <p class="text-muted">Lead Designer</p>
-              <div class="card card2">
-                <div class="border">
-                  <h2>Al Pacino</h2>
-                  <div class="icons">
-                    <i class="fa fa-linkedin" aria-hidden="true" onclick="window.open('')"></i>
-                    <i class="fa fa-instagram" aria-hidden="true" onclick="window.open('')"></i>
-                    <i class="fa fa-twitter" aria-hidden="true" onclick="window.open('')"></i>
-                    <i class="fa fa-facebook" aria-hidden="true" onclick="window.open('')"></i>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-sm-4">
-            <div class="team-member">
-              <h4>Larry Parker</h4>
-              <p class="text-muted">Lead Marketer</p>
+              <h4>Dionei Caliel</h4>
+              <p class="text-muted">Ocupation</p>
               <div class="card card1">
                 <div class="border">
-                  <h2>Ben Stiller</h2>
+                  <h2>Dionei Caliel</h2>
                   <div class="icons">
                     <i class="fa fa-linkedin" aria-hidden="true" onclick="window.open('')"></i>
                     <i class="fa fa-instagram" aria-hidden="true" onclick="window.open('')"></i>
@@ -80,11 +46,45 @@
           </div>
           <div class="col-sm-4">
             <div class="team-member">
-              <h4>Diana Pertersen</h4>
-              <p class="text-muted">Lead Developer</p>
+              <h4>Gabriel Oliveira</h4>
+              <p class="text-muted">Ocupation</p>
               <div class="card card2">
                 <div class="border">
-                  <h2>Patrick Stewart</h2>
+                  <h2>Gabriel Oliveira</h2>
+                  <div class="icons">
+                    <i class="fa fa-linkedin" aria-hidden="true" onclick="window.open('')"></i>
+                    <i class="fa fa-instagram" aria-hidden="true" onclick="window.open('')"></i>
+                    <i class="fa fa-twitter" aria-hidden="true" onclick="window.open('')"></i>
+                    <i class="fa fa-facebook" aria-hidden="true" onclick="window.open('')"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <div class="team-member">
+              <h4>Dani</h4>
+              <p class="text-muted">Ocupation</p>
+              <div class="card card3">
+                <div class="border">
+                  <h2>Dani</h2>
+                  <div class="icons">
+                    <i class="fa fa-linkedin" aria-hidden="true" onclick="window.open('')"></i>
+                    <i class="fa fa-instagram" aria-hidden="true" onclick="window.open('')"></i>
+                    <i class="fa fa-twitter" aria-hidden="true" onclick="window.open('')"></i>
+                    <i class="fa fa-facebook" aria-hidden="true" onclick="window.open('')"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <div class="team-member">
+              <h4>Will</h4>
+              <p class="text-muted">Ocupation</p>
+              <div class="card card4">
+                <div class="border">
+                  <h2>Will</h2>
                   <div class="icons">
                     <i class="fa fa-linkedin" aria-hidden="true" onclick="window.open('')"></i>
                     <i class="fa fa-instagram" aria-hidden="true" onclick="window.open('')"></i>
@@ -113,6 +113,11 @@ export default {
 
 section {
   padding-top: 10vh;
+}
+
+h4{
+  color:#d7a449;
+  text-shadow: 3px 3px 0 hsl(0, 0%, 0%, 0.25);
 }
 
 /* Container */
@@ -188,14 +193,16 @@ section {
 
 /* Card 1 */
 .card1 {
-  background: url("src/assets/portifolio/perfil_keller2.png") center center no-repeat;
+  background: url("src/assets/portifolio/perfil_desc.png") center center no-repeat;
   background-size: 300px;
-}
+  filter: grayscale(90%) contrast(1.7) brightness(0.7); /* Ajuste a intensidade da escala de cinza e o contraste conforme necessário */
+  }
 
 .card1:hover {
-  background: url("src/assets/portifolio/perfil_keller2.png") left center no-repeat;
+  background: url("src/assets/portifolio/perfil_desc.png") left center no-repeat;
   background-size: 600px;
-}
+  filter: grayscale(90%) contrast(1.7) brightness(0.7); /* Ajuste a intensidade da escala de cinza e o contraste conforme necessário */
+  }
 
 .card1:hover h2,
 .card1:hover .fa {
@@ -204,13 +211,13 @@ section {
 
 /* Card 2 */
 .card2 {
-  background: url("src/assets/portifolio/perfil_keller2.png") center center no-repeat;
+  background: url("src/assets/portifolio/perfil_desc.png") center center no-repeat;
   background-size: 300px;
   filter: grayscale(90%) contrast(1.7) brightness(0.7); /* Ajuste a intensidade da escala de cinza e o contraste conforme necessário */
   }
 
 .card2:hover {
-  background: url("src/assets/portifolio/perfil_keller2.png") left center no-repeat;
+  background: url("src/assets/portifolio/perfil_desc.png") left center no-repeat;
   background-size: 600px;
   filter: grayscale(90%) contrast(1.7) brightness(0.7); /* Ajuste a intensidade da escala de cinza e o contraste conforme necessário */
   }
@@ -220,10 +227,47 @@ section {
   opacity: 1;
 }
 
+/* Card 3 */
+.card3 {
+  background: url("src/assets/portifolio/perfil_desc.png") center center no-repeat;
+  background-size: 300px;
+  filter: grayscale(90%) contrast(1.7) brightness(0.7); /* Ajuste a intensidade da escala de cinza e o contraste conforme necessário */
+  }
+
+.card3:hover {
+  background: url("src/assets/portifolio/perfil_desc.png") left center no-repeat;
+  background-size: 600px;
+  filter: grayscale(90%) contrast(1.7) brightness(0.7); /* Ajuste a intensidade da escala de cinza e o contraste conforme necessário */
+  }
+
+.card3:hover h2,
+.card3:hover .fa {
+  opacity: 1;
+}
+
+/* Card 4 */
+.card4 {
+  background: url("src/assets/portifolio/perfil_desc.png") center center no-repeat;
+  background-size: 300px;
+  filter: grayscale(90%) contrast(1.7) brightness(0.7); /* Ajuste a intensidade da escala de cinza e o contraste conforme necessário */
+  }
+
+.card4:hover {
+  background: url("src/assets/portifolio/perfil_desc.png") left center no-repeat;
+  background-size: 600px;
+  filter: grayscale(90%) contrast(1.7) brightness(0.7); /* Ajuste a intensidade da escala de cinza e o contraste conforme necessário */
+  }
+
+.card4:hover h2,
+.card4:hover .fa {
+  opacity: 1;
+}
+
+
 /* Heading 2 */
 h2 {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  color: white;
+  color:#837878;
   margin: 20px;
   opacity: 0;
   transition: opacity 1s;
@@ -262,7 +306,7 @@ h2 {
 }
 
 .icons i:hover {
-  color: #ffffff;
+  color:#583f13;
   transform: scale(1.5);
 }
 </style>

@@ -55,6 +55,7 @@ blockquote{
   color: #000000;
   text-align: left;
   font-size: 16px;
+  border-radius: 10px;
   background-color: #000000;
 }
 .snip1386 * {

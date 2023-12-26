@@ -1,8 +1,9 @@
 <template>
     <section id="section-plans">
         <div>
-          <h1 class="text-center">Selecione o plano que melhor se encaixa com o seu empreendimento!</h1>
-        <div class="container">
+            <h2 class="section-heading text-center">Planos</h2>
+            <h3 class="section-subheading text-muted text-center">Selecione o plano que melhor se encaixa com o seu empreendimento!</h3>
+          <div class="container">
           
 
 <div class="pricing-box-container">
@@ -92,6 +93,11 @@ body {
 
 .text-center {
 	text-align: center;
+	
+}
+.section-heading{
+	color:#d7a449;
+	text-shadow: 3px 3px 0 hsl(0, 0%, 0%, 0.25);
 }
 
 .pricing-box-container {
@@ -110,6 +116,7 @@ body {
 	margin: 2%;
 	min-width: 250px;
 	max-width: 350px;
+	transition: box-shadow 0.3s ease-in-out, transform 0.3s ease-in-out;
 }
 
 .pricing-box h5 {
@@ -142,6 +149,10 @@ body {
 	border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
 
+.pricing-box:hover {
+  box-shadow: 0px 2px 20px 0px rgba(0,0,0,0.8);
+  transform: scale(1.02);
+}
 .btn-primary {
 	border-radius: 25px;
 	border: none;

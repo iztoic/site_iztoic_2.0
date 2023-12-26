@@ -20,7 +20,7 @@
 											<span class="travel hover-target">Serviços</span>
 											<span class="wildlife hover-target">Planos</span>
 											<span class="nature hover-target">Portifólio</span>
-											<span class="simpleport hover-target">Informações</span>
+											<span class="simpleport hover-target">Clientes</span>
 										</p>
 									</div>
 
@@ -440,6 +440,7 @@ a:hover {
 
 .hero-section p span {
 	margin-left: 15px;
+	color:#d7a449;
 	margin-right: 15px;
 	position: relative;
 	display: inline-block;
@@ -518,7 +519,7 @@ body.simpleport-on .hero-section {
 	font-size: 17px;
 	line-height: 20px;
 	font-weight: 700;
-	color: #fff;
+	color:#d7a449;
 	letter-spacing: 2px;
 	top: 50%;
 	left: 40px;
@@ -628,7 +629,7 @@ body.about-on .about-section {
 	font-size: 17px;
 	line-height: 20px;
 	font-weight: 700;
-	color: #fff;
+	color:#d7a449;
 	letter-spacing: 2px;
 	top: 50%;
 	right: 40px;

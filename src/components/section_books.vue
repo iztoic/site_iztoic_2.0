@@ -78,11 +78,8 @@ body {
 h1, h2, h3, h4, h5, h6 {
   font-family: var(--ff-display);
   line-height: 120%;
-  text-transform: uppercase;
 }
 h1.pen-title {
- 	unset: all;
-  color: var(--clr-light);
   font-size: 3rem;
   margin: 0 0 1rem 0;
   text-align: center;
@@ -110,6 +107,10 @@ section.site__wrapper {
   justify-content: center;
   gap: 2rem;
   width: fit-content;
+}
+
+.pen-title{
+  color:#d7a449;
 }
 
 .card {
