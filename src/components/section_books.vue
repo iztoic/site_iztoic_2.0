@@ -65,6 +65,9 @@ export default {
   --ff-serif: "Special Elite", serif;
 }
 
+#section-books{
+  padding-bottom: 20px;
+}
 
 body {
   background-color: var(--clr-alert);
@@ -117,25 +120,32 @@ section.site__wrapper {
   border: 1px solid hsl(0, 0%, 0%, 0.25);
   box-shadow: 0.5rem 0.5rem 1rem hsl(0, 0%, 0%, 0.5);
   height: 400px;
- 	overflow: hidden;
+  overflow: hidden;
   position: relative;
   width: 300px;
+  background-color: #fff; /* Set background color to white */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .card a {
-  display: block;
-	height: 100%;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
   width: 100%;
+  text-decoration: none;
 }
 
 .card img {
   display: block;
-  object-fit: contain;
+  object-fit: cover;
   position: absolute;
   top: 0;
   left: 0;
   transition: top 255ms ease-in-out;
-  width: 101%;
+  width: 100%;
+  height: 100%;
   z-index: 0;
 }
 
@@ -145,7 +155,8 @@ section.site__wrapper {
 
 .card a .caption {
   background-color: hsl(0, 0%, 0%, 0);
-	display: grid;
+  display: flex;
+  flex-direction: column;
   overflow: hidden;
   overflow-y: hidden;
   padding: 1rem;
@@ -154,15 +165,15 @@ section.site__wrapper {
   right: 0;
   bottom: 0;
   top: 300px;
-	transition-property: all;
-  transition-duration: 0.2s;  
-  width: 100%;  
-  z-index: 10;  
+  transition-property: all;
+  transition-duration: 0.2s;
+  width: 100%;
+  z-index: 10;
 }
 
 .card a:hover .caption {
   background-color: hsl(0, 0%, 0%, 0.5);
-	top: 0;
+  top: 0;
   transition: all 2s;
 }
 
@@ -170,6 +181,7 @@ section.site__wrapper {
   color: var(--clr-light);
   font-size: 1.8rem;
   text-shadow: 2px 2px 0 var(--clr-shade), -2px -2px 0 var(--clr-shade), -2px 2px 0 var(--clr-shade), 2px -2px 0 var(--clr-shade);
+  margin-bottom: 0.5rem; /* Add margin to separate title and description */
 }
 
 .card a .caption p {
@@ -178,10 +190,10 @@ section.site__wrapper {
   font-size: smaller;
   transition: all 0.2s;
   width: 90%;
+  margin-bottom: 0; /* Remove default margin */
 }
 
 .card a:hover .caption p {
   display: block;
 }
-
 </style>

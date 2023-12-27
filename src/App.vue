@@ -1,6 +1,7 @@
 <template>
 	<div id="app">
 		<div class="hero-section">
+			<div class="logo"><img src="src/assets/portifolio/logo_iztoic.png"></div>
 			<div class="about-text hover-target">Sobre</div>
 			<div class="contact-text hover-target">Contato</div>
 			<div class="section-center">
@@ -9,7 +10,7 @@
 						<header id="page-top">
 							<div class="container">
 								<div class="intro-text">
-									<div class="intro-lead-in">Guiando Sua Marca pela Estrada do Sucesso: Juntos,
+									<div class="intro-lead-in">Guiando Sua Marca pela Estrada do Sucesso!<br> Juntos,
 										Construímos o Caminho para o Impacto.</div>
 									<div class="intro-heading">IZTOIC</div>
 									<a class="page-scroll">Maximizar o crescimento de empresas com planos estratégicos de
@@ -403,6 +404,7 @@ a:hover {
 	box-shadow: 0 0 40px rgba(0, 0, 0, 0.2);
 	-webkit-transition: all 300ms linear;
 	transition: all 300ms linear;
+	border: 3px solid #d7a449;
 	-webkit-transition-delay: 400ms;
 	transition-delay: 400ms;
 	transform-origin: center top;
@@ -791,12 +793,16 @@ body.travel-on .travel-section {
 	top: 0;
 	-webkit-transition-delay: 400ms;
 	transition-delay: 400ms;
+	border: 3px solid #d7a449;
+	border-right: 3px solid transparent;
 }
 
 body.wildlife-on .wildlife-section {
 	top: 0;
 	-webkit-transition-delay: 400ms;
 	transition-delay: 400ms;
+	border: 3px solid #d7a449;
+	border-right: 3px solid transparent;
 }
 
 body.nature-on .nature-section {
@@ -810,6 +816,7 @@ body.simpleport-on .simpleport-section {
 	top: 0;
 	-webkit-transition-delay: 400ms;
 	transition-delay: 400ms;
+	border: 3px solid #d7a449;
 }
 
 .travel-section img,
@@ -1094,6 +1101,31 @@ ul.social-buttons li a:active {
     z-index: 2;
     text-align: center;
     color: #fff;
+}
+
+.logo {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  z-index: 100;
+}
+
+.logo img {
+  max-width: 50%;
+  height: auto;
+  border-radius: 50%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  border: 2px solid #d7a449; /* Adiciona uma borda branca de 2 pixels */
+  padding: 5px; /* Adiciona um preenchimento interno para afastar a imagem da borda */
+}
+
+::-webkit-scrollbar {
+    width: 10px; /* Largura da barra de rolagem */
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #d7a449; /* Cor da linha da barra de rolagem */
+    border-radius: 6px; /* Borda arredondada da linha */
 }
 
 

@@ -113,6 +113,8 @@ export default {
 
 section {
   padding-top: 10vh;
+  border: 3px solid #d7a449;
+  border-right: 3px solid transparent;
 }
 
 h4{

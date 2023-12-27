@@ -1,104 +1,70 @@
 <template>
-    <div>
-        <section id="section-contact">
-  
-  <h1 class="section-header">Contato</h1>
-  
-  <div class="contact-wrapper">
-  
-  <!-- Left contact page --> 
-    
-    <form id="contact-form" class="form-horizontal" role="form">
-       
-      <div class="form-group">
-        <div class="col-sm-12">
-          <input type="text" class="form-control" id="name" placeholder="NOME" name="name" value="" required>
+  <div>
+    <section id="section-contact">
+      <h1 class="section-header">Contato</h1>
+      <div class="contact-wrapper">
+        <form id="contact-form" class="form-horizontal" role="form" @submit.prevent="submitForm">
+          <div class="form-group">
+            <div class="col-sm-12">
+              <input type="text" class="form-control" id="name" placeholder="NOME" name="name" value="" required>
+            </div>
+          </div>
+          <div class="form-group">
+            <div class="col-sm-12">
+              <input type="email" class="form-control" id="email" placeholder="EMAIL" name="email" value="" required>
+            </div>
+          </div>
+          <textarea class="form-control" rows="10" placeholder="MENSAGEM" name="message" required></textarea>
+          <button class="btn btn-primary send-button" id="submit" type="submit" value="SEND">
+            <div class="alt-send-button">
+              <i class="fa fa-paper-plane"></i><span class="send-text">ENVIAR</span>
+            </div>
+          </button>
+        </form>
+        <div class="direct-contact-container">
+          <ul class="contact-list">
+            <li class="list-item"><i class="fa fa-map-marker fa-2x"><span class="contact-text place">Joinville, Santa Catarina</span></i></li>
+            <li class="list-item"><i class="fa fa-phone fa-2x"><span class="contact-text phone"><a href="tel:1-212-555-5555" title="Give me a call">(212) 555-2368</a></span></i></li>
+            <li class="list-item"><i class="fa fa-envelope fa-2x"><span class="contact-text gmail"><a href="mailto:#" title="Send me an email">contato@iztoic.com</a></span></i></li>
+          </ul>
+          <hr>
+          <ul class="social-media-list">
+            <li><a href="#" target="_blank" class="contact-icon"><i class="fa fa-github" aria-hidden="true"></i></a></li>
+            <li><a href="#" target="_blank" class="contact-icon"><i class="fa fa-codepen" aria-hidden="true"></i></a></li>
+            <li><a href="#" target="_blank" class="contact-icon"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+            <li><a href="https://www.instagram.com/iztoic" target="_blank" class="contact-icon"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+          </ul>
+          <hr>
+          <div class="copyright">&copy; TODOS OS DIREITOS RESERVADOS</div>
         </div>
       </div>
-
-      <div class="form-group">
-        <div class="col-sm-12">
-          <input type="email" class="form-control" id="email" placeholder="EMAIL" name="email" value="" required>
-        </div>
-      </div>
-
-      <textarea class="form-control" rows="10" placeholder="MENSAGEM" name="message" required></textarea>
-      
-      <button class="btn btn-primary send-button" id="submit" type="submit" value="SEND">
-        <div class="alt-send-button">
-          <i class="fa fa-paper-plane"></i><span class="send-text">ENVIAR</span>
-        </div>
-      
-      </button>
-      
-    </form>
-    
-  <!-- Left contact page --> 
-    
-      <div class="direct-contact-container">
-
-        <ul class="contact-list">
-          <li class="list-item"><i class="fa fa-map-marker fa-2x"><span class="contact-text place">Joinville, Santa Catarina</span></i></li>
-          
-          <li class="list-item"><i class="fa fa-phone fa-2x"><span class="contact-text phone"><a href="tel:1-212-555-5555" title="Give me a call">(212) 555-2368</a></span></i></li>
-          
-          <li class="list-item"><i class="fa fa-envelope fa-2x"><span class="contact-text gmail"><a href="mailto:#" title="Send me an email">contato@iztoic.com</a></span></i></li>
-          
-        </ul>
-
-        <hr>
-        <ul class="social-media-list">
-          <li><a href="#" target="_blank" class="contact-icon">
-            <i class="fa fa-github" aria-hidden="true"></i></a>
-          </li>
-          <li><a href="#" target="_blank" class="contact-icon">
-            <i class="fa fa-codepen" aria-hidden="true"></i></a>
-          </li>
-          <li><a href="#" target="_blank" class="contact-icon">
-            <i class="fa fa-twitter" aria-hidden="true"></i></a>
-          </li>
-          <li><a href="#" target="_blank" class="contact-icon">
-            <i class="fa fa-instagram" aria-hidden="true"></i></a>
-          </li>       
-        </ul>
-        <hr>
-
-        <div class="copyright">&copy; TODOS OS DIREITOS RESERVADOS</div>
-
-      </div>
-    
+    </section>
   </div>
-  
-</section> 
-    </div>
-    </template>
-    
-    <script>
-        export default {
-        name: "SectionContact",
-        methods: {
-    submitForm(e) {
-      e.target.elements.name.value = '';
-      e.target.elements.email.value = '';
-      e.target.elements.message.value = '';
+</template>
 
-      // Qualquer outra lógica que você precise realizar no envio do formulário
-
-      // Se desejar, você pode emitir um evento para informar ao componente pai que o formulário foi enviado
-      this.$emit('form-submitted');
+<script>
+  export default {
+    name: "SectionContact",
+    methods: {
+      submitForm(e) {
+        e.target.elements.name.value = '';
+        e.target.elements.email.value = '';
+        e.target.elements.message.value = '';
+        this.$emit('form-submitted');
+      }
     }
   }
-        }
-        
-    </script>
+</script>
     
     <style scoped>
 
 section {
+  border: 3px solid #d7a449;
+  border-right: 3px solid transparent;
   margin: 0;
   padding: 0;
-  background-color: #000;
-  padding-bottom: 100px;
+  background-color: #1f2029;
+  padding-bottom: 50px;
 }
 
 #section-contact {
@@ -111,7 +77,7 @@ section {
   margin: 0 auto;
   padding: 40px 0;
   font: 300 60px 'Oswald', sans-serif;
-  color: #fff;
+  color: #d7a449;
   text-transform: uppercase;
   letter-spacing: 6px;
 }
@@ -138,7 +104,7 @@ section {
 textarea {
   max-width: 400px;
   background-color: #000;
-  color: #fff;
+  color: #d7a449;
   letter-spacing: 1px;
 }
 
@@ -181,13 +147,13 @@ textarea {
 
 .list-item {
   line-height: 4;
-  color: #aaa;
+  color: #d7a449;
 }
 
 .contact-text {
   font: 300 18px 'Lato', sans-serif;
   letter-spacing: 1.9px;
-  color: #bbb;
+  color: #fff;
 }
 
 .place {
@@ -203,13 +169,13 @@ textarea {
 }
 
 .contact-text a {
-  color: #bbb;
+  color: #fff;
   text-decoration: none;
   transition-duration: 0.2s;
 }
 
 .contact-text a:hover {
-  color: #fff;
+  color: #d7a449;
   text-decoration: none;
 }
 
@@ -225,7 +191,7 @@ textarea {
 }
 
 .social-media-list li a {
-  color: #fff;
+  color: #d7a449;
 }
 
 .social-media-list li {
@@ -236,7 +202,7 @@ textarea {
   margin: 10px 3px;
   line-height: 60px;
   border-radius: 50%;
-  color: #fff;
+  color: #d7a449;
   background-color: rgb(27,27,27);
   cursor: pointer; 
   transition: all .2s ease-in-out;
@@ -272,7 +238,7 @@ textarea {
 
 .copyright {
   font: 200 14px 'Oswald', sans-serif;
-  color: #555;
+  color: #d7a449;
   letter-spacing: 1px;
   text-align: center;
 }

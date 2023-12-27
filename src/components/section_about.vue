@@ -8,7 +8,7 @@
                 <div class="inner-column">
                     <div class="sec-title">
                         <div class="title">Sobre Nós</div>
-                        <h2>We Are The Leader In <br> The Interiores</h2>
+                        <h2>Inovação<br>Transformação<br>Impacto</h2>
                     </div>
                     <div class="text">Somos uma agência criativa que trabalha com sua maior paixão: O desenvolvimento de soluções estratégicas para conectar sua marca com o consumidor de forma humanizada. <br> Somos uma equipe que traz o design e o marketing de um jeito unico para dar forma a um único objetivo: Tornar sua marca ainda mais relevante para as pessoas, ajudando a construir seu sonho.</div>
                     </div>
@@ -63,34 +63,99 @@ export default {
 
 <style scoped>
 .section-about{
+border: 3px solid #d7a449;
+border-right: 3px solid transparent;
 position:relative;
-padding:120px 0px;
+padding-top:80px;
 }
 
 .section-about .content-column{
 position:relative;
-margin-bottom:40px;
 }
 
 .section-about .content-column .inner-column{
 position:relative;
-padding-top:50px;
 padding-right:100px;
+align-items: flex-start;
 }
 
 .section-about .content-column .text{
 position:relative;
 color:#777777;
-font-size:15px;
-line-height:2em;
-margin-bottom:40px;
+font-size:16px;
+line-height:1.8em;
+margin-bottom:20px;
+max-width: 400px; /* Limita a largura máxima para melhor legibilidade */
+margin-right: 20px; /* Adiciona espaço à direita para separar do lado da imagem */
 }
+
+.section-about .content-column .text::before {
+  content: '\201C'; /* Adicione aspas duplas no início do texto */
+  font-size: 40px;
+  color: #d7a449;
+  position: absolute;
+  left: -20px;
+  top: -10px;
+}
+
+.section-about .content-column .text::after {
+  content: '\201D'; /* Adicione aspas duplas no final do texto */
+  font-size: 40px;
+  color: #d7a449;
+  position: absolute;
+  right: -20px;
+  bottom: -10px;
+}
+
+/* Adicione um efeito de sobreposição para destacar o texto */
+.section-about .content-column .text:hover {
+  color: #d7a449;
+}
+
+/* Destaque o título da seção */
+.section-about .sec-title .title {
+  color: #d7a449;
+  font-size: 24px; /* Aumente o tamanho do título */
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+/* Adicione um fundo sutil para o título da seção */
+.section-about .sec-title .title:before {
+  content: '';
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #d7a449;
+}
+
+/* Ajuste a estilização do subtítulo */
+.section-about .sec-title2 {
+  color: #fff;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+/* Adicione um fundo sutil à área do texto */
+.section-about .content-column {
+  padding: 40px;
+  border-radius: 10px;
+  margin-bottom: 40px;
+}
+
+/* Adicione um espaçamento adicional ao título para melhorar a aparência */
+.section-about .sec-title {
+  margin-bottom: 20px;
+}
+
 
 .section-about .content-column .email{
 position:relative;
 color:#252525;
 font-weight:700;
-margin-bottom:50px;
+margin-bottom:20px;
 }
 
 .section-about .image-column{

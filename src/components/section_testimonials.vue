@@ -1,48 +1,49 @@
 <template>
-          <section id="section-testimonials">
-            <figure class="snip1386">
-  <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sample18.jpg" alt="sample18" class="background" />
-  <figcaption>
-    <blockquote>Which is worse, that everyone has his price, or that the price is always so low.</blockquote>
-    <h5>- Emily Barrow</h5>
-  </figcaption><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/profile-sample1.jpg" alt="profile-sample1" class="profile" />
-</figure>
-<figure class="snip1386 hover"><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sample10.jpg" alt="sample10" class="background" />
-  <figcaption>
-    <blockquote>I'm killing time while I wait for life to shower me with meaning and happiness.</blockquote>
-    <h5>- Tim Forever</h5>
-  </figcaption><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/profile-sample5.jpg" alt="profile-sample5" class="profile" />
-</figure>
-<figure class="snip1386"><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sample19.jpg" alt="sample19" class="background" />
-  <figcaption>
-    <blockquote>The only skills I have the patience to learn are those that have no real application in life. </blockquote>
-    <h5>- Jenny Jenkins</h5>
-  </figcaption><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/profile-sample6.jpg" alt="profile-sample6" class="profile" />
-</figure>
-          </section>
+  <section id="section-testimonials">
+    <figure class="snip1386">
+      <img src="src/assets/portifolio/casa_ministro.png" class="background" />
+      <figcaption>
+        <blockquote>A IZTOIC superou minhas expectativas! Criatividade, eficiência e resultados impressionantes.</blockquote>
+        <h5>- Casa Ministro</h5>
+      </figcaption><img src="src/assets/portifolio/casa_ministro_logo.png" class="profile" />
+    </figure>
+    <figure class="snip1386 hover"><img src="src/assets/portifolio/7_graos.png" class="background" />
+      <figcaption>
+        <blockquote>Os serviços da IZTOIC são incríveis! Transformaram o meu negócio.</blockquote>
+        <h5>- 7 Grãos</h5>
+      </figcaption><img src="src/assets/portifolio/7_graos_logo.png" class="profile" />
+    </figure>
+    <figure class="snip1386"><img src="src/assets/portifolio/neudorf.png" class="background" />
+      <figcaption>
+        <blockquote>A IZTOIC entregou soluções tecnológicas excepcionais.</blockquote>
+        <h5>- Neudorf Choperia</h5>
+      </figcaption><img src="src/assets/portifolio/neudorf_logo.png" class="profile" />
+    </figure>
+  </section>
 </template>
 
 <script>
 export default {
-    name: "SectionTestimonials"
+  name: "SectionTestimonials"
 };
 </script>
 
 <style scoped>
 @import url(https://fonts.googleapis.com/css?family=Playfair+Display:400,900);
 
-section{
+section {
   padding-top: 50px;
-    width: 100%;
-    display: flex;
-    justify-content: space-evenly;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
 }
 
-blockquote{
-    padding: 0;
-    border-left:0px;
-    
+blockquote {
+  padding: 0;
+  border-left: 0px;
+
 }
+
 .snip1386 {
   font-family: 'Playfair Display', Arial, sans-serif;
   position: relative;
@@ -58,15 +59,18 @@ blockquote{
   border-radius: 10px;
   background-color: #000000;
 }
+
 .snip1386 * {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
+
 .snip1386 .background {
   max-width: 100%;
   backface-visibility: hidden;
   opacity: 0.5;
 }
+
 .snip1386 figcaption {
   position: absolute;
   top: 0;
@@ -78,6 +82,7 @@ blockquote{
   background-color: #ffffff;
   width: 40%;
 }
+
 .snip1386 figcaption:before {
   position: absolute;
   top: 50%;
@@ -92,6 +97,7 @@ blockquote{
   border-color: transparent transparent transparent #ffffff;
   margin-left: -1px;
 }
+
 .snip1386:after {
   position: absolute;
   bottom: 50%;
@@ -103,22 +109,26 @@ blockquote{
   border-width: 120px 120px 0 120px;
   border-color: rgba(255, 255, 255, 0.5) transparent transparent transparent;
 }
+
 .snip1386 h5,
 .snip1386 blockquote {
   -webkit-transform: translateX(30px);
   transform: translateX(30px);
   margin: 0;
 }
+
 .snip1386 h5 {
   margin: 10px 0;
   line-height: 1.1em;
   font-weight: 900;
-  color: #1a1a1a;
+  color: #d7a449;
 }
+
 .snip1386 blockquote {
   font-size: 0.9em;
   font-style: italic;
 }
+
 .snip1386 .profile {
   position: absolute;
   width: 100px;
@@ -130,7 +140,8 @@ blockquote{
   transform: translate(50%, -50%);
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
 }
-.credibility{
+
+.credibility {
   align-items: center;
   display: flex;
 }
@@ -152,6 +163,7 @@ blockquote{
 .snip1386:hover .background {
   opacity: 1;
 }
+
 .snip1386 .profile {
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
@@ -159,6 +171,4 @@ blockquote{
 .snip1386:hover .profile {
   transform: translate(50%, -50%) scale(1.1);
   box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
-}
-
-</style>
+}</style>

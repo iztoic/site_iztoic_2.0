@@ -3,56 +3,48 @@
   <ul class='slider'>
     <li class='item' style="background-image: url('src/assets/portifolio/night_shop.jpg')">
       <div class='content'>
-        <h2 class='title'>"Lossless Youths"</h2>
-        <p class='description'> Lorem ipsum, dolor sit amet consectetur
-        adipisicing elit. Tempore fuga voluptatum, iure corporis inventore
-        praesentium nisi. Id laboriosam ipsam enim.  </p>
-        <button>Read More</button>
+        <h2 class='title'>"A Noite Deslumbrante"</h2>
+        <p class='description'> Explore a magia da noite com nossa campanha "Lossless Youths". Nossas estratégias inovadoras capturam a essência vibrante da juventude sem perder nenhum detalhe. Descubra como podemos iluminar sua marca na escuridão da concorrência.  </p>
+        <button>Leia Mais</button>
       </div>
     </li>
     <li class='item' style="background-image: url('src/assets/portifolio/restaurant_drink.jpg')">
       <div class='content'>
-        <h2 class='title'>"Estrange Bond"</h2>
-        <p class='description'> Lorem ipsum, dolor sit amet consectetur
-        adipisicing elit. Tempore fuga voluptatum, iure corporis inventore
-        praesentium nisi. Id laboriosam ipsam enim.  </p>
-        <button>Read More</button>
+        <h2 class='title'>"Vínculo Estranho"</h2>
+        <p class='description'> Embarque em uma jornada visual única com "Estrange Bond". Revelamos histórias intrigantes por meio de nossa abordagem distinta de marketing. Descubra como podemos conectar sua marca de maneira memorável e envolvente.  </p>
+        <button>Leia Mais</button>
       </div>
     </li>
     <li class='item' style="background-image: url('src/assets/portifolio/drone_tecnology.jpg')">
       <div class='content'>
-        <h2 class='title'>"The Gate Keeper"</h2>
-        <p class='description'> Lorem ipsum, dolor sit amet consectetur
-        adipisicing elit. Tempore fuga voluptatum, iure corporis inventore
-        praesentium nisi. Id laboriosam ipsam enim.  </p>
-        <button>Read More</button>
+        <h2 class='title'>""O Guardião da Porta"</h2>
+        <p class='description'> Abra as portas para o sucesso com "The Gate Keeper". Nossa agência utiliza a tecnologia de forma inteligente para garantir que sua marca esteja sempre um passo à frente. Descubra como podemos ser os guardiões da sua presença online.  </p>
+        <button>Leia Mais</button>
       </div>
     </li>
     <li class='item' style="background-image: url('src/assets/portifolio/people_drone.jpg')">
       <div class='content'>
-        <h2 class='title'>"Last Trace Of Us"</h2>
+        <h2 class='title'>"A Última Pegada de Nós"</h2>
         <p class='description'>
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempore fuga voluptatum, iure corporis inventore praesentium nisi. Id laboriosam ipsam enim.
+          Registre momentos emocionantes com "Last Trace Of Us". Nossa abordagem única cria uma narrativa visual envolvente que destaca o valor duradouro de sua marca. Explore como podemos deixar uma impressão marcante.
         </p>
-        <button>Read More</button>
+        <button>Leia Mais</button>
       </div>
     </li>
     <li class='item' style="background-image: url('src/assets/portifolio/wine_bar.jpg')">
       <div class='content'>
-        <h2 class='title'>"Urban Decay"</h2>
+        <h2 class='title'>"No Holofote!"</h2>
         <p class='description'>
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempore fuga voluptatum, iure corporis inventore praesentium nisi. Id laboriosam ipsam enim.
+          Destaque-se na multidão com "No Holofote!". Nossa agência coloca sua marca no centro das atenções, destacando sua singularidade. Descubra como podemos garantir que sua marca brilhe em qualquer cenário.
         </p>
-        <button>Read More</button>
+        <button>Leia Mais</button>
       </div>
     </li>
     <li class='item' style="background-image: url('src/assets/portifolio/cigarette_box.jpg')">
       <div class='content'>
-        <h2 class='title'>"The Migration"</h2>
-        <p class='description'> Lorem ipsum, dolor sit amet consectetur
-        adipisicing elit. Tempore fuga voluptatum, iure corporis inventore
-        praesentium nisi. Id laboriosam ipsam enim.  </p>
-        <button>Read More</button>
+        <h2 class='title'>"A Migração"</h2>
+        <p class='description'> Navegue pelas tendências com "The Migration". Oferecemos estratégias de marketing que acompanham a evolução do mercado, garantindo que sua marca não fique para trás. Descubra como podemos conduzir sua marca para novos horizontes.  </p>
+        <button>Leia Mais</button>
       </div>
     </li>
   </ul>
@@ -166,6 +158,7 @@ main {
   background-position: center;
   background-size: cover;
   border-radius: 20px;
+  border: 3px solid #d7a449;
   box-shadow: 0 20px 30px rgba(255,255,255,0.3) inset;
   transition: transform 0.1s, left 0.75s, top 0.75s, width 0.75s, height 0.75s;
 
@@ -188,12 +181,16 @@ main {
 
 .content {
   width: min(30vw,400px);
+  height: 350px;
   position: absolute;
   top: 50%;
   left: 3rem;
   transform: translateY(-50%);
-  font: 400 0.85rem helvetica,sans-serif;
-  color: white;
+  font: 400 0.95rem helvetica,sans-serif;
+  color: #d7a449;
+  background-color: #1f2029;
+  padding: 40px;
+  border-radius: 10px;
   text-shadow: 0 3px 8px rgba(0,0,0,0.5);
   opacity: 0;
   display: none;
@@ -206,7 +203,7 @@ main {
   & .description {
     line-height: 1.7;
     margin: 1rem 0 1.5rem;
-    font-size: 0.8rem;
+    font-size: 1.2rem;
   }
 
   & button {
@@ -231,7 +228,7 @@ main {
     transform: translateY(calc(-50% + 75px));
   }
   100% {
-    opacity: 1;
+    opacity: 0.90;
     filter: blur(0);
   }
 }

@@ -1,5 +1,4 @@
 <template>
-  <div>
     <section id="section-services">
       <div class="container">
         <div class="row">
@@ -48,7 +47,6 @@
         </div>
       </div>
     </section>
-  </div>
 </template>
 
 <script>

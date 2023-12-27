@@ -76,30 +76,45 @@ export default {
           {
             "type": "Feature",
             "properties": {
-              "title": "Oaxaca City",
-              "imageUrl": "https://c1.staticflickr.com/5/4357/36172707494_2b8ea05f04_q.jpg",
-              "type": "city",
+              "title": "Casa Ministro, Charutos & Whisky Lounge",
+              "imageUrl": "src/assets/portifolio/casa_ministro_logo.png",
+              "type": "Bar",
             },
             "geometry": {
               "type": "Point",
               "coordinates": [
-              -48.845116,
-              -26.303207,
+              -48.846131066078904,
+              -26.310174216183405,
               ]
             }
           },
           {
             "type": "Feature",
             "properties": {
-              "title": "City",
-              "imageUrl": "https://c1.staticflickr.com/5/4357/36172707494_2b8ea05f04_q.jpg",
-              "type": "city",
+              "title": "7 Grãos Pães e Doces",
+              "imageUrl": "src/assets/portifolio/7_graos_logo.png",
+              "type": "Padaria",
             },
             "geometry": {
               "type": "Point",
               "coordinates": [
-              -48.733116,
-              -26.303207,
+              -48.920667672345175,
+              -26.287165020260446,
+              ]
+            }
+          },
+          {
+            "type": "Feature",
+            "properties": {
+              "title": "Neudorf Choperia",
+              "imageUrl": "src/assets/portifolio/neudorf_logo.png",
+              "type": "Hamburgueria",
+            },
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+              -48.91875157359281,
+              -26.287266018376062,
               ]
             }
           }
