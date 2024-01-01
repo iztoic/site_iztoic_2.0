@@ -31,7 +31,7 @@
         <button>Leia Mais</button>
       </div>
     </li>
-    <li class='item' style="background-image: url('src/assets/portifolio/wine_bar.jpg')">
+    <li class='item' style="background-image: url('src/assets/portifolio/holofote.jpg')">
       <div class='content'>
         <h2 class='title'>"No Holofote!"</h2>
         <p class='description'>

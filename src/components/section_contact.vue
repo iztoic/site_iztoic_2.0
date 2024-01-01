@@ -23,16 +23,20 @@
         </form>
         <div class="direct-contact-container">
           <ul class="contact-list">
-            <li class="list-item"><i class="fa fa-map-marker fa-2x"><span class="contact-text place">Joinville, Santa Catarina</span></i></li>
-            <li class="list-item"><i class="fa fa-phone fa-2x"><span class="contact-text phone"><a href="tel:1-212-555-5555" title="Give me a call">(212) 555-2368</a></span></i></li>
-            <li class="list-item"><i class="fa fa-envelope fa-2x"><span class="contact-text gmail"><a href="mailto:#" title="Send me an email">contato@iztoic.com</a></span></i></li>
+            <li class="list-item"><i class="fa fa-map-marker fa-2x"><span class="contact-text place">Joinville, Santa
+                  Catarina</span></i></li>
+            <li class="list-item"><i class="fa fa-phone fa-2x"><span class="contact-text phone"><a
+                    href="tel:1-212-555-5555" title="Give me a call">(212) 555-2368</a></span></i></li>
+            <li class="list-item"><i class="fa fa-envelope fa-2x"><span class="contact-text gmail"><a href="mailto:#"
+                    title="Send me an email">contato@iztoic.com</a></span></i></li>
           </ul>
           <hr>
           <ul class="social-media-list">
             <li><a href="#" target="_blank" class="contact-icon"><i class="fa fa-github" aria-hidden="true"></i></a></li>
             <li><a href="#" target="_blank" class="contact-icon"><i class="fa fa-codepen" aria-hidden="true"></i></a></li>
             <li><a href="#" target="_blank" class="contact-icon"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-            <li><a href="https://www.instagram.com/iztoic" target="_blank" class="contact-icon"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+            <li><a href="https://www.instagram.com/iztoic" target="_blank" class="contact-icon"><i class="fa fa-instagram"
+                  aria-hidden="true"></i></a></li>
           </ul>
           <hr>
           <div class="copyright">&copy; TODOS OS DIREITOS RESERVADOS</div>
@@ -43,21 +47,20 @@
 </template>
 
 <script>
-  export default {
-    name: "SectionContact",
-    methods: {
-      submitForm(e) {
-        e.target.elements.name.value = '';
-        e.target.elements.email.value = '';
-        e.target.elements.message.value = '';
-        this.$emit('form-submitted');
-      }
+export default {
+  name: "SectionContact",
+  methods: {
+    submitForm(e) {
+      e.target.elements.name.value = '';
+      e.target.elements.email.value = '';
+      e.target.elements.message.value = '';
+      this.$emit('form-submitted');
     }
   }
+}
 </script>
     
-    <style scoped>
-
+<style scoped>
 section {
   border: 3px solid #d7a449;
   border-right: 3px solid transparent;
@@ -100,7 +103,7 @@ section {
   font-weight: 400;
 }
 
-.form-control, 
+.form-control,
 textarea {
   max-width: 400px;
   background-color: #000;
@@ -195,7 +198,7 @@ textarea {
 }
 
 .social-media-list li {
-  position: relative; 
+  position: relative;
   display: inline-block;
   height: 60px;
   width: 60px;
@@ -203,8 +206,8 @@ textarea {
   line-height: 60px;
   border-radius: 50%;
   color: #d7a449;
-  background-color: rgb(27,27,27);
-  cursor: pointer; 
+  background-color: rgb(27, 27, 27);
+  cursor: pointer;
   transition: all .2s ease-in-out;
 }
 
@@ -223,13 +226,13 @@ textarea {
 }
 
 .social-media-list li:hover {
-  background-color: #fff; 
+  background-color: #fff;
 }
 
 .social-media-list li:hover:after {
-  opacity: 1;  
+  opacity: 1;
   transform: scale(1.12);
-  transition-timing-function: cubic-bezier(0.37,0.74,0.15,1.65);
+  transition-timing-function: cubic-bezier(0.37, 0.74, 0.15, 1.65);
 }
 
 .social-media-list li:hover a {
@@ -244,7 +247,7 @@ textarea {
 }
 
 hr {
-  border-color: rgba(255,255,255,.6);
+  border-color: rgba(255, 255, 255, .6);
 }
 
 /* Begin Media Queries*/
@@ -253,19 +256,23 @@ hr {
     display: flex;
     flex-direction: column;
   }
-  .direct-contact-container, .form-horizontal {
+
+  .direct-contact-container,
+  .form-horizontal {
     margin: 0 auto;
-  }  
-  
+  }
+
   .direct-contact-container {
     margin-top: 60px;
     max-width: 300px;
-  }    
+  }
+
   .social-media-list li {
     height: 60px;
     width: 60px;
     line-height: 60px;
   }
+
   .social-media-list li:after {
     width: 60px;
     height: 60px;
@@ -275,45 +282,51 @@ hr {
 
 @media screen and (max-width: 569px) {
 
-  .direct-contact-container, .form-wrapper {
+  .direct-contact-container,
+  .form-wrapper {
     float: none;
     margin: 0 auto;
-  }  
-  .form-control, textarea {
-    
+  }
+
+  .form-control,
+  textarea {
+
     margin: 0 auto;
   }
- 
-  
-  .name, .email, textarea {
+
+
+  .name,
+  .email,
+  textarea {
     width: 280px;
-  } 
-  
+  }
+
   .direct-contact-container {
     margin-top: 60px;
     max-width: 280px;
-  }  
+  }
+
   .social-media-list {
     left: 0;
   }
+
   .social-media-list li {
     height: 55px;
     width: 55px;
     line-height: 55px;
     font-size: 2rem;
   }
+
   .social-media-list li:after {
     width: 55px;
     height: 55px;
     line-height: 55px;
   }
-  
+
 }
 
 @media screen and (max-width: 410px) {
   .send-button {
     width: 99%;
   }
-}
-    
-    </style>
+}</style>
