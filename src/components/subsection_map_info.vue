@@ -21,31 +21,21 @@
     name: "SubSectionMapInfo",
     data() {
       return {
-        cards: Array(5).fill().map(() => ({ expanded: false })),
+        cards: Array(3).fill().map(() => ({ expanded: false })),
         cardInfo: [
           {
-            title: "Card 1",
+            title: "Casa Ministro",
             text: "Conteúdo do Card 1.",
             backgroundImage: "url('src/assets/portifolio/holofote.jpg')",
           },
           {
-            title: "Card 2",
+            title: " 7 Grãos",
             text: "Conteúdo do Card 2.",
             backgroundImage: "url('src/assets/portifolio/holofote.jpg')",
           },
           {
-            title: "Card 3",
+            title: "Neudorf Choperia",
             text: "Conteúdo do Card 3.",
-            backgroundImage: "url('src/assets/portifolio/holofote.jpg')",
-          },
-          {
-            title: "Card 4",
-            text: "Conteúdo do Card 4.",
-            backgroundImage: "url('src/assets/portifolio/holofote.jpg')",
-          },
-          {
-            title: "Card 5",
-            text: "Conteúdo do Card 5.",
             backgroundImage: "url('src/assets/portifolio/holofote.jpg')",
           }
         ],
@@ -117,6 +107,15 @@
 
 .card.expanded {
   background-image: url('src/assets/portifolio/holofote.jpg');
+}
+
+::-webkit-scrollbar {
+    width: 10px; /* Largura da barra de rolagem */
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #d7a449; /* Cor da linha da barra de rolagem */
+    border-radius: 6px; /* Borda arredondada da linha */
 }
   </style>
   

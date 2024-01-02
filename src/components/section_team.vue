@@ -4,92 +4,20 @@
       <div class="container">
         <div class="row">
           <div class="col-lg-12 text-center">
-            <h3 class="section-subheading text-muted">
-              Conheça nossa equipe
-            </h3>
+            <h3 class="section-subheading text-muted">Conheça nossa equipe</h3>
           </div>
         </div>
         <div class="row">
-          <div class="col-sm-4">
+          <div v-for="(member, index) in teamMembers" :key="index" class="col-sm-4">
             <div class="team-member">
-              <h4>Jonatan Keller</h4>
-              <p class="text-muted">Developer</p>
-              <div class="card card0">
+              <h4>{{ member.name }}</h4>
+              <p class="text-muted">{{ member.occupation }}</p>
+              <div :class="'card card' + index">
                 <div class="border">
-                  <h2>Jonatan Keller</h2>
+                  <h2>{{ member.name }}</h2>
                   <div class="icons">
-                    <i class="fa fa-linkedin" aria-hidden="true" onclick="window.open('https://www.linkedin.com/in/jonatankeller/', '_blank')"></i>
-                    <i class="fa fa-instagram" aria-hidden="true" onclick="window.open('https://www.instagram.com/kellerjonatan/', '_blank')"></i>
-                    <i class="fa fa-twitter" aria-hidden="true" onclick="window.open('')"></i>
-                    <i class="fa fa-facebook" aria-hidden="true" onclick="window.open('')"></i>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-sm-4">
-            <div class="team-member">
-              <h4>Dionei Caliel</h4>
-              <p class="text-muted">Ocupation</p>
-              <div class="card card1">
-                <div class="border">
-                  <h2>Dionei Caliel</h2>
-                  <div class="icons">
-                    <i class="fa fa-linkedin" aria-hidden="true" onclick="window.open('')"></i>
-                    <i class="fa fa-instagram" aria-hidden="true" onclick="window.open('')"></i>
-                    <i class="fa fa-twitter" aria-hidden="true" onclick="window.open('')"></i>
-                    <i class="fa fa-facebook" aria-hidden="true" onclick="window.open('')"></i>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-sm-4">
-            <div class="team-member">
-              <h4>Gabriel Oliveira</h4>
-              <p class="text-muted">Ocupation</p>
-              <div class="card card2">
-                <div class="border">
-                  <h2>Gabriel Oliveira</h2>
-                  <div class="icons">
-                    <i class="fa fa-linkedin" aria-hidden="true" onclick="window.open('')"></i>
-                    <i class="fa fa-instagram" aria-hidden="true" onclick="window.open('')"></i>
-                    <i class="fa fa-twitter" aria-hidden="true" onclick="window.open('')"></i>
-                    <i class="fa fa-facebook" aria-hidden="true" onclick="window.open('')"></i>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-sm-4">
-            <div class="team-member">
-              <h4>Dani</h4>
-              <p class="text-muted">Ocupation</p>
-              <div class="card card3">
-                <div class="border">
-                  <h2>Dani</h2>
-                  <div class="icons">
-                    <i class="fa fa-linkedin" aria-hidden="true" onclick="window.open('')"></i>
-                    <i class="fa fa-instagram" aria-hidden="true" onclick="window.open('')"></i>
-                    <i class="fa fa-twitter" aria-hidden="true" onclick="window.open('')"></i>
-                    <i class="fa fa-facebook" aria-hidden="true" onclick="window.open('')"></i>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-sm-4">
-            <div class="team-member">
-              <h4>Will</h4>
-              <p class="text-muted">Ocupation</p>
-              <div class="card card4">
-                <div class="border">
-                  <h2>Will</h2>
-                  <div class="icons">
-                    <i class="fa fa-linkedin" aria-hidden="true" onclick="window.open('')"></i>
-                    <i class="fa fa-instagram" aria-hidden="true" onclick="window.open('')"></i>
-                    <i class="fa fa-twitter" aria-hidden="true" onclick="window.open('')"></i>
-                    <i class="fa fa-facebook" aria-hidden="true" onclick="window.open('')"></i>
+                    <i v-for="(link, icon) in member.socialLinks" :key="icon" 
+                       :class="icon" aria-hidden="true" @click="openLink(link)"></i>
                   </div>
                 </div>
               </div>
@@ -100,17 +28,79 @@
     </section>
   </div>
 </template>
-  
+
 <script>
 export default {
   name: "SectionTeam",
-  components: {
-  }
+  data() {
+    return {
+      teamMembers: [
+        {
+          name: "Jonatan Keller",
+          occupation: "Developer",
+          background: "src/assets/portifolio/perfil_keller2.png",
+          socialLinks: {
+            linkedin: "https://www.linkedin.com/in/jonatankeller/",
+            instagram: "https://www.instagram.com/kellerjonatan/",
+            twitter: "",
+            facebook: "",
+          },
+        },
+        {
+          name: "Dionei Caliel",
+          occupation: "Ocupation",
+          socialLinks: {
+            linkedin: "",
+            instagram: "",
+            twitter: "",
+            facebook: "",
+          },
+        },
+        {
+          name: "Gabriel Oliveira",
+          occupation: "Ocupation",
+          socialLinks: {
+            linkedin: "",
+            instagram: "",
+            twitter: "",
+            facebook: "",
+          },
+        },
+        {
+          name: "Dani",
+          occupation: "Ocupation",
+          socialLinks: {
+            linkedin: "",
+            instagram: "",
+            twitter: "",
+            facebook: "",
+          },
+        },
+        {
+          name: "Will",
+          occupation: "Ocupation",
+          socialLinks: {
+            linkedin: "",
+            instagram: "",
+            twitter: "",
+            facebook: "",
+          },
+        },
+        // Add more team members as needed
+      ],
+    };
+  },
+  methods: {
+    openLink(link) {
+      if (link) {
+        window.open(link, "_blank");
+      }
+    },
+  },
 };
 </script>
-  
-<style scoped>
 
+<style scoped>
 section {
   padding-top: 10vh;
   border: 3px solid #d7a449;
@@ -312,4 +302,3 @@ h2 {
   transform: scale(1.5);
 }
 </style>
-  

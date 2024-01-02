@@ -1,41 +1,41 @@
 <template>
   <section id="section-books">
     <h1 class="pen-title">Ebooks</h1>
-
-	<!-- START TECHNIQUE CODE -->
-
-	<section id="main">
-		<ul class='list-inline'>
-  <li class='book'>
-    <img src='http://37signals.com/images/remote/remote_front.png' />
-  </li>
-
-  <li class='book'>
-    <img src='http://www.blanq.org/text/moleskine_iphone_wallpaper.jpg' />
-  </li>
-
-  <li class='book'>
-    <img src='https://d.gr-assets.com/books/1348927776l/8032112.jpg' />
-  </li>
-
-  <li class='book'>
-    <img src='http://ecx.images-amazon.com/images/I/51oXKWrcYYL.jpg' />
-  </li>
-</ul>
-	</section>
-</section>
+    <section id="main">
+      <ul class="list-inline">
+        <li v-for="(book, index) in books" :key="index" class="book">
+          <img :src="book.image" />
+        </li>
+      </ul>
+    </section>
+  </section>
 </template>
 
-  <script>
+<script>
 export default {
   name: "SectionBooks",
   data() {
     return {
+      books: [
+        {
+          image: "https://d.gr-assets.com/books/1348927776l/8032112.jpg",
+        },
+        {
+          image: "http://ecx.images-amazon.com/images/I/51oXKWrcYYL.jpg",
+        },
+        {
+          image: "https://d.gr-assets.com/books/1348927776l/8032112.jpg",
+        },
+        {
+          image: "http://ecx.images-amazon.com/images/I/51oXKWrcYYL.jpg",
+        },
+        {
+          image: "http://ecx.images-amazon.com/images/I/51oXKWrcYYL.jpg",
+        },
+      ],
     };
   },
-  methods: {
-    
-  },
+  methods: {},
 };
 </script>
 
