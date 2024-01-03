@@ -6,15 +6,15 @@
         <form id="contact-form" class="form-horizontal" role="form" @submit.prevent="submitForm">
           <div class="form-group">
             <div class="col-sm-12">
-              <input type="text" class="form-control" id="name" placeholder="NOME" name="name" value="" required>
+              <input type="text" class="form-control" v-model="formData.name" placeholder="NOME" name="name" required>
             </div>
           </div>
           <div class="form-group">
             <div class="col-sm-12">
-              <input type="email" class="form-control" id="email" placeholder="EMAIL" name="email" value="" required>
+              <input type="email" class="form-control" v-model="formData.email" placeholder="EMAIL" name="email" required>
             </div>
           </div>
-          <textarea class="form-control" rows="10" placeholder="MENSAGEM" name="message" required></textarea>
+          <textarea class="form-control" rows="10" v-model="formData.message" placeholder="MENSAGEM" name="message" required></textarea>
           <button class="btn btn-primary send-button" id="submit" type="submit" value="SEND">
             <div class="alt-send-button">
               <i class="fa fa-paper-plane"></i><span class="send-text">ENVIAR</span>
@@ -23,20 +23,16 @@
         </form>
         <div class="direct-contact-container">
           <ul class="contact-list">
-            <li class="list-item"><i class="fa fa-map-marker fa-2x"><span class="contact-text place">Joinville, Santa
-                  Catarina</span></i></li>
-            <li class="list-item"><i class="fa fa-phone fa-2x"><span class="contact-text phone"><a
-                    href="tel:1-212-555-5555" title="Give me a call">(212) 555-2368</a></span></i></li>
-            <li class="list-item"><i class="fa fa-envelope fa-2x"><span class="contact-text gmail"><a href="mailto:#"
-                    title="Send me an email">contato@iztoic.com</a></span></i></li>
+            <li class="list-item"><i class="fa fa-map-marker fa-2x"><span class="contact-text place">{{ contactInfo.location }}</span></i></li>
+            <li class="list-item"><i class="fa fa-phone fa-2x"><span class="contact-text phone"><a :href="'tel:' + contactInfo.phone" >{{ contactInfo.phone }}</a></span></i></li>
+            <li class="list-item"><i class="fa fa-envelope fa-2x"><span class="contact-text gmail"><a :href="'mailto:' + contactInfo.email" >{{ contactInfo.email }}</a></span></i></li>
           </ul>
           <hr>
           <ul class="social-media-list">
-            <li><a href="#" target="_blank" class="contact-icon"><i class="fa fa-github" aria-hidden="true"></i></a></li>
-            <li><a href="#" target="_blank" class="contact-icon"><i class="fa fa-codepen" aria-hidden="true"></i></a></li>
-            <li><a href="#" target="_blank" class="contact-icon"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-            <li><a href="https://www.instagram.com/iztoic" target="_blank" class="contact-icon"><i class="fa fa-instagram"
-                  aria-hidden="true"></i></a></li>
+            <li><a :href="contactInfo.github" target="_blank" class="contact-icon"><i class="fa fa-github" aria-hidden="true"></i></a></li>
+            <li><a :href="contactInfo.codepen" target="_blank" class="contact-icon"><i class="fa fa-codepen" aria-hidden="true"></i></a></li>
+            <li><a :href="contactInfo.twitter" target="_blank" class="contact-icon"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+            <li><a :href="contactInfo.instagram" target="_blank" class="contact-icon"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
           </ul>
           <hr>
           <div class="copyright">&copy; TODOS OS DIREITOS RESERVADOS</div>
@@ -49,11 +45,29 @@
 <script>
 export default {
   name: "SectionContact",
+  data() {
+    return {
+      formData: {
+        name: '',
+        email: '',
+        message: ''
+      },
+      contactInfo: {
+        location: "Joinville, Santa Catarina",
+        phone: "(212) 555-2368",
+        email: "contato@iztoic.com",
+        github: "#",
+        codepen: "#",
+        twitter: "#",
+        instagram: "https://www.instagram.com/iztoic"
+      }
+    };
+  },
   methods: {
-    submitForm(e) {
-      e.target.elements.name.value = '';
-      e.target.elements.email.value = '';
-      e.target.elements.message.value = '';
+    submitForm() {
+      this.formData.name = '';
+      this.formData.email = '';
+      this.formData.message = '';
       this.$emit('form-submitted');
     }
   }
