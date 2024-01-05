@@ -309,6 +309,11 @@ body {
 	line-height: 1.6;
 	color: #fff;
 	background-color: #1f2029;
+    background-image: url('src/assets/portifolio/texture.jpg');
+    background-repeat: repeat; /* ou repeat-x / repeat-y conforme necessário */
+    background-attachment: fixed; /* ou scroll conforme necessário */
+    background-position: center center;
+    background-size: cover; /* ou contain conforme necessário */
 	overflow: hidden;
 	height: 100vh;
 	-webkit-transition: all 300ms linear;
@@ -884,7 +889,7 @@ header .intro-text {
 
 header .intro-text .intro-lead-in {
 	margin-bottom: 25px;
-	font-family: "Droid Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-family: sans-serif;
 	font-size: 22px;
 	font-style: italic;
 	line-height: 22px;
@@ -907,7 +912,7 @@ header .intro-text .intro-heading {
 
 	header .intro-text .intro-lead-in {
 		margin-bottom: 25px;
-		font-family: "Droid Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;
+		font-family: sans-serif;
 		font-size: 40px;
 		font-style: italic;
 		line-height: 40px;

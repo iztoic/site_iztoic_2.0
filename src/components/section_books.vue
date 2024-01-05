@@ -6,13 +6,6 @@
 
 	<section id="main">
 		<ul class='list-inline'>
-  <li class='book'>
-    <img src='http://37signals.com/images/remote/remote_front.png' />
-  </li>
-
-  <li class='book'>
-    <img src='http://www.blanq.org/text/moleskine_iphone_wallpaper.jpg' />
-  </li>
 
   <li class='book'>
     <img src='https://d.gr-assets.com/books/1348927776l/8032112.jpg' />

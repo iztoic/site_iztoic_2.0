@@ -329,4 +329,5 @@ hr {
   .send-button {
     width: 99%;
   }
-}</style>
+}
+</style>

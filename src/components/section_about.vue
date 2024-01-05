@@ -67,6 +67,7 @@ border: 3px solid #d7a449;
 border-right: 3px solid transparent;
 position:relative;
 padding-top:80px;
+
 }
 
 .section-about .content-column{
