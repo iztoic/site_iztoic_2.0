@@ -1,30 +1,44 @@
 <template>
   <section id="section-testimonials">
-    <figure class="snip1386">
-      <img src="src/assets/portifolio/casa_ministro.png" class="background" />
+    <figure v-for="(testimonial, index) in testimonials" :key="index" :class="'snip1386 ' + (index === activeIndex ? 'hover' : '')">
+      <img :src="testimonial.backgroundImage" class="background" />
       <figcaption>
-        <blockquote>A IZTOIC superou minhas expectativas! Criatividade, eficiência e resultados impressionantes.</blockquote>
-        <h5>- Casa Ministro</h5>
-      </figcaption><img src="src/assets/portifolio/casa_ministro_logo.png" class="profile" />
-    </figure>
-    <figure class="snip1386 hover"><img src="src/assets/portifolio/7_graos.png" class="background" />
-      <figcaption>
-        <blockquote>Os serviços da IZTOIC são incríveis! Transformaram o meu negócio.</blockquote>
-        <h5>- 7 Grãos</h5>
-      </figcaption><img src="src/assets/portifolio/7_graos_logo.png" class="profile" />
-    </figure>
-    <figure class="snip1386"><img src="src/assets/portifolio/neudorf.png" class="background" />
-      <figcaption>
-        <blockquote>A IZTOIC entregou soluções tecnológicas excepcionais.</blockquote>
-        <h5>- Neudorf Choperia</h5>
-      </figcaption><img src="src/assets/portifolio/neudorf_logo.png" class="profile" />
+        <blockquote>{{ testimonial.quote }}</blockquote>
+        <h5>{{ testimonial.clientName }}</h5>
+      </figcaption>
+      <img :src="testimonial.logo" class="profile" />
     </figure>
   </section>
 </template>
 
 <script>
 export default {
-  name: "SectionTestimonials"
+  name: "SectionTestimonials",
+  data() {
+    return {
+      activeIndex: null, // Add this if you want to track active testimonial
+      testimonials: [
+        {
+          backgroundImage: "src/assets/portifolio/casa_ministro.png",
+          quote: "A IZTOIC superou minhas expectativas! Criatividade, eficiência e resultados impressionantes.",
+          clientName: "- Casa Ministro",
+          logo: "src/assets/portifolio/casa_ministro_logo.png",
+        },
+        {
+          backgroundImage: "src/assets/portifolio/7_graos.png",
+          quote: "Os serviços da IZTOIC são incríveis! Transformaram o meu negócio.",
+          clientName: "- 7 Grãos",
+          logo: "src/assets/portifolio/7_graos_logo.png",
+        },
+        {
+          backgroundImage: "src/assets/portifolio/neudorf.png",
+          quote: "A IZTOIC entregou soluções tecnológicas excepcionais.",
+          clientName: "- Neudorf Choperia",
+          logo: "src/assets/portifolio/neudorf_logo.png",
+        },
+      ],
+    };
+  },
 };
 </script>
 

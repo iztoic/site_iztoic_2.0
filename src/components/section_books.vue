@@ -19,16 +19,31 @@
 </section>
 </template>
 
-  <script>
+<script>
 export default {
   name: "SectionBooks",
   data() {
     return {
+      books: [
+        {
+          image: "https://d.gr-assets.com/books/1348927776l/8032112.jpg",
+        },
+        {
+          image: "http://ecx.images-amazon.com/images/I/51oXKWrcYYL.jpg",
+        },
+        {
+          image: "https://d.gr-assets.com/books/1348927776l/8032112.jpg",
+        },
+        {
+          image: "http://ecx.images-amazon.com/images/I/51oXKWrcYYL.jpg",
+        },
+        {
+          image: "http://ecx.images-amazon.com/images/I/51oXKWrcYYL.jpg",
+        },
+      ],
     };
   },
-  methods: {
-    
-  },
+  methods: {},
 };
 </script>
 
