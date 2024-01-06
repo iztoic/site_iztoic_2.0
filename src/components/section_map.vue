@@ -1,7 +1,7 @@
 <template>
   <section id="section-map">
     <div id="map"></div>
-    <SubSectionMapInfo/>
+    <SubSectionMapInfo :card-info="cardInfo" @visit-establishment="centerMapOnEstablishment"/>
   </section>
 </template>
 
@@ -10,6 +10,13 @@
 import SubSectionMapInfo from '../components/subsection_map_info.vue'
 export default {
   name: "SectionMap",
+  data() {
+    return {
+      map: null,
+      cardInfo: [
+      ],
+    };
+  },
   components:{
     SubSectionMapInfo,
   },
@@ -30,6 +37,7 @@ export default {
           zoom: 7,
           center: [-48.845116, -26.303207],
         });
+        this.map = map;
         this.initMap(map);
       } catch (error) {
         console.error({ error });
@@ -300,6 +308,14 @@ export default {
         });
 
     });
+    },
+    centerMapOnEstablishment(establishment) {
+      if (this.map) { // Verifique se a instância do mapa está disponível
+        this.map.flyTo({
+          center: establishment.localcoordenades,
+          zoom: 16,
+        });
+      }
     },
   },
 };
