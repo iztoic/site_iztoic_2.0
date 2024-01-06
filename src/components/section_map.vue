@@ -19,7 +19,7 @@ export default {
   methods: {
     async initMapbox() {
       const response = await fetch(
-        'https://api.maptiler.com/maps/hybrid/style.json?key=uB5DVeztu62syAixuO9B'
+        'https://api.maptiler.com/maps/basic-v2/style.json?key=QDPxwHNCcusn2kK7DO4T'
       );
       try {
         if (!response.ok) throw Error(response.statusText);
