@@ -124,7 +124,7 @@ import SectionServices from './components/section_services.vue';
 import SectionPlans from './components/section_plans.vue';
 import SectionPortifolio from './components/section_portifolio.vue';
 import SectionBooks from './components/section_books.vue';
-//import SectionMap from './components/section_map.vue'
+// import SectionMap from './components/section_map.vue'
 import LoaderLogo from './components/loader_logo.vue';
 export default {
 	name: 'app',
@@ -137,7 +137,7 @@ export default {
 		SectionPortifolio,
 		SectionPlans,
 		SectionBooks,
-		SectionMap,
+		// SectionMap,
 		LoaderLogo,
 	},
 
