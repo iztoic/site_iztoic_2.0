@@ -7,7 +7,7 @@
     "watchify": "watchify -vd -p browserify-hmr -e src/main.js -o dist/build.js",
     "serve": "http-server -o -s -c 1 -a localhost",
     "dev": "npm-run-all --parallel watchify serve",
-    "build": "cross-env NODE_ENV=production browserify -g envify src/main.js | uglifyjs -m > dist/build.js"
+    "build": "cross-env NODE_ENV=production browserify -g envify src/main.js | terser -m > dist/build.js"
   },
   "dependencies": {
     "@ionic/vue": "^5.6.3",
@@ -32,6 +32,7 @@
     "envify": "^3.4.1",
     "http-server": "^0.9.0",
     "npm-run-all": "^2.1.2",
+    "terser": "^5.26.0",
     "uglify-js": "^2.5.0",
     "vueify": "^9.1.0",
     "watchify": "^3.4.0"
