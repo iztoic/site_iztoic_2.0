@@ -38,7 +38,7 @@ export default {
         {
           name: "Jonatan Keller",
           occupation: "Developer",
-          background: "src/assets/portifolio/perfil_keller2.png",
+          background: "src/assets/img/perfil_keller2.png",
           socialLinks: {
             linkedin: "https://www.linkedin.com/in/jonatankeller/",
             instagram: "https://www.instagram.com/kellerjonatan/",
@@ -167,13 +167,13 @@ h4{
 
 /* Card 0 */
 .card0 {
-  background: url('src/assets/portifolio/perfil_keller2.png') center center no-repeat;
+  background: url('src/assets/img/perfil_keller2.png') center center no-repeat;
   background-size: 300px;
   filter: grayscale(90%) contrast(1.7) brightness(0.7); /* Ajuste a intensidade da escala de cinza e o contraste conforme necessário */
   }
 
 .card0:hover {
-  background: url('src/assets/portifolio/perfil_keller2.png') left center no-repeat;
+  background: url('src/assets/img/perfil_keller2.png') left center no-repeat;
   background-size: 600px;
   filter: grayscale(90%) contrast(1.7) brightness(0.7); /* Ajuste a intensidade da escala de cinza e o contraste conforme necessário */
   }
@@ -185,13 +185,13 @@ h4{
 
 /* Card 1 */
 .card1 {
-  background: url("src/assets/portifolio/perfil_desc.png") center center no-repeat;
+  background: url("src/assets/img/perfil_desc.png") center center no-repeat;
   background-size: 300px;
   filter: grayscale(90%) contrast(1.7) brightness(0.7); /* Ajuste a intensidade da escala de cinza e o contraste conforme necessário */
   }
 
 .card1:hover {
-  background: url("src/assets/portifolio/perfil_desc.png") left center no-repeat;
+  background: url("src/assets/img/perfil_desc.png") left center no-repeat;
   background-size: 600px;
   filter: grayscale(90%) contrast(1.7) brightness(0.7); /* Ajuste a intensidade da escala de cinza e o contraste conforme necessário */
   }
@@ -203,13 +203,13 @@ h4{
 
 /* Card 2 */
 .card2 {
-  background: url("src/assets/portifolio/perfil_desc.png") center center no-repeat;
+  background: url("src/assets/img/perfil_desc.png") center center no-repeat;
   background-size: 300px;
   filter: grayscale(90%) contrast(1.7) brightness(0.7); /* Ajuste a intensidade da escala de cinza e o contraste conforme necessário */
   }
 
 .card2:hover {
-  background: url("src/assets/portifolio/perfil_desc.png") left center no-repeat;
+  background: url("src/assets/img/perfil_desc.png") left center no-repeat;
   background-size: 600px;
   filter: grayscale(90%) contrast(1.7) brightness(0.7); /* Ajuste a intensidade da escala de cinza e o contraste conforme necessário */
   }
@@ -221,13 +221,13 @@ h4{
 
 /* Card 3 */
 .card3 {
-  background: url("src/assets/portifolio/perfil_desc.png") center center no-repeat;
+  background: url("src/assets/img/perfil_desc.png") center center no-repeat;
   background-size: 300px;
   filter: grayscale(90%) contrast(1.7) brightness(0.7); /* Ajuste a intensidade da escala de cinza e o contraste conforme necessário */
   }
 
 .card3:hover {
-  background: url("src/assets/portifolio/perfil_desc.png") left center no-repeat;
+  background: url("src/assets/img/perfil_desc.png") left center no-repeat;
   background-size: 600px;
   filter: grayscale(90%) contrast(1.7) brightness(0.7); /* Ajuste a intensidade da escala de cinza e o contraste conforme necessário */
   }
@@ -239,13 +239,13 @@ h4{
 
 /* Card 4 */
 .card4 {
-  background: url("src/assets/portifolio/perfil_desc.png") center center no-repeat;
+  background: url("src/assets/img/perfil_desc.png") center center no-repeat;
   background-size: 300px;
   filter: grayscale(90%) contrast(1.7) brightness(0.7); /* Ajuste a intensidade da escala de cinza e o contraste conforme necessário */
   }
 
 .card4:hover {
-  background: url("src/assets/portifolio/perfil_desc.png") left center no-repeat;
+  background: url("src/assets/img/perfil_desc.png") left center no-repeat;
   background-size: 600px;
   filter: grayscale(90%) contrast(1.7) brightness(0.7); /* Ajuste a intensidade da escala de cinza e o contraste conforme necessário */
   }

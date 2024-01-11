@@ -33,10 +33,10 @@ export default {
   data() {
     return {
       images: [
-        "src/assets/portifolio/people_drone.jpg",
-        "src/assets/portifolio/wine_bar.jpg",
-        "src/assets/portifolio/drone_tecnology.jpg",
-        "src/assets/portifolio/restaurant_drink.jpg",
+        "src/assets/img/people_drone.jpg",
+        "src/assets/img/wine_bar.jpg",
+        "src/assets/img/drone_tecnology.jpg",
+        "src/assets/img/restaurant_drink.jpg",
       ],
       currentImageIndex: 0,
     };

@@ -1,28 +1,28 @@
 <template>
   <main ref="sliderContainer">
   <ul class='slider'>
-    <li class='item' style="background-image: url('src/assets/portifolio/night_shop.jpg')">
+    <li class='item' style="background-image: url('src/assets/img/night_shop.jpg')">
       <div class='content'>
         <h2 class='title'>"A Noite Deslumbrante"</h2>
         <p class='description'> Explore a magia da noite com nossa campanha "Lossless Youths". Nossas estratégias inovadoras capturam a essência vibrante da juventude sem perder nenhum detalhe. Descubra como podemos iluminar sua marca na escuridão da concorrência.  </p>
         <button>Leia Mais</button>
       </div>
     </li>
-    <li class='item' style="background-image: url('src/assets/portifolio/restaurant_drink.jpg')">
+    <li class='item' style="background-image: url('src/assets/img/restaurant_drink.jpg')">
       <div class='content'>
         <h2 class='title'>"Vínculo Estranho"</h2>
         <p class='description'> Embarque em uma jornada visual única com "Estrange Bond". Revelamos histórias intrigantes por meio de nossa abordagem distinta de marketing. Descubra como podemos conectar sua marca de maneira memorável e envolvente.  </p>
         <button>Leia Mais</button>
       </div>
     </li>
-    <li class='item' style="background-image: url('src/assets/portifolio/drone_tecnology.jpg')">
+    <li class='item' style="background-image: url('src/assets/img/drone_tecnology.jpg')">
       <div class='content'>
         <h2 class='title'>"O Guardião da Porta"</h2>
         <p class='description'> Abra as portas para o sucesso com "The Gate Keeper". Nossa agência utiliza a tecnologia de forma inteligente para garantir que sua marca esteja sempre um passo à frente. Descubra como podemos ser os guardiões da sua presença online.  </p>
         <button>Leia Mais</button>
       </div>
     </li>
-    <li class='item' style="background-image: url('src/assets/portifolio/people_drone.jpg')">
+    <li class='item' style="background-image: url('src/assets/img/people_drone.jpg')">
       <div class='content'>
         <h2 class='title'>"A Última Pegada de Nós"</h2>
         <p class='description'>
@@ -31,7 +31,7 @@
         <button>Leia Mais</button>
       </div>
     </li>
-    <li class='item' style="background-image: url('src/assets/portifolio/holofote.jpg')">
+    <li class='item' style="background-image: url('src/assets/img/holofote.jpg')">
       <div class='content'>
         <h2 class='title'>"No Holofote!"</h2>
         <p class='description'>
@@ -40,7 +40,7 @@
         <button>Leia Mais</button>
       </div>
     </li>
-    <li class='item' style="background-image: url('src/assets/portifolio/cigarette_box.jpg')">
+    <li class='item' style="background-image: url('src/assets/img/cigarette_box.jpg')">
       <div class='content'>
         <h2 class='title'>"A Migração"</h2>
         <p class='description'> Navegue pelas tendências com "The Migration". Oferecemos estratégias de marketing que acompanham a evolução do mercado, garantindo que sua marca não fique para trás. Descubra como podemos conduzir sua marca para novos horizontes.  </p>
@@ -66,32 +66,32 @@ export default {
         {
           title: 'A Noite Deslumbrante',
           description: 'Explore a magia da noite com nossa campanha "Lossless Youths". Nossas estratégias inovadoras capturam a essência vibrante da juventude sem perder nenhum detalhe. Descubra como podemos iluminar sua marca na escuridão da concorrência.',
-          image: 'src/assets/portifolio/night_shop.jpg',
+          image: 'src/assets/img/night_shop.jpg',
         },
         {
           title: 'Vínculo Estranho',
           description: 'Embarque em uma jornada visual única com "Estrange Bond". Revelamos histórias intrigantes por meio de nossa abordagem distinta de marketing. Descubra como podemos conectar sua marca de maneira memorável e envolvente.',
-          image: 'src/assets/portifolio/restaurant_drink.jpg',
+          image: 'src/assets/img/restaurant_drink.jpg',
         },
         {
           title: 'O Guardião da Porta',
           description: 'Abra as portas para o sucesso com "The Gate Keeper". Nossa agência utiliza a tecnologia de forma inteligente para garantir que sua marca esteja sempre um passo à frente. Descubra como podemos ser os guardiões da sua presença online.',
-          image: 'src/assets/portifolio/drone_tecnology.jpg',
+          image: 'src/assets/img/drone_tecnology.jpg',
         },
         {
           title: 'A Última Pegada de Nós',
           description: 'Registre momentos emocionantes com "Last Trace Of Us". Nossa abordagem única cria uma narrativa visual envolvente que destaca o valor duradouro de sua marca. Explore como podemos deixar uma impressão marcante.',
-          image: 'src/assets/portifolio/people_drone.jpg',
+          image: 'src/assets/img/people_drone.jpg',
         },
         {
           title: 'No Holofote!',
           description: 'Destaque-se na multidão com "No Holofote!". Nossa agência coloca sua marca no centro das atenções, destacando sua singularidade. Descubra como podemos garantir que sua marca brilhe em qualquer cenário.',
-          image: 'src/assets/portifolio/holofote.jpg',
+          image: 'src/assets/img/holofote.jpg',
         },
         {
           title: 'A Migração',
           description: 'Navegue pelas tendências com "The Migration". Oferecemos estratégias de marketing que acompanham a evolução do mercado, garantindo que sua marca não fique para trás. Descubra como podemos conduzir sua marca para novos horizontes.',
-          image: 'src/assets/portifolio/cigarette_box.jpg',
+          image: 'src/assets/img/cigarette_box.jpg',
         },
         // Add more items as needed
       ],

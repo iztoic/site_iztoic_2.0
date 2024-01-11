@@ -23,31 +23,55 @@ export default {
   name: "SubSectionMapInfo",
   data() {
     return {
-      cards: Array(3).fill().map(() => ({ expanded: false })),
+      cards: Array(6).fill().map(() => ({ expanded: false })),
       cardInfo: [
         {
           name: "Casa Ministro",
           address: "R. Dr. Plácido Gomes, 320 - Anita Garibaldi, Joinville - SC, 89202-050",
           extraText: "Informações extras para o Casa Ministro.",
-          logo: "src/assets/portifolio/casa_ministro_logo.png",
-          backgroundImage: "url('src/assets/portifolio/holofote.jpg')",
+          logo: "src/assets/img/logo/casa_ministro_logo.png",
+          backgroundImage: "url('src/assets/img/holofote.jpg')",
           localcoordenades: [-48.846131066078904, -26.310174216183405],
         },
         {
           name: "7 Grãos",
           address: "R. Quinze de Novembro, 8862 - Vila Nova, Joinville - SC, 89237-680",
           extraText: "Informações extras para o 7 Grãos.",
-          logo: "src/assets/portifolio/7_graos_logo.png",
-          backgroundImage: "url('src/assets/portifolio/cigarette_box.jpg')",
+          logo: "src/assets/img/logo/7_graos_logo.png",
+          backgroundImage: "url('src/assets/img/holofote.jpg')",
           localcoordenades: [-48.920667672345175, -26.287165020260446],
         },
         {
           name: "Neudorf Choperia",
           address: "R. Quinze de Novembro, 8691 - Vila Nova, Joinville - SC, 89237-002",
           extraText: "Informações extras para o Neudorf Choperia.",
-          logo: "src/assets/portifolio/neudorf_logo.png",
-          backgroundImage: "url('src/assets/portifolio/holofote.jpg')",
+          logo: "src/assets/img/logo/neudorf_logo.png",
+          backgroundImage: "url('src/assets/img/holofote.jpg')",
           localcoordenades: [-48.91875157359281, -26.287266018376062],
+        },
+        {
+          name: "Quinze Minutos",
+          address: "R. Mal. Hermes, 250 - Glória, Joinville - SC, 89217-200",
+          extraText: "Informações extras para a Quinze Minutos.",
+          logo: "src/assets/img/logo/quinze_minutos_logo.png",
+          backgroundImage: "url('src/assets/img/holofote.jpg')",
+          localcoordenades: [-48.872563761471085, -26.29339946894952],
+        },
+        {
+          name: "Sabores do Sul",
+          address: "R. Leopoldo Beninca, 22 - Vila Nova, Joinville - SC, 89237-150",
+          extraText: "Informações extras para o Sabores do Sul.",
+          logo: "src/assets/img/logo/sabores_do_sul_logo.png",
+          backgroundImage: "url('src/assets/img/holofote.jpg')",
+          localcoordenades: [-48.901370894604256, -26.292276301129796],
+        },
+        {
+          name: "Padilha AgroPet",
+          address: "R. Quinze de Novembro, 7718 - Vila Nova, Joinville - SC, 89237-001",
+          extraText: "Informações extras para Padilha AgroPet.",
+          logo: "src/assets/img/logo/agropet_padilha_logo.png",
+          backgroundImage: "url('src/assets/img/holofote.jpg')",
+          localcoordenades: [-48.90982112355096, -26.286743308298952],
         }
       ],
     };

@@ -1,7 +1,7 @@
 <template>
 	<div id="app">
 		<div class="hero-section">
-			<div class="logo"><img src="src/assets/portifolio/logo_iztoic.png"></div>
+			<div class="logo"><img src="src/assets/img/logo/iztoic_logo.png"></div>
 			<div class="about-text hover-target">Sobre</div>
 			<div class="contact-text hover-target">Contato</div>
 			<div class="section-center">
@@ -309,7 +309,6 @@ body {
 	line-height: 1.6;
 	color: #fff;
 	background-color: #1f2029;
-    background-image: url('src/assets/portifolio/texture.jpg');
     background-repeat: repeat; /* ou repeat-x / repeat-y conforme necessário */
     background-attachment: fixed; /* ou scroll conforme necessário */
     background-position: center center;

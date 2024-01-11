@@ -19,22 +19,40 @@ export default {
       activeIndex: null, // Add this if you want to track active testimonial
       testimonials: [
         {
-          backgroundImage: "src/assets/portifolio/casa_ministro.png",
+          backgroundImage: "src/assets/img/clientes/casa_ministro.png",
           quote: "A IZTOIC superou minhas expectativas! Criatividade, eficiência e resultados impressionantes.",
           clientName: "- Casa Ministro",
-          logo: "src/assets/portifolio/casa_ministro_logo.png",
+          logo: "src/assets/img/logo/casa_ministro_logo.png",
         },
         {
-          backgroundImage: "src/assets/portifolio/7_graos.png",
+          backgroundImage: "src/assets/img/clientes/7_graos.png",
           quote: "Os serviços da IZTOIC são incríveis! Transformaram o meu negócio.",
           clientName: "- 7 Grãos",
-          logo: "src/assets/portifolio/7_graos_logo.png",
+          logo: "src/assets/img/logo/7_graos_logo.png",
         },
         {
-          backgroundImage: "src/assets/portifolio/neudorf.png",
+          backgroundImage: "src/assets/img/clientes/neudorf.png",
           quote: "A IZTOIC entregou soluções tecnológicas excepcionais.",
           clientName: "- Neudorf Choperia",
-          logo: "src/assets/portifolio/neudorf_logo.png",
+          logo: "src/assets/img/logo/neudorf_logo.png",
+        },
+        {
+          backgroundImage: "src/assets/img/clientes/quinze_minutos.png",
+          quote: "A IZTOIC entregou soluções tecnológicas excepcionais.",
+          clientName: "- Quinze Minutos",
+          logo: "src/assets/img/logo/quinze_minutos_logo.png",
+        },
+        {
+          backgroundImage: "src/assets/img/clientes/sabores_do_sul.png",
+          quote: "A IZTOIC entregou soluções tecnológicas excepcionais.",
+          clientName: "- Sabores do Sul",
+          logo: "src/assets/img/logo/sabores_do_sul_logo.png",
+        },
+        {
+          backgroundImage: "src/assets/img/clientes/agropet_padilha.png",
+          quote: "A IZTOIC entregou soluções tecnológicas excepcionais.",
+          clientName: "- Agropet Padilha",
+          logo: "src/assets/img/logo/agropet_padilha_logo.png",
         },
       ],
     };

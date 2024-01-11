@@ -85,7 +85,7 @@ export default {
             "type": "Feature",
             "properties": {
               "title": "Casa Ministro, Charutos & Whisky Lounge",
-              "imageUrl": "src/assets/portifolio/casa_ministro_logo.png",
+              "imageUrl": "src/assets/img/logo/casa_ministro_logo.png",
               "type": "Bar",
             },
             "geometry": {
@@ -100,7 +100,7 @@ export default {
             "type": "Feature",
             "properties": {
               "title": "7 Grãos Pães e Doces",
-              "imageUrl": "src/assets/portifolio/7_graos_logo.png",
+              "imageUrl": "src/assets/img/logo/7_graos_logo.png",
               "type": "Padaria",
             },
             "geometry": {
@@ -115,7 +115,7 @@ export default {
             "type": "Feature",
             "properties": {
               "title": "Neudorf Choperia",
-              "imageUrl": "src/assets/portifolio/neudorf_logo.png",
+              "imageUrl": "src/assets/img/logo/neudorf_logo.png",
               "type": "Hamburgueria",
             },
             "geometry": {
@@ -123,6 +123,51 @@ export default {
               "coordinates": [
               -48.91875157359281,
               -26.287266018376062,
+              ]
+            }
+          },
+          {
+            "type": "Feature",
+            "properties": {
+              "title": "Quinze Minutos",
+              "imageUrl": "src/assets/img/logo/quinze_minutos_logo.png",
+              "type": "Fornecedor de máquinas de café",
+            },
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+              -48.872563761471085,
+              -26.29339946894952,
+              ]
+            }
+          },
+          {
+            "type": "Feature",
+            "properties": {
+              "title": "Sabores do Sul",
+              "imageUrl": "src/assets/img/logo/sabores_do_sul_logo.png",
+              "type": "Lanchonete",
+            },
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+              -48.901370894604256,
+              -26.292276301129796,
+              ]
+            }
+          },
+          {
+            "type": "Feature",
+            "properties": {
+              "title": "Padilha AgroPet",
+              "imageUrl": "src/assets/img/logo/agropet_padilha_logo.png",
+              "type": "Pet Shop",
+            },
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+              -48.90982112355096,
+              -26.286743308298952,
               ]
             }
           }
