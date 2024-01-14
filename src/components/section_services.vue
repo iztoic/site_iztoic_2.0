@@ -10,7 +10,7 @@
         <div class="row text-center">
           <div class="col-md-3 service-item">
             <span class="fa-stack fa-4x">
-              <img src="https://www.yudiz.com/codepen/photography-banner/VFX.png" class="fa fa-stack-1x copyright rounded-circle" alt="Imagem" />
+              <img src="src/assets/img/VFX.png" class="fa fa-stack-1x copyright rounded-circle" alt="Imagem" />
             </span>
             <h4 class="service-heading">Copyright</h4>
             <p class="text-muted">
@@ -19,7 +19,7 @@
           </div>
           <div class="col-md-3 service-item">
             <span class="fa-stack fa-4x">
-              <img src="https://www.yudiz.com/codepen/photography-banner/Videography.png" class="fa fa-stack-1x video-maker rounded-circle" alt="Imagem" />
+              <img src="src/assets/img/Videography.png" class="fa fa-stack-1x video-maker rounded-circle" alt="Imagem" />
             </span>
             <h4 class="service-heading">Video Maker</h4>
             <p class="text-muted">
@@ -28,7 +28,7 @@
           </div>
           <div class="col-md-3 service-item">
             <span class="fa-stack fa-4x">
-              <img src="https://www.yudiz.com/codepen/photography-banner/photography.png" class="fa fa-stack-1x social-media rounded-circle" alt="Imagem" />
+              <img src="src/assets/img/photography.png" class="fa fa-stack-1x social-media rounded-circle" alt="Imagem" />
             </span>
             <h4 class="service-heading">Social Media</h4>
             <p class="text-muted">
@@ -37,7 +37,7 @@
           </div>
           <div class="col-md-3 service-item">
             <span class="fa-stack fa-4x">
-              <img src="https://www.yudiz.com/codepen/photography-banner/photography.png" class="fa fa-stack-1x marketing-digital rounded-circle" alt="Imagem" />
+              <img src="src/assets/img/videography.png" class="fa fa-stack-1x marketing-digital rounded-circle" alt="Imagem" />
             </span>
             <h4 class="service-heading">Marketing Digital</h4>
             <p class="text-muted">

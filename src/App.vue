@@ -401,7 +401,7 @@ a:hover {
 	display: block;
 	overflow: hidden;
 	height: 100vh;
-	background-image: url(https://unsplash.imgix.net/uploads%2F14115408840644deb16b0%2F2dc933e3?q=75&fm=jpg&auto=format&s=7f43646e4d26049c6c39890afb2e5ced);
+	background-image: url(src/assets/img/background_page.png);
 	background-size: cover;
 	background-position: center;
 	transform: scale(1) rotateX(0);
@@ -466,7 +466,7 @@ a:hover {
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: 30px 30px;
-	background-image: url('http://www.ivang-design.com/svg-load/portfolio/down.svg');
+	background-image: url('src/assets/img//down.svg');
 	opacity: 0.2;
 	-webkit-transition: all 200ms linear;
 	transition: all 200ms linear;
@@ -550,7 +550,7 @@ body.simpleport-on .hero-section {
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: 30px 30px;
-	background-image: url('http://www.ivang-design.com/svg-load/portfolio/left.svg');
+	background-image: url('src/assets/img/left.svg');
 	opacity: 0.2;
 	-webkit-transition: all 200ms linear;
 	transition: all 200ms linear;
@@ -595,7 +595,7 @@ body.about-on .about-section {
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: 36px 36px;
-	background-image: url('http://www.ivang-design.com/svg-load/portfolio/close.svg');
+	background-image: url('src/assets/img/close.svg');
 	cursor: pointer;
 	z-index: 11;
 }
@@ -660,7 +660,7 @@ body.about-on .about-section {
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: 30px 30px;
-	background-image: url('http://www.ivang-design.com/svg-load/portfolio/left.svg');
+	background-image: url('src/assets/img/left.svg');
 	opacity: 0.2;
 	-webkit-transition: all 200ms linear;
 	transition: all 200ms linear;
@@ -705,7 +705,7 @@ body.contact-on .contact-section {
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: 36px 36px;
-	background-image: url('http://www.ivang-design.com/svg-load/portfolio/close.svg');
+	background-image: url('src/assets/img/close.svg');
 	cursor: pointer;
 	z-index: 11;
 }
@@ -780,7 +780,7 @@ body.contact-on .contact-section {
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: 36px 36px;
-	background-image: url('http://www.ivang-design.com/svg-load/portfolio/close.svg');
+	background-image: url('src/assets/img/close.svg');
 	cursor: pointer;
 	z-index: 11;
 }

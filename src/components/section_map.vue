@@ -26,7 +26,7 @@ export default {
   methods: {
     async initMapbox() {
       const response = await fetch(
-        'https://api.maptiler.com/maps/basic-v2/style.json?key=QDPxwHNCcusn2kK7DO4T'
+        'https://api.maptiler.com/maps/basic-v2/style.json?key=49RUadURGLXgj0A7AWfo'
       );
       try {
         if (!response.ok) throw Error(response.statusText);
@@ -428,7 +428,7 @@ export default {
 #map {
   flex: 1;
   height: 45vh;
-  border: 2px solid #ccc;
+  border: 2px solid #d7a449;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
