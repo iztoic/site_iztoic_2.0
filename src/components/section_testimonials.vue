@@ -1,6 +1,6 @@
 <template>
   <section id="section-testimonials">
-    <figure v-for="(testimonial, index) in testimonials" :key="index" :class="'snip1386 ' + (index === activeIndex ? 'hover' : '')">
+    <figure v-for="(testimonial, index) in displayedTestimonials" :key="index" :class="'snip1386 ' + (index === activeIndex ? 'hover' : '')">
       <img :src="testimonial.backgroundImage" class="background" />
       <figcaption>
         <blockquote>{{ testimonial.quote }}</blockquote>
@@ -8,6 +8,8 @@
       </figcaption>
       <img :src="testimonial.logo" class="profile" />
     </figure>
+
+    <button @click="loadMore" v-if="showLoadMoreButton" class="ver-mais-btn">Ver mais</button>
   </section>
 </template>
 
@@ -16,7 +18,7 @@ export default {
   name: "SectionTestimonials",
   data() {
     return {
-      activeIndex: null, // Add this if you want to track active testimonial
+      activeIndex: null,
       testimonials: [
         {
           backgroundImage: "src/assets/img/clientes/casa_ministro.png",
@@ -55,10 +57,39 @@ export default {
           logo: "src/assets/img/logo/agropet_padilha_logo.png",
         },
       ],
+      displayedTestimonials: [],
+      itemsToShow: 3,
+      showLoadMoreButton: true,
     };
+  },
+  mounted() {
+    this.loadTestimonials();
+  },
+  methods: {
+    loadTestimonials() {
+      // Randomly shuffle the testimonials array
+      const shuffledTestimonials = this.testimonials.sort(() => Math.random() - 0.5);
+
+      // Take the first 'itemsToShow' testimonials for display
+      this.displayedTestimonials = shuffledTestimonials.slice(0, this.itemsToShow);
+
+      // Check if there are more testimonials to show
+      this.showLoadMoreButton = shuffledTestimonials.length > this.itemsToShow;
+    },
+    loadMore() {
+      // Randomly shuffle the testimonials array
+      const shuffledTestimonials = this.testimonials.sort(() => Math.random() - 0.5);
+
+      // Take the next 'itemsToShow' testimonials for display
+      this.displayedTestimonials = shuffledTestimonials.slice(0, this.itemsToShow);
+
+      // Check if there are more testimonials to show
+      this.showLoadMoreButton = shuffledTestimonials.length > this.itemsToShow;
+    },
   },
 };
 </script>
+
 
 <style scoped>
 @import url(https://fonts.googleapis.com/css?family=Playfair+Display:400,900);
@@ -171,6 +202,7 @@ blockquote {
   -webkit-transform: translate(50%, -50%);
   transform: translate(50%, -50%);
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+  border: 2px solid #d7a449;
 }
 
 .credibility {
@@ -203,4 +235,21 @@ blockquote {
 .snip1386:hover .profile {
   transform: translate(50%, -50%) scale(1.1);
   box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
-}</style>
+}
+.ver-mais-btn {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #36424b;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border: 2px solid #d7a449; /* Adicione uma borda ao redor do logo */
+  }
+
+  .ver-mais-btn:hover {
+    background-color: #1a2125;
+    border: 2px solid #d7a449; /* Adicione uma borda ao redor do logo */
+
+  }
+  </style>

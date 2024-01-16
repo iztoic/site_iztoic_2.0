@@ -8,11 +8,11 @@
 		<ul class='list-inline'>
 
   <li class='book'>
-    <img src='https://d.gr-assets.com/books/1348927776l/8032112.jpg' />
+    <img src='src/assets/img/book_1.jpg' />
   </li>
 
   <li class='book'>
-    <img src='http://ecx.images-amazon.com/images/I/51oXKWrcYYL.jpg' />
+    <img src='src/assets/img/book_2.jpg' />
   </li>
 </ul>
 	</section>
@@ -24,23 +24,6 @@ export default {
   name: "SectionBooks",
   data() {
     return {
-      books: [
-        {
-          image: "https://d.gr-assets.com/books/1348927776l/8032112.jpg",
-        },
-        {
-          image: "http://ecx.images-amazon.com/images/I/51oXKWrcYYL.jpg",
-        },
-        {
-          image: "https://d.gr-assets.com/books/1348927776l/8032112.jpg",
-        },
-        {
-          image: "http://ecx.images-amazon.com/images/I/51oXKWrcYYL.jpg",
-        },
-        {
-          image: "http://ecx.images-amazon.com/images/I/51oXKWrcYYL.jpg",
-        },
-      ],
     };
   },
   methods: {},

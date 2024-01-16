@@ -26,7 +26,7 @@ export default {
   methods: {
     async initMapbox() {
       const response = await fetch(
-        'https://api.maptiler.com/maps/basic-v2/style.json?key=QDPxwHNCcusn2kK7DO4T'
+        'https://api.maptiler.com/maps/basic-v2/style.json?key=49RUadURGLXgj0A7AWfo'
       );
       try {
         if (!response.ok) throw Error(response.statusText);
@@ -204,11 +204,7 @@ export default {
           <path class="e-marker__circle" d="M36,97.4c15,0,27.3-12.2,27.3-27.3c0-15-12.2-27.3-27.3-27.3S8.7,55.1,8.7,70.2S21,97.4,36,97.4z"/>
                 ${currentIcon}
                 <image class="e-marker__image" width="100%" height="100%" clip-path="url(#circle)" xlink:href="${imageUrl}" />
-                <text class="e-marker__text" transform="matrix(1 0 0 1 0 13.9998)">
-                    <tspan x="50%" y="0" >${titleFirst.join(' ')}</tspan>
-                    <tspan x="50%" y="13" >${titleLast.join(' ')}</tspan>      
-                </text>
-            </svg>
+              </svg>
         </div>
     `;
 }
@@ -428,7 +424,7 @@ export default {
 #map {
   flex: 1;
   height: 45vh;
-  border: 2px solid #ccc;
+  border: 2px solid #d7a449;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
