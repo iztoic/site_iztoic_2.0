@@ -1,10 +1,10 @@
 <template>
 	<div id="app">
-		<div class="hero-section">
+		<div class="main-section">
 			<div class="logo"><img src="src/assets/img/logo/iztoic_logo.png"></div>
 			<div class="about-text hover-target">Sobre</div>
 			<div class="contact-text hover-target">Contato</div>
-			<div class="section-center">
+			<div class="center-section">
 				<div class="container-fluid">
 					<div class="row justify-content-center">
 						<header id="page-top">
@@ -18,10 +18,10 @@
 									<a class="page-scroll">Conheça nosso trabalho!</a>
 									<div class="col-12 text-center mt-4 mt-lg-5">
 										<p>
-											<span class="travel hover-target">Serviços</span>
-											<span class="wildlife hover-target">Planos</span>
-											<span class="nature hover-target">Portifólio</span>
-											<span class="simpleport hover-target">Clientes</span>
+											<span class="page_services hover-target">Serviços</span>
+											<span class="page_plans hover-target">Planos</span>
+											<span class="page_portifolio hover-target">Portifólio</span>
+											<span class="page_clients hover-target">Clientes</span>
 										</p>
 									</div>
 
@@ -57,35 +57,35 @@
 			</div>
 		</div>
 
-		<div class="layerindex about-section">
+		<div class="layerindex page_about-section">
 			<div class="about-close hover-target"></div>
 			<SectionAbout />
 			<SectionTeam />
 		</div>
 
-		<div class="layerindex contact-section">
+		<div class="layerindex page_contact-section">
 			<div class="contact-close hover-target"></div>
 			<SectionContact />
 		</div>
 
-		<div class="travel-section">
-			<div class="travel-close hover-target"></div>
+		<div class="page_services-section">
+			<div class="page_services-close hover-target"></div>
 			<SectionServices />
 		</div>
 
-		<div class="layerindex wildlife-section">
-			<div class="wildlife-close hover-target"></div>
+		<div class="layerindex page_plans-section">
+			<div class="page_plans-close hover-target"></div>
 			<SectionPlans />
 			<SectionBooks />
 		</div>
 
-		<div class="nature-section">
-			<div class="nature-close hover-target"></div>
+		<div class="page_portifolio-section">
+			<div class="page_portifolio-close hover-target"></div>
 			<SectionPortifolio />
 		</div>
 
-		<div class="layerindex simpleport-section">
-			<div class="simpleport-close hover-target"></div>
+		<div class="layerindex page_clients-section">
+			<div class="page_clients-close hover-target"></div>
 			<SectionTestimonials />
 			<SectionMap/>
 		</div>
@@ -234,52 +234,52 @@ export default {
 				document.body.classList.remove("contact-on");
 			});
 
-			// Travel portfolio page
-			var travel = document.querySelector(".travel");
-			var travelClose = document.querySelector(".travel-close");
+			// page_services portfolio page
+			var page_services = document.querySelector(".page_services");
+			var page_servicesClose = document.querySelector(".page_services-close");
 
-			travel.addEventListener("click", function () {
-				document.body.classList.add("travel-on");
+			page_services.addEventListener("click", function () {
+				document.body.classList.add("page_services-on");
 			});
 
-			travelClose.addEventListener("click", function () {
-				document.body.classList.remove("travel-on");
+			page_servicesClose.addEventListener("click", function () {
+				document.body.classList.remove("page_services-on");
 			});
 
-			// Wildlife portfolio page
-			var wildlife = document.querySelector(".wildlife");
-			var wildlifeClose = document.querySelector(".wildlife-close");
+			// page_plans portfolio page
+			var page_plans = document.querySelector(".page_plans");
+			var page_plansClose = document.querySelector(".page_plans-close");
 
-			wildlife.addEventListener("click", function () {
-				document.body.classList.add("wildlife-on");
+			page_plans.addEventListener("click", function () {
+				document.body.classList.add("page_plans-on");
 			});
 
-			wildlifeClose.addEventListener("click", function () {
-				document.body.classList.remove("wildlife-on");
+			page_plansClose.addEventListener("click", function () {
+				document.body.classList.remove("page_plans-on");
 			});
 
-			// Nature portfolio page
-			var nature = document.querySelector(".nature");
-			var natureClose = document.querySelector(".nature-close");
+			// page_portifolio portfolio page
+			var page_portifolio = document.querySelector(".page_portifolio");
+			var page_portifolioClose = document.querySelector(".page_portifolio-close");
 
-			nature.addEventListener("click", function () {
-				document.body.classList.add("nature-on");
+			page_portifolio.addEventListener("click", function () {
+				document.body.classList.add("page_portifolio-on");
 			});
 
-			natureClose.addEventListener("click", function () {
-				document.body.classList.remove("nature-on");
+			page_portifolioClose.addEventListener("click", function () {
+				document.body.classList.remove("page_portifolio-on");
 			});
 
-			// simpleport portfolio page
-			var simpleport = document.querySelector(".simpleport");
-			var simpleportClose = document.querySelector(".simpleport-close");
+			// page_clients portfolio page
+			var page_clients = document.querySelector(".page_clients");
+			var page_clientsClose = document.querySelector(".page_clients-close");
 
-			simpleport.addEventListener("click", function () {
-				document.body.classList.add("simpleport-on");
+			page_clients.addEventListener("click", function () {
+				document.body.classList.add("page_clients-on");
 			});
 
-			simpleportClose.addEventListener("click", function () {
-				document.body.classList.remove("simpleport-on");
+			page_clientsClose.addEventListener("click", function () {
+				document.body.classList.remove("page_clients-on");
 			});
 		});
 
@@ -395,7 +395,7 @@ a:hover {
 /* #Primary style
 ================================================== */
 
-.hero-section {
+.main-section {
 	position: relative;
 	width: 100%;
 	display: block;
@@ -414,14 +414,14 @@ a:hover {
 	transform-origin: center top;
 }
 
-.hero-section h1 {
+.main-section h1 {
 	color: #fff;
 	font-size: 5vw;
 	line-height: 1;
 	font-weight: 900;
 }
 
-.hero-section .dancing {
+.main-section .dancing {
 	font-family: 'Dancing Script', cursive;
 	letter-spacing: 1px;
 	color: #866BAF;
@@ -431,12 +431,12 @@ a:hover {
 }
 
 @media screen and (max-width: 580px) {
-	.hero-section .dancing {
+	.main-section .dancing {
 		font-size: 18px;
 	}
 }
 
-.hero-section p {
+.main-section p {
 	font-size: 15px;
 	line-height: 20px;
 	font-weight: 500;
@@ -444,7 +444,7 @@ a:hover {
 	letter-spacing: 1px;
 }
 
-.hero-section p span {
+.main-section p span {
 	margin-left: 15px;
 	color:#d7a449;
 	margin-right: 15px;
@@ -454,7 +454,7 @@ a:hover {
 	padding-bottom: 35px;
 }
 
-.hero-section p span:before {
+.main-section p span:before {
 	position: absolute;
 	content: '';
 	bottom: 10px;
@@ -472,50 +472,50 @@ a:hover {
 	transition: all 200ms linear;
 }
 
-.hero-section p span:hover:before {
+.main-section p span:hover:before {
 	opacity: 1;
 	bottom: 5px;
 }
 
-body.about-on .hero-section {
+body.about-on .main-section {
 	transform: scale(0.75);
 	-webkit-transition-delay: 0ms;
 	transition-delay: 0ms;
 }
 
-body.contact-on .hero-section {
+body.contact-on .main-section {
 	transform: scale(0.75);
 	-webkit-transition-delay: 0ms;
 	transition-delay: 0ms;
 }
 
 
-body.simpleport-on .hero-section {
+body.page_clients-on .main-section {
 	transform: scale(0.75);
 	-webkit-transition-delay: 0ms;
 	transition-delay: 0ms;
 }
 
-body.travel-on .hero-section {
+body.page_services-on .main-section {
 	transform: rotateX(-10deg);
 	-webkit-transition-delay: 0ms;
 	transition-delay: 0ms;
 }
 
-body.wildlife-on .hero-section {
+body.page_plans-on .main-section {
 	transform: rotateX(-10deg);
 	-webkit-transition-delay: 0ms;
 	transition-delay: 0ms;
 }
 
-body.nature-on .hero-section {
+body.page_portifolio-on .main-section {
 	transform: rotateX(-10deg);
 	-webkit-transition-delay: 0ms;
 	transition-delay: 0ms;
 }
 
 
-body.simpleport-on .hero-section {
+body.page_clients-on .main-section {
 	transform: rotateX(-10deg);
 	-webkit-transition-delay: 0ms;
 	transition-delay: 0ms;
@@ -561,7 +561,7 @@ body.simpleport-on .hero-section {
 	left: -30px;
 }
 
-.about-section {
+.page_about-section {
 	position: fixed;
 	top: 0;
 	left: 0;
@@ -576,7 +576,7 @@ body.simpleport-on .hero-section {
 	z-index: 10;
 }
 
-body.about-on .about-section {
+body.about-on .page_about-section {
 	transform: translateX(0);
 	-webkit-transition-delay: 400ms;
 	transition-delay: 400ms;
@@ -604,7 +604,7 @@ body.about-on .about-section {
 	transform: rotate(90deg);
 }
 
-.section-center {
+.center-section {
 	position: absolute;
 	width: 100%;
 	left: 0;
@@ -613,7 +613,7 @@ body.about-on .about-section {
 	z-index: 1;
 }
 
-.about-section img {
+.page_about-section img {
 	width: 100px;
 	height: 100px;
 	border-radius: 4px;
@@ -622,7 +622,7 @@ body.about-on .about-section {
 	box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
 }
 
-.about-section p span {
+.page_about-section p span {
 	font-family: 'Dancing Script', cursive;
 	letter-spacing: 1px;
 	color: #866BAF;
@@ -671,7 +671,7 @@ body.about-on .about-section {
 	left: -30px;
 }
 
-.contact-section {
+.page_contact-section {
 	position: fixed;
 	top: 0;
 	left: 0;
@@ -686,7 +686,7 @@ body.about-on .about-section {
 	z-index: 10;
 }
 
-body.contact-on .contact-section {
+body.contact-on .page_contact-section {
 	transform: translateX(0);
 	-webkit-transition-delay: 400ms;
 	transition-delay: 400ms;
@@ -714,7 +714,7 @@ body.contact-on .contact-section {
 	transform: rotate(90deg);
 }
 
-.contact-section a {
+.page_contact-section a {
 	margin: 0 auto;
 	font-size: 32px;
 	font-weight: 900;
@@ -723,7 +723,7 @@ body.contact-on .contact-section {
 	display: inline-block;
 }
 
-.contact-section .social a {
+.page_contact-section .social a {
 	margin-left: 8px;
 	margin-right: 8px;
 	font-size: 15px;
@@ -733,11 +733,11 @@ body.contact-on .contact-section {
 }
 
 @media screen and (max-width: 580px) {
-	.contact-section a {
+	.page_contact-section a {
 		font-size: 17px;
 	}
 
-	.contact-section .social a {
+	.page_contact-section .social a {
 		margin-left: 3px;
 		margin-right: 3px;
 		font-size: 13px;
@@ -745,10 +745,10 @@ body.contact-on .contact-section {
 	}
 }
 
-.travel-section,
-.wildlife-section,
-.simpleport-section,
-.nature-section {
+.page_services-section,
+.page_plans-section,
+.page_clients-section,
+.page_portifolio-section {
 	position: fixed;
 	top: 100%;
 	left: 0;
@@ -764,10 +764,10 @@ body.contact-on .contact-section {
 	z-index: 10;
 }
 
-.travel-close,
-.wildlife-close,
-.simpleport-close,
-.nature-close {
+.page_services-close,
+.page_plans-close,
+.page_clients-close,
+.page_portifolio-close {
 	position: absolute;
 	top: 20px;
 	right: 20px;
@@ -785,15 +785,15 @@ body.contact-on .contact-section {
 	z-index: 11;
 }
 
-.travel-close:hover,
-.wildlife-close:hover,
+.page_services-close:hover,
+.page_plans-close:hover,
 
-.simpleport-close:hover,
-.nature-close:hover {
+.page_clients-close:hover,
+.page_portifolio-close:hover {
 	transform: rotate(90deg);
 }
 
-body.travel-on .travel-section {
+body.page_services-on .page_services-section {
 	top: 0;
 	-webkit-transition-delay: 400ms;
 	transition-delay: 400ms;
@@ -801,7 +801,7 @@ body.travel-on .travel-section {
 	border-right: 3px solid transparent;
 }
 
-body.wildlife-on .wildlife-section {
+body.page_plans-on .page_plans-section {
 	top: 0;
 	-webkit-transition-delay: 400ms;
 	transition-delay: 400ms;
@@ -809,24 +809,24 @@ body.wildlife-on .wildlife-section {
 	border-right: 3px solid transparent;
 }
 
-body.nature-on .nature-section {
+body.page_portifolio-on .page_portifolio-section {
 	top: 0;
 	-webkit-transition-delay: 400ms;
 	transition-delay: 400ms;
 }
 
 
-body.simpleport-on .simpleport-section {
+body.page_clients-on .page_clients-section {
 	top: 0;
 	-webkit-transition-delay: 400ms;
 	transition-delay: 400ms;
 	border: 3px solid #d7a449;
 }
 
-.travel-section img,
-.wildlife-section img,
-.simpleport-section img,
-.nature-section img {
+.page_services-section img,
+.page_plans-section img,
+.page_clients-section img,
+.page_portifolio-section img {
 	margin-top: 30px;
 	width: 100%;
 	height: auto;
@@ -835,10 +835,10 @@ body.simpleport-on .simpleport-section {
 	box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
 }
 
-.travel-section h3,
-.wildlife-section h3,
-.simpleport-section h3,
-.nature-section h3 {
+.page_services-section h3,
+.page_plans-section h3,
+.page_clients-section h3,
+.page_portifolio-section h3 {
 	font-size: 44px;
 	line-height: 1.3;
 	font-weight: 700;
@@ -846,19 +846,19 @@ body.simpleport-on .simpleport-section {
 	color: #fff;
 }
 
-.travel-section p,
-.wildlife-section p,
-.simpleport-section p,
-.nature-section p {
+.page_services-section p,
+.page_plans-section p,
+.page_clients-section p,
+.page_portifolio-section p {
 	font-size: 14px;
 	line-height: 1.7;
 	letter-spacing: 1px;
 }
 
-.travel-section p span,
-.wildlife-section p span,
-.simpleport-section p span,
-.nature-section p span {
+.page_services-section p span,
+.page_plans-section p span,
+.page_clients-section p span,
+.page_portifolio-section p span {
 	font-size: 20px;
 	line-height: 1.3;
 	font-weight: 700;
