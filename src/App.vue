@@ -671,6 +671,12 @@ body.about-on .page_about-section {
 	left: -30px;
 }
 
+.page_clients-section{
+	background-image: url('src/assets/img/wallpaper_clients.jpg');
+	background-size: cover;
+	background-position: center;
+}
+
 .page_contact-section {
 	position: fixed;
 	top: 0;

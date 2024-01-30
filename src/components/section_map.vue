@@ -413,7 +413,6 @@ export default {
 }
 
 #section-map {
-  padding-top: 3vh;
   width: 90vw;
   height: 35vh;
   margin: 15px;
@@ -423,7 +422,7 @@ export default {
 
 #map {
   flex: 1;
-  height: 45vh;
+  height: 53vh;
   border: 2px solid #d7a449;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);

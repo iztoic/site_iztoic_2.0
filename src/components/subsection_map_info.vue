@@ -86,7 +86,7 @@ export default {
   
   <style scoped>
 #map-info {
-  height: 45vh;
+  height: 53vh;
   width: 40vw;
   margin-right: 2%;
   display: flex;

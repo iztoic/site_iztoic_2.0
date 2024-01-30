@@ -19,6 +19,7 @@ export default {
   data() {
     return {
       activeIndex: null,
+      slideDirection: "right-to-left",
       testimonials: [
         {
           backgroundImage: "src/assets/img/clientes/casa_ministro.png",
@@ -58,7 +59,7 @@ export default {
         },
       ],
       displayedTestimonials: [],
-      itemsToShow: 3,
+      itemsToShow: 2,
       showLoadMoreButton: true,
     };
   },
@@ -76,16 +77,36 @@ export default {
       // Check if there are more testimonials to show
       this.showLoadMoreButton = shuffledTestimonials.length > this.itemsToShow;
     },
-    loadMore() {
-      // Randomly shuffle the testimonials array
-      const shuffledTestimonials = this.testimonials.sort(() => Math.random() - 0.5);
+    async loadMore() {
+    // Adicione um pequeno delay antes de trocar os cards
+    await new Promise(resolve => setTimeout(resolve, 300)); // Tempo em milissegundos
 
-      // Take the next 'itemsToShow' testimonials for display
+    // Remova depoimentos já exibidos
+    const remainingTestimonials = this.testimonials.filter(testimonial => !this.displayedTestimonials.includes(testimonial));
+
+    // Verifique se há depoimentos restantes suficientes para manter dois cards
+    if (remainingTestimonials.length >= this.itemsToShow) {
+      // Embaralhe os depoimentos restantes
+      const shuffledTestimonials = remainingTestimonials.sort(() => Math.random() - 0.5);
+
+      // Define a direção do carrossel
+      this.slideDirection = "right-to-left";
+
+      // Adicione dois novos depoimentos à lista existente
       this.displayedTestimonials = shuffledTestimonials.slice(0, this.itemsToShow);
 
-      // Check if there are more testimonials to show
-      this.showLoadMoreButton = shuffledTestimonials.length > this.itemsToShow;
-    },
+      // Aguarde o término da transição e, em seguida, redefina a direção do carrossel
+      setTimeout(() => {
+        this.slideDirection = "";
+      }, 600); // Ajuste conforme necessário
+
+      // Atualize a flag de botão de carga
+      this.showLoadMoreButton = remainingTestimonials.length > this.itemsToShow;
+    } else {
+      // Se não houver depoimentos suficientes, mantenha os já exibidos
+      this.showLoadMoreButton = false;
+    }
+  },
   },
 };
 </script>
@@ -113,8 +134,8 @@ blockquote {
   overflow: hidden;
   margin: 10px;
   min-width: 230px;
-  max-width: 315px;
-  max-height: 220px;
+  max-width: 445px;
+  max-height: 190px;
   width: 100%;
   color: #000000;
   text-align: left;
@@ -252,4 +273,13 @@ blockquote {
     border: 2px solid #d7a449; /* Adicione uma borda ao redor do logo */
 
   }
+
+  .right-to-left-enter-active,
+.right-to-left-leave-active {
+  transition: transform 0.6s ease;
+}
+
+.right-to-left-enter, .right-to-left-leave-to /* .right-to-left-leave-active in <2.1.8 */ {
+  transform: translateX(100%);
+}
   </style>
