@@ -30,7 +30,7 @@ export default {
           address: "R. Dr. Plácido Gomes, 320 - Anita Garibaldi, Joinville - SC, 89202-050",
           extraText: "Informações extras para o Casa Ministro.",
           logo: "src/assets/img/logo/casa_ministro_logo.png",
-          backgroundImage: "url('src/assets/img/holofote.jpg')",
+          backgroundImage: "url('src/assets/img/card_background_1.png')",
           localcoordenades: [-48.846131066078904, -26.310174216183405],
         },
         {
@@ -38,7 +38,7 @@ export default {
           address: "R. Quinze de Novembro, 8862 - Vila Nova, Joinville - SC, 89237-680",
           extraText: "Informações extras para o 7 Grãos.",
           logo: "src/assets/img/logo/7_graos_logo.png",
-          backgroundImage: "url('src/assets/img/holofote.jpg')",
+          backgroundImage: "url('src/assets/img/card_background_1.png')",
           localcoordenades: [-48.920667672345175, -26.287165020260446],
         },
         {
@@ -46,7 +46,7 @@ export default {
           address: "R. Quinze de Novembro, 8691 - Vila Nova, Joinville - SC, 89237-002",
           extraText: "Informações extras para o Neudorf Choperia.",
           logo: "src/assets/img/logo/neudorf_logo.png",
-          backgroundImage: "url('src/assets/img/holofote.jpg')",
+          backgroundImage: "url('src/assets/img/card_background_1.png')",
           localcoordenades: [-48.91875157359281, -26.287266018376062],
         },
         {
@@ -54,7 +54,7 @@ export default {
           address: "R. Mal. Hermes, 250 - Glória, Joinville - SC, 89217-200",
           extraText: "Informações extras para a Quinze Minutos.",
           logo: "src/assets/img/logo/quinze_minutos_logo.png",
-          backgroundImage: "url('src/assets/img/holofote.jpg')",
+          backgroundImage: "url('src/assets/img/card_background_1.png')",
           localcoordenades: [-48.872563761471085, -26.29339946894952],
         },
         {
@@ -62,7 +62,7 @@ export default {
           address: "R. Leopoldo Beninca, 22 - Vila Nova, Joinville - SC, 89237-150",
           extraText: "Informações extras para o Sabores do Sul.",
           logo: "src/assets/img/logo/sabores_do_sul_logo.png",
-          backgroundImage: "url('src/assets/img/holofote.jpg')",
+          backgroundImage: "url('src/assets/img/card_background_1.png')",
           localcoordenades: [-48.901370894604256, -26.292276301129796],
         },
         {
@@ -70,7 +70,7 @@ export default {
           address: "R. Quinze de Novembro, 7718 - Vila Nova, Joinville - SC, 89237-001",
           extraText: "Informações extras para Padilha AgroPet.",
           logo: "src/assets/img/logo/agropet_padilha_logo.png",
-          backgroundImage: "url('src/assets/img/holofote.jpg')",
+          backgroundImage: "url('src/assets/img/card_background_1.png')",
           localcoordenades: [-48.90982112355096, -26.286743308298952],
         }
       ],
@@ -86,7 +86,7 @@ export default {
   
   <style scoped>
 #map-info {
-  height: 53vh;
+  height: 42vh;
   width: 40vw;
   margin-right: 2%;
   display: flex;
@@ -106,11 +106,10 @@ export default {
   margin: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   transition: width 1.8s ease, height 1.8s ease, opacity 1.8s ease, border-radius 1.8s ease;
-  background-size: cover;
-  background-position: center;
+	background-position: right;
   border-radius: 10px;
+  
 }
-
 
 .card-body {
   padding: 1rem;
@@ -158,7 +157,9 @@ export default {
   margin-top: 10px;
   position: absolute;
   bottom: 17px;
-  right: 56px;
+  right: 53px;
+  border: 1px solid black;
+  border-bottom: 0px;
   transform: translate(50%, 50%); /* Centralize o botão no canto inferior direito */
 }
   </style>

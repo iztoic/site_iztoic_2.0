@@ -1,5 +1,7 @@
 <template>
   <section id="section-testimonials">
+    <p class="title">O que nossos clientes tem a dizer sobre nosso serviço!</p>
+    <div class="figures">
     <figure v-for="(testimonial, index) in displayedTestimonials" :key="index" :class="'snip1386 ' + (index === activeIndex ? 'hover' : '')">
       <img :src="testimonial.backgroundImage" class="background" />
       <figcaption>
@@ -8,8 +10,8 @@
       </figcaption>
       <img :src="testimonial.logo" class="profile" />
     </figure>
-
     <button @click="loadMore" v-if="showLoadMoreButton" class="ver-mais-btn">Ver mais</button>
+  </div>
   </section>
 </template>
 
@@ -119,7 +121,7 @@ section {
   padding-top: 50px;
   width: 100%;
   display: flex;
-  justify-content: space-evenly;
+  flex-direction: column;
 }
 
 blockquote {
@@ -281,5 +283,20 @@ blockquote {
 
 .right-to-left-enter, .right-to-left-leave-to /* .right-to-left-leave-active in <2.1.8 */ {
   transform: translateX(100%);
+}
+
+.title {
+  display: flex;
+  width: 70%; /* Define a largura como 70% da largura total da página */
+  margin: auto; /* Centraliza horizontalmente */
+  font-size: 24px; /* Aumenta o tamanho da fonte para 24 pixels */
+  color: #d7a449; /* Altera a cor do texto para verde */
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.5); /* Adiciona uma sombra ao texto */
+}
+
+
+.figures{
+  display: flex;
+  justify-content: space-evenly;
 }
   </style>

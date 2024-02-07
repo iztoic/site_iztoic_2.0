@@ -1,7 +1,13 @@
 <template>
   <section id="section-map">
+    <div class="title">
+      <p>clientes</p>
+      <p>mapa</p>
+    </div>
+    <div class="maps">
     <div id="map"></div>
     <SubSectionMapInfo :card-info="cardInfo" @visit-establishment="centerMapOnEstablishment"/>
+  </div>
   </section>
 </template>
 
@@ -417,16 +423,18 @@ export default {
   height: 35vh;
   margin: 15px;
   display: flex;
-  flex-direction: row-reverse;
+  flex-direction: column
 }
 
 #map {
   flex: 1;
-  height: 53vh;
-  border: 2px solid #d7a449;
+  height: 42vh;
   border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.2);
+  border: 5px solid transparent;
+  background: linear-gradient(45deg, #d7a449, #fff);
 }
+
 
 #map-info {
   box-sizing: border-box;
@@ -440,4 +448,20 @@ export default {
   text-align: center;
 }
 
+.title {
+  display: flex;
+  font-size: 24px; /* Aumenta o tamanho da fonte para 24 pixels */
+  color: #d7a449; /* Altera a cor do texto para verde */
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.5); /* Adiciona uma sombra ao texto */
+  justify-content: space-between
+}
+
+.maps{
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+p{
+  margin: 0px;
+}
 </style>
