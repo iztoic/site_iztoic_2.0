@@ -15,7 +15,7 @@
         <button>Leia Mais</button>
       </div>
     </li>
-    <li class='item' style="background-image: url('src/assets/img/drone_tecnology.jpg')">
+    <li class='item' style="background-image: url('src/assets/img/guy.jpg')">
       <div class='content'>
         <h2 class='title'>"O Guardião da Porta"</h2>
         <p class='description'> Abra as portas para o sucesso com "The Gate Keeper". Nossa agência utiliza a tecnologia de forma inteligente para garantir que sua marca esteja sempre um passo à frente. Descubra como podemos ser os guardiões da sua presença online.  </p>

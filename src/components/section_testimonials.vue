@@ -54,7 +54,7 @@ export default {
           logo: "src/assets/img/logo/sabores_do_sul_logo.png",
         },
         {
-          backgroundImage: "src/assets/img/clientes/agropet_padilha.png",
+          backgroundImage: "src/assets/img/clientes/agropet_padilha.jpg",
           quote: "A IZTOIC entregou soluções tecnológicas excepcionais.",
           clientName: "- Agropet Padilha",
           logo: "src/assets/img/logo/agropet_padilha_logo.png",
