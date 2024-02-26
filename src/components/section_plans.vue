@@ -7,7 +7,7 @@
           
 
 <div class="pricing-box-container">
-	<div class="pricing-box text-center">
+	<div class="pricing-box pricing-box-low text-center">
 		<h5>PRIMEIROS PASSOS PRO</h5>
 		<p class="price"><sup>R$</sup>1.500<sub>/mês</sub></p>
 		<ul class="features-list">
@@ -23,7 +23,7 @@
 		<button class="btn-primary">Get Started</button>
 	</div>
 
-	<div class="pricing-box pricing-box-bg-image text-center">
+	<div class="pricing-box pricing-box-medium text-center">
 		<h5>STRATEGIA MOMENTUM</h5>
 		<p class="price"><sup>R$</sup>2.957<sub>/mês</sub></p>
 		<ul class="features-list">
@@ -39,7 +39,7 @@
 		<button class="btn-primary">Get Started</button>
 	</div>
 
-	<div class="pricing-box text-center">
+	<div class="pricing-box pricing-box-high text-center">
 		<h5>SUCESSO SUPREMO</h5>
 		<p class="price"><sup>R$</sup>6.450<sub>/mês</sub></p>
 		<ul class="features-list">
@@ -170,7 +170,21 @@ body {
 	transform: translateY(-3px);
 }
 
-.pricing-box-bg-image {
+.pricing-box-low {
+	background-image: url("src/assets/img/background_plan.png");
+	background-size: cover;
+	background-position: center center;
+	color: #ffffff;
+}
+
+.pricing-box-medium {
+	background-image: url("src/assets/img/background_plan.png");
+	background-size: cover;
+	background-position: center center;
+	color: #ffffff;
+}
+
+.pricing-box-high {
 	background-image: url("src/assets/img/background_plan.png");
 	background-size: cover;
 	background-position: center center;

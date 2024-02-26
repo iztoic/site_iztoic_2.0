@@ -1,6 +1,14 @@
 <template>
 	<div id="app">
 		<div class="main-section">
+			<video
+		ref="video4"
+          src="src/assets/video/initialpage.mov"
+          autoplay
+          muted
+          loop
+          style="width: 100%; height: 100%; object-fit: cover;"
+        ></video>
 			<div class="logo"><img src="src/assets/img/logo/iztoic_logo.png"></div>
 			<div class="about-text hover-target">Sobre</div>
 			<div class="contact-text hover-target">Contato</div>
@@ -13,9 +21,9 @@
 									<div class="intro-lead-in">Guiando Sua Marca pela Estrada do Sucesso!<br> Juntos,
 										Construímos o Caminho para o Impacto.</div>
 									<div class="intro-heading">IZTOIC</div>
-									<a class="page-scroll">Maximizar o crescimento de empresas com planos estratégicos de
+									<a class="page-text">Maximizar o crescimento de empresas com planos estratégicos de
 										marketing personalizados e altamente eficazes.</a><br>
-									<a class="page-scroll">Conheça nosso trabalho!</a>
+									<a class="page-text">Conheça nosso trabalho!</a>
 									<div class="col-12 text-center mt-4 mt-lg-5">
 										<p>
 											<span class="page_services hover-target">Serviços</span>
@@ -77,6 +85,7 @@
 			<div class="page_plans-close hover-target"></div>
 			<SectionPlans />
 			<SectionBooks />
+			<PortifolioGallery />
 		</div>
 
 		<div class="page_portifolio-section">
@@ -117,6 +126,7 @@
 <script src="https://raw.githubusercontent.com/IronSummitMedia/startbootstrap/gh-pages/templates/agency/js/bootstrap.min.js"></script>
 <script>
 import SectionAbout from './components/section_about.vue';
+import PortifolioGallery from './components/portifolio_gallery.vue';
 import SectionTeam from './components/section_team.vue';
 import SectionContact from './components/section_contact.vue';
 import SectionTestimonials from './components/section_testimonials.vue';
@@ -130,6 +140,7 @@ export default {
 	name: 'app',
 	components: {
 		SectionAbout,
+		PortifolioGallery,
 		SectionTeam,
 		SectionContact,
 		SectionTestimonials,
@@ -401,7 +412,7 @@ a:hover {
 	display: block;
 	overflow: hidden;
 	height: 100vh;
-	background-image: url(src/assets/img/background_page.png);
+	/* background-image: url(src/assets/img/background_page.png); */
 	background-size: cover;
 	background-position: center;
 	transform: scale(1) rotateX(0);
@@ -898,6 +909,7 @@ header .intro-text .intro-lead-in {
 	font-size: 22px;
 	font-style: italic;
 	line-height: 22px;
+	color: #d7a449;
 }
 
 header .intro-text .intro-heading {
@@ -907,6 +919,11 @@ header .intro-text .intro-heading {
 	font-size: 50px;
 	font-weight: 700;
 	line-height: 50px;
+	color: #d7a449;
+}
+
+.page-text{
+	color: #d7a449 !important;
 }
 
 @media(min-width:768px) {

@@ -16,8 +16,9 @@
                 <div class="border">
                   <h2>{{ member.name }}</h2>
                   <div class="icons">
-                    <i v-for="(link, icon) in member.socialLinks" :key="icon" 
-                       :class="icon" aria-hidden="true" @click="openLink(link)"></i>
+                    <a v-for="(link, icon) in member.socialLinks" :key="icon" :href="link" target="_blank">
+                      <i :class="'fa fa-' + icon" aria-hidden="true"></i>
+                    </a>
                   </div>
                 </div>
               </div>
