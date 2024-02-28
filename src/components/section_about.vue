@@ -83,9 +83,12 @@ align-items: flex-start;
 .section-about .content-column .text{
 position:relative;
 color:#777777;
+padding: 10px;
 font-size:16px;
 line-height:1.8em;
 margin-bottom:20px;
+background-color: rgba(41, 41, 41, 0.7);
+border-radius: 10px;
 max-width: 400px; /* Limita a largura máxima para melhor legibilidade */
 margin-right: 20px; /* Adiciona espaço à direita para separar do lado da imagem */
 }
@@ -116,7 +119,7 @@ margin-right: 20px; /* Adiciona espaço à direita para separar do lado da image
 /* Destaque o título da seção */
 .section-about .sec-title .title {
   color: #d7a449;
-  font-size: 24px; /* Aumente o tamanho do título */
+  font-size: 34px; /* Aumente o tamanho do título */
   font-weight: 700;
   margin-bottom: 15px;
 }

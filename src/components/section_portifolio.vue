@@ -222,7 +222,7 @@ main {
   transform: translateY(-50%);
   font: 400 0.95rem helvetica,sans-serif;
   color: #d7a449;
-  background-color: #1f2029;
+  background-color: rgba(41, 41, 41, 0.7); 
   padding: 40px;
   border-radius: 10px;
   text-shadow: 0 3px 8px rgba(0,0,0,0.5);

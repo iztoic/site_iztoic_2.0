@@ -122,15 +122,17 @@ div{
   border-radius: 16px;
   overflow: hidden;
   position: relative;
-  transition: all 0.4s ease-in-out;
+  transition: all 0.3s ease;
   -webkit-transition: all 0.4s ease-in-out;
   cursor: pointer;
   margin-right: 5px; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 .game-section .item-card.active {
   width: calc(100% / 4 - 5px);
   box-shadow: 12px 40px 40px rgba(0, 0, 0, 0.25);
   -webkit-box-shadow: 12px 40px 40px rgba(0, 0, 0, 0.25);
+  background-color: #f9f9f9; /* Cor de fundo mais clara */
 }
 .game-section .item-card:after {
   content: "";
@@ -148,6 +150,7 @@ div{
   position: relative;
   z-index: 1;
   overflow: hidden;
+  background-color: rgba(41, 41, 41, 0.5); 
   transform: translateY(calc(100% - 54px));
   -webkit-transform: translateY(calc(100% - 54px));
   transition: all 0.4s ease-in-out;
@@ -173,6 +176,18 @@ div{
   margin-top: -20px;
   position: relative;
   z-index: 5;
+}
+
+/* Ajusta cores e fontes */
+.game-section .item-card-desc h3 {
+  color: #d7a449; /* Cor do título */
+  font-size: 22px; /* Tamanho da fonte do título */
+}
+
+.game-section .item-card-desc p {
+  text-align: justify;
+  color: #bebcbc; /* Cor do texto */
+  font-size: 14px; /* Tamanho da fonte do texto */
 }
 
 
@@ -282,7 +297,8 @@ div{
   }
   .game-section .item.active {
     width: 270px;
-    box-shadow: 6px 10px 10px rgba(0, 0, 0, 0.25);
+    box-shadow: none;
+    background-color: transparent;
     -webkit-box-shadow: 6px 10px 10px rgba(0, 0, 0, 0.25);
   }
   .game-section .item-desc {
