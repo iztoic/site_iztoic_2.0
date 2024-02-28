@@ -29,9 +29,7 @@
           </ul>
           <hr>
           <ul class="social-media-list">
-            <li><a :href="contactInfo.github" target="_blank" class="contact-icon"><i class="fa fa-github" aria-hidden="true"></i></a></li>
-            <li><a :href="contactInfo.codepen" target="_blank" class="contact-icon"><i class="fa fa-codepen" aria-hidden="true"></i></a></li>
-            <li><a :href="contactInfo.twitter" target="_blank" class="contact-icon"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+            <li><a :href="contactInfo.linkedin" target="_blank" class="contact-icon"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
             <li><a :href="contactInfo.instagram" target="_blank" class="contact-icon"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
           </ul>
           <hr>
@@ -56,9 +54,7 @@ export default {
         location: "Joinville, Santa Catarina",
         phone: "(212) 555-2368",
         email: "contato@iztoic.com",
-        github: "#",
-        codepen: "#",
-        twitter: "#",
+        linkedin: "#",
         instagram: "https://www.instagram.com/iztoic"
       }
     };

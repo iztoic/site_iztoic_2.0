@@ -121,6 +121,7 @@
 
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
 <script src="https://raw.githubusercontent.com/IronSummitMedia/startbootstrap/gh-pages/templates/agency/js/bootstrap.min.js"></script>
@@ -130,7 +131,7 @@ import PortifolioGallery from './components/portifolio_gallery.vue';
 import SectionTeam from './components/section_team.vue';
 import SectionContact from './components/section_contact.vue';
 import SectionTestimonials from './components/section_testimonials.vue';
-import SectionServices from './components/section_services.vue';
+import SectionServices from './components/section_services2.vue';
 import SectionPlans from './components/section_plans.vue';
 import SectionPortifolio from './components/section_portifolio.vue';
 import SectionBooks from './components/section_books.vue';

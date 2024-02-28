@@ -102,19 +102,13 @@ export default {
     },
 	
 	muteVideos() {
-  const videos = document.querySelectorAll('video');
-  let shouldMute = false;
-  videos.forEach(video => {
-    if (!video.muted && !video.paused && video.volume > 0) {
-      shouldMute = true;
-    }
-  });
-  if (shouldMute) {
-    videos.forEach(video => {
-      video.muted = true;
-    });
-  }
-}
+      const videos = document.querySelectorAll('video');
+      videos.forEach(video => {
+        if (!video.paused) {
+          video.pause();
+        }
+      });
+	}
 
   },
   mounted() {
@@ -133,6 +127,17 @@ export default {
     // Definir o activePanel como 0 para fechar todos os cards
     this.activePanel = null;
   });
+  // Adiciona eventos de clique a todos os vídeos
+  this.videos.forEach((video, index) => {
+      video.addEventListener('click', () => {
+        if (video.paused) {
+          this.muteVideos(); // Pausa todos os outros vídeos
+          video.play();
+        } else {
+          video.pause();
+        }
+      });
+    });
   }
 };
 </script>
