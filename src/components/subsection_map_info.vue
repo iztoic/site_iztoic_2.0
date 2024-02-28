@@ -42,6 +42,14 @@ export default {
           localcoordenades: [-48.920667672345175, -26.287165020260446],
         },
         {
+          name: "Agência Seu Destino",
+          address: "R. Quinze de Novembro, 7009-6981 - Vila Nova, Joinville - SC, 89237-680",
+          extraText: "Informações extras para a Agência Seu Destino.",
+          logo: "src/assets/img/logo/agencia_seu_destino_logo.png",
+          backgroundImage: "url('src/assets/img/card_background_1.png')",
+          localcoordenades: [-48.90221016272976, -26.287978372930052],
+        },
+        {
           name: "Neudorf Choperia",
           address: "R. Quinze de Novembro, 8691 - Vila Nova, Joinville - SC, 89237-002",
           extraText: "Informações extras para o Neudorf Choperia.",

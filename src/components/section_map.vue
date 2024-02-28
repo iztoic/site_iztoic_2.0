@@ -150,6 +150,21 @@ export default {
           {
             "type": "Feature",
             "properties": {
+              "title": "Agencia Seu Destino",
+              "imageUrl": "src/assets/img/logo/agencia_seu_destino_logo.png",
+              "type": "Agência de Viagens",
+            },
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+              -48.90221016272976,
+              -26.287978372930052,
+              ]
+            }
+          },
+          {
+            "type": "Feature",
+            "properties": {
               "title": "Sabores do Sul",
               "imageUrl": "src/assets/img/logo/sabores_do_sul_logo.png",
               "type": "Lanchonete",
