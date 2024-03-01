@@ -8,7 +8,7 @@
           </div>
         </div>
         <div class="row">
-          <div v-for="(member, index) in teamMembers" :key="index" class="col-sm-4">
+          <div v-for="(member, index) in teamMembers" :key="index" class="col-md-6 col-lg-4">
             <div class="team-member">
               <h4>{{ member.name }}</h4>
               <p class="text-muted">{{ member.occupation }}</p>
@@ -301,5 +301,11 @@ h2 {
 .icons i:hover {
   color:#583f13;
   transform: scale(1.5);
+}
+
+@media (max-width: 767px) {
+  .team-member {
+    margin-bottom: 30px;
+  }
 }
 </style>
