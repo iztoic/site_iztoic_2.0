@@ -66,35 +66,35 @@
 		</div>
 
 		<div class="layerindex page_about-section">
-			<div class="about-close hover-target"></div>
+			<div class="about-close hover-target exit-target"></div>
 			<SectionAbout />
 			<SectionTeam />
 		</div>
 
 		<div class="layerindex page_contact-section">
-			<div class="contact-close hover-target"></div>
+			<div class="contact-close hover-target exit-target"></div>
 			<SectionContact />
 		</div>
 
 		<div class="page_services-section">
-			<div class="page_services-close hover-target"></div>
+			<div class="page_services-close hover-target exit-target"></div>
 			<SectionServices />
 		</div>
 
 		<div class="layerindex page_plans-section">
-			<div class="page_plans-close hover-target"></div>
+			<div class="page_plans-close hover-target exit-target"></div>
 			<SectionPlans />
 			<SectionBooks />
 			<PortifolioGallery />
 		</div>
 
 		<div class="page_portifolio-section">
-			<div class="page_portifolio-close hover-target"></div>
+			<div class="page_portifolio-close hover-target exit-target"></div>
 			<SectionPortifolio />
 		</div>
 
 		<div class="layerindex page_clients-section">
-			<div class="page_clients-close hover-target"></div>
+			<div class="page_clients-close hover-target exit-target"></div>
 			<SectionTestimonials />
 			<SectionMap/>
 		</div>
@@ -447,11 +447,13 @@ a:hover {
 		font-size: 18px;
 	}
 }
-
+.text-center{
+bottom: -2rem;
+}
 .main-section p {
-	font-size: 15px;
-	line-height: 20px;
-	font-weight: 500;
+	font-size: 3rem;
+	line-height: 100%;
+	font-weight: 700;
 	color: #fff;
 	letter-spacing: 1px;
 }
@@ -534,12 +536,12 @@ body.page_clients-on .main-section {
 }
 .about-text {
 	position: absolute;
-	font-size: 17px;
-	line-height: 20px;
+	font-size: 3rem;
+	line-height: 100%;
 	font-weight: 700;
 	color:#d7a449;
 	letter-spacing: 2px;
-	top: 50%;
+	top: 70%;
 	left: 40px;
 	cursor: pointer;
 	z-index: 2;
@@ -644,12 +646,12 @@ body.about-on .page_about-section {
 
 .contact-text {
 	position: absolute;
-	font-size: 17px;
-	line-height: 20px;
+	font-size: 3rem;
+	line-height: 100%;
 	font-weight: 700;
 	color:#d7a449;
 	letter-spacing: 2px;
-	top: 50%;
+	top: 70%;
 	right: 40px;
 	cursor: pointer;
 	z-index: 2;
@@ -750,7 +752,7 @@ body.contact-on .page_contact-section {
 	color: #866BAF;
 }
 
-@media screen and (max-width: 580px) {
+@media (max-width: 580px) {
 	.page_contact-section a {
 		font-size: 17px;
 	}
@@ -908,6 +910,7 @@ header .intro-text .intro-lead-in {
 	margin-bottom: 25px;
 	font-family: sans-serif;
 	font-size: 22px;
+	padding-bottom: 3vh;
 	font-style: italic;
 	line-height: 22px;
 	color: #d7a449;
@@ -918,6 +921,7 @@ header .intro-text .intro-heading {
 	text-transform: uppercase;
 	font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
 	font-size: 50px;
+	padding-bottom: 3vh;
 	font-weight: 700;
 	line-height: 50px;
 	color: #d7a449;
@@ -925,6 +929,7 @@ header .intro-text .intro-heading {
 
 .page-text{
 	color: #d7a449 !important;
+	padding-bottom: 1vh;
 }
 
 @media(min-width:768px) {
@@ -1013,6 +1018,7 @@ span.copyright {
 	text-transform: none;
 	font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
 	line-height: 40px;
+	font-size: 1.5rem;
 	color: #fff !important;
 }
 
@@ -1022,6 +1028,7 @@ ul.quicklinks {
 	text-transform: none;
 	font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
 	line-height: 40px;
+	font-size: 1.5rem;
 }
 
 ul.social-buttons {
@@ -1156,5 +1163,9 @@ ul.social-buttons li a:active {
     border-radius: 6px; /* Borda arredondada da linha */
 }
 
-
+.exit-target{
+top: 40px;
+right: 30px;
+background-size: 10vh 10vw;
+}
 </style>

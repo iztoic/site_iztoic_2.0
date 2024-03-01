@@ -99,7 +99,6 @@ div{
 /******* Common Element CSS End *********/
 
 
-/******* Middle section CSS Start ******/
 /* -------- Landing page ------- */
 .game-section {
   padding: 60px 50px;
@@ -207,104 +206,98 @@ div{
 .row-list {
   margin-bottom: 5px; /* Adiciona espaço entre as linhas (rows) */
 }
-/******** Middle section CSS End *******/
 
-/***** responsive css Start ******/
-
-@media (min-width: 992px) and (max-width: 1199px) {
-  h2 {
-    margin-bottom: 32px;
-  }
-  h3 {
-    margin: 0 0 8px;
-    font-size: 24px;
-    line-height: 32px;
-  }
-
-  /* -------- Landing page ------- */
-  .game-section {
-    padding: 50px 30px;
-  }
-  .game-section .item {
-    margin: 0 12px 60px;
-    width: 260px;
-    height: 360px;
-  }
-  .game-section .item.active {
-    width: 400px;
-  }
-  .game-section .item-desc {
-    transform: translateY(calc(100% - 46px));
-    -webkit-transform: translateY(calc(100% - 46px));
-  }
+/* -------- Landing page ------- */
+.game-section {
+  padding: 60px 50px;
+  padding-top: 0px;
 }
 
-@media (min-width: 768px) and (max-width: 991px) {
-  h2 {
-    margin-bottom: 32px;
-  }
-  h3 {
-    margin: 0 0 8px;
-    font-size: 24px;
-    line-height: 32px;
-  }
-  .line-title {
-    width: 330px;
-  }
+.game-section .item-card {
+  margin: 0 5px 30px;
+  width: calc(75% / 4 - 5px);
+  height: 400px;
+  display: flex;
+  align-items: flex-end;
+  background: #343434 no-repeat center center / cover;
+  border-radius: 16px;
+  overflow: hidden;
+  position: relative;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  margin-right: 5px; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
 
-  /* -------- Landing page ------- */
-  .game-section {
-    padding: 50px 30px 40px;
-  }
-  .game-section .item {
-    margin: 0 12px 60px;
-    width: 240px;
-    height: 330px;
-  }
-  .game-section .item.active {
-    width: 360px;
-  }
-  .game-section .item-desc {
-    transform: translateY(calc(100% - 42px));
-    -webkit-transform: translateY(calc(100% - 42px));
-  }
+.game-section .item-card.active {
+  width: calc(100% / 4 - 5px);
+  box-shadow: 12px 40px 40px rgba(0, 0, 0, 0.25);
+  background-color: #f9f9f9; /* Cor de fundo mais clara */
+}
+
+.game-section .item-card:after {
+  content: "";
+  display: block;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 1));
+}
+
+.game-section .item-card-desc {
+  padding: 0 24px 12px;
+  color: #fff;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  background-color: rgba(41, 41, 41, 0.5); 
+  transform: translateY(calc(100% - 54px));
+  transition: all 0.4s ease-in-out;
+}
+
+.game-section .item-card.active .item-card-desc {
+  transform: none;
+}
+
+.game-section .item-card-desc p {
+  opacity: 0;
+  transform: translateY(32px);
+  transition: all 0.4s ease-in-out 0.2s;
+}
+
+.game-section .item-card.active .item-card-desc p {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.game-section .owl-theme.custom-carousel .owl-dots {
+  margin-top: -20px;
+  position: relative;
+  z-index: 5;
+}
+
+/* Ajusta cores e fontes */
+.game-section .item-card-desc h3 {
+  color: #d7a449; /* Cor do título */
+  font-size: 22px; /* Tamanho da fonte do título */
+}
+
+.game-section .item-card-desc p {
+  text-align: justify;
+  color: #bebcbc; /* Cor do texto */
+  font-size: 14px; /* Tamanho da fonte do texto */
 }
 
 @media (max-width: 767px) {
-  body {
-    font-size: 14px;
-  }
-  h2 {
-    margin-bottom: 20px;
-  }
-  h3 {
-    margin: 0 0 8px;
-    font-size: 19px;
-    line-height: 24px;
-  }
-  .line-title {
-    width: 250px;
+  .game-section .item-card {
+    width: 100%; /* Modifica a largura para ocupar 100% do espaço */
+    margin-right: 0; /* Remove a margem direita */
   }
 
-  /* -------- Landing page ------- */
-  .game-section {
-    padding: 30px 15px 20px;
-  }
-  .game-section .item {
-    margin: 0 10px 40px;
-    width: 200px;
-    height: 280px;
-  }
-  .game-section .item.active {
-    width: 270px;
-    box-shadow: none;
-    background-color: transparent;
-    -webkit-box-shadow: 6px 10px 10px rgba(0, 0, 0, 0.25);
-  }
-  .game-section .item-desc {
-    padding: 0 14px 5px;
-    transform: translateY(calc(100% - 42px));
-    -webkit-transform: translateY(calc(100% - 42px));
+  .game-section .owl-carousel .owl-item {
+    width: 100%; /* Modifica a largura dos itens do carrossel para ocupar 100% do espaço */
   }
 }
 

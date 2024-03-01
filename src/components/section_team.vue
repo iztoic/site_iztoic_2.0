@@ -103,14 +103,23 @@ export default {
 
 <style scoped>
 section {
-  padding-top: 10vh;
+  padding-top: 5%;
   border: 3px solid #d7a449;
   border-right: 3px solid transparent;
 }
 
+h3{
+  font-size: 300%;
+}
+
 h4{
   color:#d7a449;
+  font-size: 200%;
   text-shadow: 3px 3px 0 hsl(0, 0%, 0%, 0.25);
+}
+
+p{
+  font-size: 150%;
 }
 
 /* Container */
@@ -303,9 +312,7 @@ h2 {
   transform: scale(1.5);
 }
 
-@media (max-width: 767px) {
-  .team-member {
-    margin-bottom: 30px;
-  }
+.team-member{
+  padding-bottom: 10%;
 }
 </style>

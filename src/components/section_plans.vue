@@ -183,7 +183,6 @@ body {
 	background-position: center center;
 	color: #ffffff;
 }
-
 .pricing-box-high {
 	background-image: url("src/assets/img/background_plan.png");
 	background-size: cover;
