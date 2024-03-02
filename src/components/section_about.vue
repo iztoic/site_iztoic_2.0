@@ -143,7 +143,6 @@ width: 220%;
 
 /* Adicione um fundo sutil à área do texto */
 .section-about .content-column {
-  padding: 40px;
   border-radius: 10px;
   margin-bottom: 40px;
 }
@@ -290,7 +289,7 @@ color:#fff;
 }
 .sec-title {
 position: relative;
-padding-bottom: 40px;
+padding: 40px;
 }
 .sec-title .title {
 position: relative;
@@ -314,6 +313,17 @@ background-color: #bbbbbb;
 }
 
 @media (max-width: 767px) {
+  .section-about .content-column{
+    padding: 20px;
+    padding-left: 0px;
+  }
+  .section-about .image-column .inner-column{
+  }
+  
+  .section-about .content-column .text{
+    width: 69vw;
+    margin: 5vw;
+  }
   .content-column,
   .image-column {
     padding: 20px;
@@ -325,19 +335,38 @@ background-color: #bbbbbb;
   
   .sec-title h2 {
     font-size: 24px;
+    padding: 40px;
   }
 }
 
 @media (max-width: 575px) {
-  .content-column {
-    padding-right: 0;
+  .section-about .content-column{
+    padding-left: 5px;
+  }
+
+  .section-about .image-column .inner-column{
+
+  }
+
+  .section-about .content-column .text{
+    width: 69vw;
+    margin: 5vw;
   }
   
   .inner-column{
     padding-right: 0px
   }
+  .content-column {
+    width: 100%;
+    padding-right: 0;
+    margin-bottom: 20px;
+  }
+
   .image-column {
-    margin-top: 20px;
+    width: 100%;
+  }
+  .sec-title{
+    padding: 40px;
   }
 }
 

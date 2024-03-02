@@ -465,7 +465,9 @@ bottom: -2rem;
 	position: relative;
 	display: inline-block;
 	cursor: pointer;
-	padding-bottom: 35px;
+	margin-bottom: 35px;
+	border-radius: 15px;
+	background-color: rgba(15, 15, 15, 0.9);
 }
 
 .main-section p span:before {
@@ -550,6 +552,8 @@ body.page_clients-on .main-section {
 	transform: translateY(-50%);
 	-webkit-transition: all 200ms linear;
 	transition: all 200ms linear;
+	border-radius: 15px;
+	background-color: rgba(15, 15, 15, 0.9);
 }
 
 .about-text:before {
@@ -645,21 +649,23 @@ body.about-on .page_about-section {
 }
 
 .contact-text {
-	position: absolute;
-	font-size: 3rem;
-	line-height: 100%;
-	font-weight: 700;
-	color:#d7a449;
-	letter-spacing: 2px;
-	top: 70%;
-	right: 40px;
-	cursor: pointer;
-	z-index: 2;
-	-webkit-writing-mode: vertical-lr;
-	writing-mode: vertical-lr;
-	transform: translateY(-50%) rotate(180deg);
-	-webkit-transition: all 200ms linear;
-	transition: all 200ms linear;
+    position: absolute;
+    font-size: 3rem;
+    line-height: 100%;
+    font-weight: 700;
+    color: #d7a449;
+    letter-spacing: 2px;
+    top: 70%;
+    right: 40px;
+    cursor: pointer;
+    z-index: 2;
+    -webkit-writing-mode: vertical-lr;
+    writing-mode: vertical-lr;
+    transform: translateY(-50%) rotate(180deg);
+    -webkit-transition: all 200ms linear;
+    transition: all 200ms linear;
+	border-radius: 15px;
+	background-color: rgba(15, 15, 15, 0.9);
 }
 
 .contact-text:before {

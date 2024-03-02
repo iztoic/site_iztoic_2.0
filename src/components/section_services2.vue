@@ -290,16 +290,28 @@ div{
   font-size: 14px; /* Tamanho da fonte do texto */
 }
 
-@media (max-width: 767px) {
+@media screen and (max-width: 767px) {
   .game-section .item-card {
-    width: 100%; /* Modifica a largura para ocupar 100% do espaço */
-    margin-right: 0; /* Remove a margem direita */
+    width: calc(75% / 1 - 5px); /* Manter o tamanho original dos cards */
+    margin-right: 5px; /* Adicionar margem direita para separar os cards */
   }
 
-  .game-section .owl-carousel .owl-item {
-    width: 100%; /* Modifica a largura dos itens do carrossel para ocupar 100% do espaço */
+  .game-section .item-card.active {
+    width: calc(100% - 5px); /* Ajustar a largura do card ativo */
+  }
+  
+  .game-section .item-card-desc {
+    padding: 0 24px 12px;
+  }
+
+  .game-section .item-card.active .item-card-desc {
+    transform: none; /* Manter o texto visível */
+  }
+
+  .game-section .item-card-desc p {
+    opacity: 1; /* Manter o texto visível */
+    transform: translateY(0); /* Manter o texto visível */
   }
 }
-
 
 </style>
