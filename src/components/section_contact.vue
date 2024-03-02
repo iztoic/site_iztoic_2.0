@@ -51,7 +51,7 @@ export default {
         message: ''
       },
       contactInfo: {
-        location: "Joinville, Santa Catarina",
+        location: "Joinville, SC",
         phone: "(212) 555-2368",
         email: "contato@iztoic.com",
         linkedin: "#",
@@ -78,11 +78,6 @@ section {
   padding: 0;
   background-color: #1f2029;
   padding-bottom: 50px;
-}
-
-#section-contact {
-  width: 100vw;
-  height: 100vh;
 }
 
 .section-header {
@@ -171,14 +166,17 @@ textarea {
 
 .place {
   margin-left: 62px;
+  white-space: nowrap;
 }
 
 .phone {
   margin-left: 56px;
+  white-space: nowrap;
 }
 
 .gmail {
   margin-left: 53px;
+  white-space: nowrap;
 }
 
 .contact-text a {
@@ -260,84 +258,75 @@ hr {
   border-color: rgba(255, 255, 255, .6);
 }
 
-/* Begin Media Queries*/
 @media screen and (max-width: 850px) {
   .contact-wrapper {
-    display: flex;
     flex-direction: column;
+    align-items: center;
   }
 
-  .direct-contact-container,
   .form-horizontal {
-    margin: 0 auto;
-  }
-
-  .direct-contact-container {
-    margin-top: 60px;
     max-width: 300px;
   }
 
-  .social-media-list li {
-    height: 60px;
-    width: 60px;
-    line-height: 60px;
+  .direct-contact-container {
+    max-width: 300px;
+    margin-top: 40px;
   }
-
-  .social-media-list li:after {
-    width: 60px;
-    height: 60px;
-    line-height: 60px;
+  .send-button {
+    width: 100%;
+  }
+  .col-sm-12{
+  margin: 0px 20vw 0 0;
+  }
+  .alt-send-button {
+    width: 100%;
   }
 }
 
 @media screen and (max-width: 569px) {
-
-  .direct-contact-container,
-  .form-wrapper {
-    float: none;
-    margin: 0 auto;
-  }
-
   .form-control,
   textarea {
-
-    margin: 0 auto;
+    width: 100%;
+  }
+  .col-sm-12{
+  margin: 0px 20vw 0 0;
   }
 
-
-  .name,
-  .email,
-  textarea {
-    width: 280px;
-  }
-
-  .direct-contact-container {
-    margin-top: 60px;
-    max-width: 280px;
-  }
-
-  .social-media-list {
-    left: 0;
+  .form-group {
+    margin-bottom: 20px;
   }
 
   .social-media-list li {
-    height: 55px;
-    width: 55px;
-    line-height: 55px;
-    font-size: 2rem;
+    height: 50px;
+    width: 50px;
+    line-height: 50px;
+    font-size: 1.8rem;
   }
 
   .social-media-list li:after {
-    width: 55px;
-    height: 55px;
-    line-height: 55px;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+  }
+  .send-button,
+  .alt-send-button {
+    height: 44px; /* Ajuste a altura conforme necessário */
   }
 
+  .send-text {
+    margin-top: 6px; /* Ajuste o espaçamento conforme necessário */
+  }
 }
 
 @media screen and (max-width: 410px) {
-  .send-button {
-    width: 99%;
+  .alt-send-button {
+    width: 100%;
+  }
+  .col-sm-12{
+  margin: 0px 20vw 0 0;
+  }
+  .send-text {
+    font-size: 14px; /* Ajuste o tamanho da fonte conforme necessário */
   }
 }
 </style>

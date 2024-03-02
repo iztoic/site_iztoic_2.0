@@ -186,7 +186,7 @@ main {
   height: 300px;
   list-style-type: none;
   position: absolute;
-  top: 50%;
+  top: 30%;
   transform: translateY(-50%);
   z-index: 1;
   background-position: center;
@@ -214,10 +214,10 @@ main {
 }
 
 .content {
-  width: min(30vw,400px);
-  height: 350px;
+  width: min(70vw,400px);
+  height: 30%;
   position: absolute;
-  top: 50%;
+  top: 70%;
   left: 3rem;
   transform: translateY(-50%);
   font: 400 0.95rem helvetica,sans-serif;
@@ -295,6 +295,7 @@ main {
     & .title        { font-size: 1rem; }
     & .description  { font-size: 0.7rem; }
     & button        { font-size: 0.7rem; }
+
   }
   .item {
     width: 160px;
@@ -305,6 +306,10 @@ main {
     &:nth-child(5) { left: calc(50% + 340px); }
     &:nth-child(6) { left: calc(50% + 510px); opacity: 0; }
   }
+  .nav .btn {
+      font-size: 2.5rem; /* Tamanho maior para os botões de navegação */
+      padding: 1rem; /* Padding maior para os botões de navegação */
+    }
 }
 
 @media (width < 650px) {
@@ -312,6 +317,7 @@ main {
     & .title        { font-size: 0.9rem; }
     & .description  { font-size: 0.65rem; }
     & button        { font-size: 0.7rem; }
+
   }
   .item {
     width: 130px;
@@ -322,5 +328,9 @@ main {
     &:nth-child(5) { left: calc(50% + 280px); }
     &:nth-child(6) { left: calc(50% + 420px); opacity: 0; }
   }
+  .nav .btn {
+      font-size: 3.2rem; /* Tamanho ainda maior para os botões de navegação */
+      padding: 0.8rem; /* Padding ainda maior para os botões de navegação */
+    }
 }
 </style>

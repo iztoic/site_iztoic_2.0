@@ -170,5 +170,21 @@ export default {
   border-bottom: 0px;
   transform: translate(50%, 50%); /* Centralize o botão no canto inferior direito */
 }
+
+@media screen and (max-width: 768px) {
+    .card {
+      height: 25vh; /* Defina a altura dos cards para 25% da altura da tela */
+    }
+    .card-body{
+      display: flex;
+      flex-direction: column;
+    justify-content: space-around;
+    }
+    .logo-img {
+  max-width: 40px;
+  right: 3px;
+  top: 3px;
+  }
+}
   </style>
   

@@ -4,7 +4,7 @@
         <div class="row clearfix">
             
             <!--Content Column-->
-            <div class="content-column col-md-6 col-sm-12 col-xs-12">
+            <div class="content-column col-md-6 col-sm-6 col-xs-12">
                 <div class="inner-column">
                     <div class="sec-title">
                         <div class="title">Sobre Nós</div>
@@ -15,7 +15,7 @@
             </div>
             
             <!-- Image Column -->
-    <div class="image-column col-md-6 col-sm-12 col-xs-12">
+    <div class="image-column col-md-6 col-sm-6 col-xs-12">
       <div class="inner-column " data-wow-delay="0ms" data-wow-duration="1500ms">
         <div class="image">
           <img :src="currentImage" alt="">
@@ -165,7 +165,7 @@ position:relative;
 }
 
 .section-about .image-column .inner-column{
-position:relative;
+  position: relative;
 padding:5% 5% 0% 0%;
 margin-left:5%;
 }
@@ -313,29 +313,39 @@ background-color: #bbbbbb;
 }
 
 @media (max-width: 767px) {
-  .section-about .content-column{
-    padding: 20px;
-    padding-left: 0px;
-  }
-  .section-about .image-column .inner-column{
+  .section-about .sec-title .title{
+  white-space: nowrap;
   }
   
-  .section-about .content-column .text{
-    width: 69vw;
-    margin: 5vw;
+  .sec-title{
+    width: 50%;
   }
-  .content-column,
-  .image-column {
-    padding: 20px;
+  .section-about .content-column .text{
+    width: 73vw;
+  }
+  
+  .content-column {
+    width: 50%;
+    padding-right: 0;
   }
 
   .inner-column{
-    padding-right: 0px
+    padding-right: 0px;
+  }
+  .image-column {
+    width: 50%;
+    margin-bottom: 85vw;
   }
   
   .sec-title h2 {
     font-size: 24px;
-    padding: 40px;
+    padding: 0px;
+  }
+  .sec-title{
+    padding: 10px;
+  }
+  .section-about .sec-title .title{
+    font-size: 24px;
   }
 }
 
@@ -343,9 +353,8 @@ background-color: #bbbbbb;
   .section-about .content-column{
     padding-left: 5px;
   }
-
-  .section-about .image-column .inner-column{
-
+  .section-about .sec-title .title{
+  white-space: nowrap;
   }
 
   .section-about .content-column .text{
@@ -354,19 +363,30 @@ background-color: #bbbbbb;
   }
   
   .inner-column{
-    padding-right: 0px
+    padding-right: 0px;
   }
   .content-column {
-    width: 100%;
+    width: 50%;
     padding-right: 0;
-    margin-bottom: 20px;
   }
 
   .image-column {
-    width: 100%;
+    width: 50%;
   }
   .sec-title{
-    padding: 40px;
+    padding: 10px;
+  }
+  
+  .section-about .content-column .text{
+    width: 87vw;
+    margin: 5vw;
+  }
+  
+  .sec-title h2{
+    font-size: 20px;
+  }
+  .section-about .sec-title .title{
+    font-size: 20px;
   }
 }
 

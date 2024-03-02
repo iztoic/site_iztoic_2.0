@@ -315,4 +315,18 @@ h2 {
 .team-member{
   padding-bottom: 10%;
 }
+
+@media (max-width: 768px) {
+  .col-md-6 {
+    flex-basis: 100%;
+    max-width: 100%;
+    padding: 0 15px;
+    margin-bottom: 30px;
+  }
+
+  .card {
+    max-width: 300px;
+    margin: 0 auto;
+  }
+}
 </style>

@@ -202,10 +202,24 @@ body {
 .panel.active h3 {
 	opacity: 1;
 }
+@media screen and (max-width: 850px) {
+
+  .container {
+		width: 100vw;
+    flex-direction: column;
+    flex-wrap: nowrap;
+	}
+	.panel:nth-of-type(4),
+	.panel:nth-of-type(5) {
+		display: none;
+	}
+}
 
 @media (max-width: 480px) {
 	.container {
 		width: 100vw;
+    flex-direction: column;
+    flex-wrap: nowrap;
 	}
 	.panel:nth-of-type(4),
 	.panel:nth-of-type(5) {

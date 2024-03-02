@@ -299,4 +299,16 @@ blockquote {
   display: flex;
   justify-content: space-evenly;
 }
+
+@media screen and (max-width: 768px) {
+    .figures {
+      flex-direction: column; /* Muda a direção do flex container para coluna */
+      align-items: center; /* Alinha os itens ao centro */
+    }
+
+    .snip1386 {
+      width: 80%; /* Define a largura dos cards para 80% da largura da tela */
+      margin-bottom: 20px; /* Adiciona margem inferior para separar os cards */
+    }
+  }
   </style>

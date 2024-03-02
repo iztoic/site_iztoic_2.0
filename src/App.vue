@@ -76,16 +76,16 @@
 			<SectionContact />
 		</div>
 
-		<div class="page_services-section">
+		<div class="layerindex page_services-section">
 			<div class="page_services-close hover-target exit-target"></div>
 			<SectionServices />
+			<PortifolioGallery />
 		</div>
 
 		<div class="layerindex page_plans-section">
 			<div class="page_plans-close hover-target exit-target"></div>
 			<SectionPlans />
 			<SectionBooks />
-			<PortifolioGallery />
 		</div>
 
 		<div class="page_portifolio-section">
@@ -544,7 +544,7 @@ body.page_clients-on .main-section {
 	color:#d7a449;
 	letter-spacing: 2px;
 	top: 70%;
-	left: 40px;
+	left: 20px;
 	cursor: pointer;
 	z-index: 2;
 	-webkit-writing-mode: vertical-lr;
@@ -656,7 +656,7 @@ body.about-on .page_about-section {
     color: #d7a449;
     letter-spacing: 2px;
     top: 70%;
-    right: 40px;
+    right: 20px;
     cursor: pointer;
     z-index: 2;
     -webkit-writing-mode: vertical-lr;
