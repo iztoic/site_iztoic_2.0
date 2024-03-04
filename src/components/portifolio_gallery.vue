@@ -144,7 +144,6 @@ export default {
 
 <style scoped>
 @import url("https://fonts.googleapis.com/css?family=Yantramanav&display=swap");
-
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap");
 
 * {
@@ -203,7 +202,6 @@ body {
 	opacity: 1;
 }
 @media screen and (max-width: 850px) {
-
   .container {
 		width: 100vw;
     flex-direction: column;

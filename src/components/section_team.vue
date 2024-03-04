@@ -8,7 +8,7 @@
           </div>
         </div>
         <div class="row">
-          <div v-for="(member, index) in teamMembers" :key="index" class="col-md-6 col-lg-4">
+          <div v-for="(member, index) in teamMembers" :key="index" class="info-card">
             <div class="team-member">
               <h4>{{ member.name }}</h4>
               <p class="text-muted">{{ member.occupation }}</p>
@@ -78,7 +78,7 @@ export default {
           },
         },
         {
-          name: "Will",
+          name: "Bina",
           occupation: "Ocupation",
           socialLinks: {
             linkedin: "",
@@ -102,38 +102,30 @@ export default {
 </script>
 
 <style scoped>
+@import url('../src/styles.css');
 section {
-  padding-top: 5%;
-  border: 3px solid #d7a449;
-  border-right: 3px solid transparent;
+  padding: var(--all_section_components_padding);
+  border: var(--all_section_components_border);
+  border-right: var(--all_section_components_border_right_transparent);
 }
 
-h3{
-  font-size: 300%;
-}
+h3 { font-size: var(--all_text_size_h3);}
+p { font-size: var(--all_text_size_p);}
 
 h4{
-  color:#d7a449;
-  font-size: 200%;
-  text-shadow: 3px 3px 0 hsl(0, 0%, 0%, 0.25);
-}
-
-p{
-  font-size: 150%;
+  color:var(--primary_gold_color);
+  font-size: var(--all_text_size_h4);
+  text-shadow: var(--all_page_text_shadow);
 }
 
 /* Container */
-.cardcontainer {
-  height: 100vh;
-  width: 100vw;
-  max-height: 800px;
-  max-width: 1280px;
-  min-height: 600px;
-  min-width: 1000px;
+.container {
+  width: var(--all_full_section_container_width);
   display: flex;
   justify-content: space-around;
   align-items: center;
   margin: 0 auto;
+  flex-direction: column;
 }
 
 .row {
@@ -159,6 +151,15 @@ p{
   border: 1px solid white;
 }
 
+.team-member {
+  width: 300px;
+}
+
+.info-card{
+  display: flex;
+  justify-content: center;
+  padding: 5px;
+}
 /* Card */
 .card {
   height: 379px;
@@ -231,13 +232,13 @@ p{
 
 /* Card 3 */
 .card3 {
-  background: url("src/assets/img/perfil_desc.png") center center no-repeat;
+  background: url("src/assets/img/perfil_dani.jpg") center center no-repeat;
   background-size: 300px;
   filter: grayscale(90%) contrast(1.7) brightness(0.7); /* Ajuste a intensidade da escala de cinza e o contraste conforme necessário */
   }
 
 .card3:hover {
-  background: url("src/assets/img/perfil_desc.png") left center no-repeat;
+  background: url("src/assets/img/perfil_dani.jpg") left center no-repeat;
   background-size: 600px;
   filter: grayscale(90%) contrast(1.7) brightness(0.7); /* Ajuste a intensidade da escala de cinza e o contraste conforme necessário */
   }
@@ -249,13 +250,13 @@ p{
 
 /* Card 4 */
 .card4 {
-  background: url("src/assets/img/perfil_desc.png") center center no-repeat;
+  background: url("src/assets/img/perfil_bina.jpg") center center no-repeat;
   background-size: 300px;
   filter: grayscale(90%) contrast(1.7) brightness(0.7); /* Ajuste a intensidade da escala de cinza e o contraste conforme necessário */
   }
 
 .card4:hover {
-  background: url("src/assets/img/perfil_desc.png") left center no-repeat;
+  background: url("src/assets/img/perfil_bina.jpg") left center no-repeat;
   background-size: 600px;
   filter: grayscale(90%) contrast(1.7) brightness(0.7); /* Ajuste a intensidade da escala de cinza e o contraste conforme necessário */
   }

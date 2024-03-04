@@ -62,12 +62,14 @@ export default {
 </script>
 
 <style scoped>
-.section-about{
-border: 3px solid #d7a449;
-border-right: 3px solid transparent;
+@import url('../src/styles.css');
+
+section{
+padding: var(--all_section_components_padding);
+border: var(--all_section_components_border);
+border-right: var(--all_section_components_border_right_transparent);
 position:relative;
 padding-top:80px;
-
 }
 
 .section-about .content-column{

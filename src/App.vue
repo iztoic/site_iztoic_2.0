@@ -313,6 +313,7 @@ export default {
 @import url('https://startbootstrap.com/templates/agency/font-awesome-4.1.0/css/font-awesome.min.css');
 @import url('https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css');
 @import url('https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/themes/smoothness/jquery-ui.css');
+@import url('./styles.css');
 
 body {
 	font-family: 'Poppins', sans-serif;

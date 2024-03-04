@@ -2,21 +2,14 @@
   <section id="section-books">
     <h1 class="pen-title">Ebooks</h1>
 
-	<!-- START TECHNIQUE CODE -->
-
-	<section id="main">
-		<ul class='list-inline'>
-
-  <li class='book'>
-    <img src='src/assets/img/book_1.jpg' />
-  </li>
-
-  <li class='book'>
-    <img src='src/assets/img/book_2.jpg' />
-  </li>
-</ul>
-	</section>
-</section>
+    <section id="main">
+      <ul class='list-inline'>
+        <li class='book' v-for="(book, index) in books" :key="index">
+          <img :src="book.image" />
+        </li>
+      </ul>
+    </section>
+  </section>
 </template>
 
 <script>
@@ -24,6 +17,11 @@ export default {
   name: "SectionBooks",
   data() {
     return {
+      books: [
+        { image: 'src/assets/img/book_1.jpg' },
+        { image: 'src/assets/img/book_2.jpg' },
+        // Adicione mais objetos para representar mais livros
+      ]
     };
   },
   methods: {},
@@ -156,5 +154,12 @@ ul {
 
 .book::after {
   left: -6px;
+}
+
+/* Media queries para tornar o layout responsivo */
+@media screen and (max-width: 768px) {
+  .list-inline > li {
+    margin-left: 1em; /* Ajuste de margem para dispositivos menores */
+  }
 }
 </style>

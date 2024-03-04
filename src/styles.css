@@ -1,0 +1,22 @@
+:root{
+    --all_section_components_padding: 5%;
+    --all_section_components_border: 3px solid var(--primary_gold_color);
+    --all_section_components_border_right_transparent: 3px solid transparent;
+
+    --primary_gold_color: #d7a449;
+    --all_page_text_shadow: 3px 3px 0 hsl(0, 0%, 0%, 0.25);
+
+
+    --all_text_size_h1: 7vh;
+    --all_text_size_h2: 6vh;
+    --all_text_size_h3: 5vh;
+    --all_text_size_h4: 4vh;
+    --all_text_size_h5: 3vh;
+    --all_text_size_p: 3vh;
+    --all_text_size_a: 3vh;
+
+
+        /* SECTION TEAM */
+    --all_full_section_container_width: 100vw;
+      /* END SECTION TEAM */
+}
