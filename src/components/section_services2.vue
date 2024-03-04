@@ -215,7 +215,7 @@ div{
 
 .game-section .item-card {
   margin: 0 5px 30px;
-  width: calc(75% / 4 - 5px);
+  width: calc(90% / 3 - 5px);
   height: 400px;
   display: flex;
   align-items: flex-end;

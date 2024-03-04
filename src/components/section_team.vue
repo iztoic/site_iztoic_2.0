@@ -4,7 +4,7 @@
       <div class="container">
         <div class="row">
           <div class="col-lg-12 text-center">
-            <h3 class="section-subheading text-muted">Conheça nossa equipe</h3>
+            <h3 class="section-subheading">Conheça nossa equipe</h3>
           </div>
         </div>
         <div class="row">
@@ -12,7 +12,7 @@
             <div class="team-member">
               <h4>{{ member.name }}</h4>
               <p class="text-muted">{{ member.occupation }}</p>
-              <div :class="'card card' + index">
+              <div :class="'card card' + index" :style="{ 'background-image': 'url(' + member.background + ')' }">
                 <div class="border">
                   <h2>{{ member.name }}</h2>
                   <div class="icons">
@@ -50,6 +50,7 @@ export default {
         {
           name: "Dionei Caliel",
           occupation: "Ocupation",
+          background: "src/assets/img/perfil_desc.png",
           socialLinks: {
             linkedin: "",
             instagram: "",
@@ -60,6 +61,7 @@ export default {
         {
           name: "Gabriel Oliveira",
           occupation: "Ocupation",
+          background: "src/assets/img/perfil_desc.png",
           socialLinks: {
             linkedin: "",
             instagram: "",
@@ -70,6 +72,7 @@ export default {
         {
           name: "Dani",
           occupation: "Ocupation",
+          background: "src/assets/img/perfil_dani.jpg",
           socialLinks: {
             linkedin: "",
             instagram: "",
@@ -80,6 +83,7 @@ export default {
         {
           name: "Bina",
           occupation: "Ocupation",
+          background: "src/assets/img/perfil_bina.jpg",
           socialLinks: {
             linkedin: "",
             instagram: "",
@@ -100,25 +104,39 @@ export default {
   },
 };
 </script>
-
 <style scoped>
 @import url('../src/styles.css');
-section {
-  padding: var(--all_section_components_padding);
-  border: var(--all_section_components_border);
-  border-right: var(--all_section_components_border_right_transparent);
-}
 
-h3 { font-size: var(--all_text_size_h3);}
+h3 { 
+  font-size: var(--all_text_size_h3);
+  color: var(--primary_gold_color);
+  text-shadow: var(--all_page_text_shadow);
+}
 p { font-size: var(--all_text_size_p);}
 
-h4{
+h4 {
   color:var(--primary_gold_color);
-  font-size: var(--all_text_size_h4);
+  font-size: var(--all_text_size_h5);
   text-shadow: var(--all_page_text_shadow);
 }
 
-/* Container */
+h2 {
+  font-family: var(--all_text_font_family);
+  color:var(--secundary_gray_color);
+  margin: 20px;
+  opacity: 0;
+  transition: opacity 1s;
+}
+
+.row {
+  justify-content: center;
+}
+
+</style>
+
+
+
+<style scoped>
 .container {
   width: var(--all_full_section_container_width);
   display: flex;
@@ -128,31 +146,13 @@ h4{
   flex-direction: column;
 }
 
-.row {
-  justify-content: center;
-}
-
 .col-sm-4 {
   padding-top: 20px;
   padding-bottom: 20px;
 }
 
-/* Border */
-.border {
-  height: 369px;
-  width: 290px;
-  background: transparent;
-  border-radius: 10px;
-  transition: border 1s;
-  position: relative;
-}
-
 .border:hover {
   border: 1px solid white;
-}
-
-.team-member {
-  width: 300px;
 }
 
 .info-card{
@@ -160,10 +160,10 @@ h4{
   justify-content: center;
   padding: 5px;
 }
-/* Card */
+
 .card {
-  height: 379px;
-  width: 300px;
+  height: 50vh;
+  width: 40vh;
   background: grey;
   border-radius: 10px;
   transition: background 0.8s;
@@ -176,119 +176,46 @@ h4{
   position: relative;
 }
 
-/* Card 0 */
-.card0 {
-  background: url('src/assets/img/perfil_keller2.png') center center no-repeat;
-  background-size: 300px;
-  filter: grayscale(90%) contrast(1.7) brightness(0.7); /* Ajuste a intensidade da escala de cinza e o contraste conforme necessário */
-  }
+.border {
+  height: 95%;
+  width: 95%;
+  background: transparent;
+  border-radius: 10px;
+  transition: border 1s;
+  position: relative;
+}
 
-.card0:hover {
-  background: url('src/assets/img/perfil_keller2.png') left center no-repeat;
-  background-size: 600px;
-  filter: grayscale(90%) contrast(1.7) brightness(0.7); /* Ajuste a intensidade da escala de cinza e o contraste conforme necessário */
-  }
+.card0, .card1, .card2, .card3, .card4 {
+  background: var(--section_team_cards_background_before);
+  background-size: var(--section_team_cards_background_size);
+  filter: var(--section_team_cards_grayscale_filter);
+}
 
-.card0:hover h2,
-.card0:hover .fa {
+.card0:hover,.card1:hover,.card2:hover,.card3:hover,.card4:hover {
+  background: var(--section_team_cards_background_after);
+  background-size: var(--section_team_cards_background_size_hoover);
+  filter: var(--section_team_cards_grayscale_filter);
+}
+
+.card0:hover h2, .card0:hover .fa,
+.card1:hover h2, .card1:hover .fa,
+.card2:hover h2, .card2:hover .fa,
+.card3:hover h2, .card3:hover .fa,
+.card4:hover h2, .card4:hover .fa {
   opacity: 1;
 }
 
-/* Card 1 */
-.card1 {
-  background: url("src/assets/img/perfil_desc.png") center center no-repeat;
-  background-size: 300px;
-  filter: grayscale(90%) contrast(1.7) brightness(0.7); /* Ajuste a intensidade da escala de cinza e o contraste conforme necessário */
-  }
-
-.card1:hover {
-  background: url("src/assets/img/perfil_desc.png") left center no-repeat;
-  background-size: 600px;
-  filter: grayscale(90%) contrast(1.7) brightness(0.7); /* Ajuste a intensidade da escala de cinza e o contraste conforme necessário */
-  }
-
-.card1:hover h2,
-.card1:hover .fa {
-  opacity: 1;
-}
-
-/* Card 2 */
-.card2 {
-  background: url("src/assets/img/perfil_desc.png") center center no-repeat;
-  background-size: 300px;
-  filter: grayscale(90%) contrast(1.7) brightness(0.7); /* Ajuste a intensidade da escala de cinza e o contraste conforme necessário */
-  }
-
-.card2:hover {
-  background: url("src/assets/img/perfil_desc.png") left center no-repeat;
-  background-size: 600px;
-  filter: grayscale(90%) contrast(1.7) brightness(0.7); /* Ajuste a intensidade da escala de cinza e o contraste conforme necessário */
-  }
-
-.card2:hover h2,
-.card2:hover .fa {
-  opacity: 1;
-}
-
-/* Card 3 */
-.card3 {
-  background: url("src/assets/img/perfil_dani.jpg") center center no-repeat;
-  background-size: 300px;
-  filter: grayscale(90%) contrast(1.7) brightness(0.7); /* Ajuste a intensidade da escala de cinza e o contraste conforme necessário */
-  }
-
-.card3:hover {
-  background: url("src/assets/img/perfil_dani.jpg") left center no-repeat;
-  background-size: 600px;
-  filter: grayscale(90%) contrast(1.7) brightness(0.7); /* Ajuste a intensidade da escala de cinza e o contraste conforme necessário */
-  }
-
-.card3:hover h2,
-.card3:hover .fa {
-  opacity: 1;
-}
-
-/* Card 4 */
-.card4 {
-  background: url("src/assets/img/perfil_bina.jpg") center center no-repeat;
-  background-size: 300px;
-  filter: grayscale(90%) contrast(1.7) brightness(0.7); /* Ajuste a intensidade da escala de cinza e o contraste conforme necessário */
-  }
-
-.card4:hover {
-  background: url("src/assets/img/perfil_bina.jpg") left center no-repeat;
-  background-size: 600px;
-  filter: grayscale(90%) contrast(1.7) brightness(0.7); /* Ajuste a intensidade da escala de cinza e o contraste conforme necessário */
-  }
-
-.card4:hover h2,
-.card4:hover .fa {
-  opacity: 1;
-}
-
-
-/* Heading 2 */
-h2 {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  color:#837878;
-  margin: 20px;
-  opacity: 0;
-  transition: opacity 1s;
-}
-
-/* Font Awesome */
 .fa {
   opacity: 0;
   transition: opacity 1s;
 }
 
-/* Icons */
 .icons {
   position: absolute;
   fill: #fff;
   color: #fff;
   height: 130px;
-  top: 226px;
+  top: 166px;
   width: 50px;
   display: flex;
   flex-direction: column;
@@ -315,6 +242,7 @@ h2 {
 
 .team-member{
   padding-bottom: 10%;
+  width: 250px;
 }
 
 @media (max-width: 768px) {
@@ -327,7 +255,23 @@ h2 {
 
   .card {
     max-width: 300px;
-    margin: 0 auto;
+  }
+}
+
+@media (max-width: 575px) {
+  .col-md-6 {
+    flex-basis: 100%;
+    max-width: 100%;
+    padding: 0 15px;
+    margin-bottom: 30px;
+  }
+
+  .card {
+    max-width: 300px;
+  }
+
+  .row{
+    justify-items: flex-start;
   }
 }
 </style>

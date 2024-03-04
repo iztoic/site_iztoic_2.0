@@ -7,8 +7,8 @@
             <div class="content-column col-md-6 col-sm-6 col-xs-12">
                 <div class="inner-column">
                     <div class="sec-title">
-                        <div class="title">Sobre Nós</div>
-                        <h2>Inovação<br>Transformação<br>Impacto</h2>
+                        <h3 class="title-text-center">Sobre Nós</h3>
+                        <h3 class="title-text-description">Inovação<br>Transformação<br>Impacto</h3>
                     </div>
                     <div class="text">Somos uma agência criativa que trabalha com sua maior paixão: O desenvolvimento de soluções estratégicas para conectar sua marca com o consumidor de forma humanizada. <br> Somos uma equipe que traz o design e o marketing de um jeito unico para dar forma a um único objetivo: Tornar sua marca ainda mais relevante para as pessoas, ajudando a construir seu sonho.</div>
                     </div>
@@ -64,14 +64,22 @@ export default {
 <style scoped>
 @import url('../src/styles.css');
 
-section{
-padding: var(--all_section_components_padding);
-border: var(--all_section_components_border);
-border-right: var(--all_section_components_border_right_transparent);
-position:relative;
-padding-top:80px;
+.title-text-center{
+  text-align: center;
+  color: var(--primary_gold_color);
+  text-shadow: var(--all_page_text_shadow);
+  font-size: 40px;
 }
 
+.title-text-description{
+  color: var(--primary_gold_color);
+  text-shadow: var(--all_page_text_shadow);
+  font-size: 35px;
+}
+
+.section-about{
+  height: 550px;
+}
 .section-about .content-column{
 position:relative;
 }
@@ -85,13 +93,14 @@ align-items: flex-start;
 position:relative;
 color:#777777;
 padding: 10px;
-font-size:170%;
+font-size:120%;
 line-height:1.8em;
 background-color: rgba(41, 41, 41, 0.7);
 border-radius: 10px;
-margin-top: 20%;
+margin-top: 10%;
+margin-bottom: 10%;
 margin-right: 20px; /* Adiciona espaço à direita para separar do lado da imagem */
-width: 220%;
+width: 80vw;
 }
 
 .section-about .content-column .text::before {
@@ -323,7 +332,9 @@ background-color: #bbbbbb;
     width: 50%;
   }
   .section-about .content-column .text{
-    width: 73vw;
+    width: 80vw;
+    font-size: 100%;
+    margin-bottom: 10%;
   }
   
   .content-column {
@@ -339,16 +350,16 @@ background-color: #bbbbbb;
     margin-bottom: 85vw;
   }
   
-  .sec-title h2 {
-    font-size: 24px;
-    padding: 0px;
+  .title-text-center {
+    font-size: 30px;
   }
-  .sec-title{
-    padding: 10px;
+  .title-text-description{
+    font-size: 25px;
   }
-  .section-about .sec-title .title{
-    font-size: 24px;
-  }
+
+  .section-about{
+  height: 600px;
+}
 }
 
 @media (max-width: 575px) {
@@ -360,9 +371,13 @@ background-color: #bbbbbb;
   }
 
   .section-about .content-column .text{
-    width: 69vw;
-    margin: 5vw;
+    width: 80vw;
+    margin-bottom: 10%;
+    font-size: 90%;
   }
+  .section-about{
+  height: 500px;
+}
   
   .inner-column{
     padding-right: 0px;
@@ -379,16 +394,11 @@ background-color: #bbbbbb;
     padding: 10px;
   }
   
-  .section-about .content-column .text{
-    width: 87vw;
-    margin: 5vw;
-  }
-  
-  .sec-title h2{
+  .title-text-center {
     font-size: 20px;
   }
-  .section-about .sec-title .title{
-    font-size: 20px;
+  .title-text-description{
+    font-size: 15px;
   }
 }
 

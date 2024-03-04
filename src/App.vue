@@ -79,7 +79,7 @@
 		<div class="layerindex page_services-section">
 			<div class="page_services-close hover-target exit-target"></div>
 			<SectionServices />
-			<PortifolioGallery />
+			<!-- <PortifolioGallery /> -->
 		</div>
 
 		<div class="layerindex page_plans-section">
@@ -127,7 +127,7 @@
 <script src="https://raw.githubusercontent.com/IronSummitMedia/startbootstrap/gh-pages/templates/agency/js/bootstrap.min.js"></script>
 <script>
 import SectionAbout from './components/section_about.vue';
-import PortifolioGallery from './components/portifolio_gallery.vue';
+// import PortifolioGallery from './components/portifolio_gallery.vue';
 import SectionTeam from './components/section_team.vue';
 import SectionContact from './components/section_contact.vue';
 import SectionTestimonials from './components/section_testimonials.vue';
@@ -141,7 +141,7 @@ export default {
 	name: 'app',
 	components: {
 		SectionAbout,
-		PortifolioGallery,
+		// PortifolioGallery,
 		SectionTeam,
 		SectionContact,
 		SectionTestimonials,
@@ -593,6 +593,9 @@ body.page_clients-on .main-section {
 	-webkit-transition: all 300ms linear;
 	transition: all 300ms linear;
 	z-index: 10;
+	padding: var(--all_section_components_padding);
+	border: var(--all_section_components_border);
+	border-right: var(--all_section_components_border_right_transparent);
 }
 
 body.about-on .page_about-section {
@@ -711,6 +714,9 @@ body.about-on .page_about-section {
 	-webkit-transition: all 300ms linear;
 	transition: all 300ms linear;
 	z-index: 10;
+	padding: var(--all_section_components_padding);
+	border: var(--all_section_components_border);
+	border-right: var(--all_section_components_border_right_transparent);
 }
 
 body.contact-on .page_contact-section {
@@ -789,6 +795,13 @@ body.contact-on .page_contact-section {
 	-webkit-transition: all 300ms linear;
 	transition: all 300ms linear;
 	z-index: 10;
+	padding: var(--all_section_components_padding);
+	border: var(--all_section_components_border);
+	border-right: var(--all_section_components_border_right_transparent);
+}
+
+.page_portifolio-section, .page_clients-section {
+	padding:0px
 }
 
 .page_services-close,

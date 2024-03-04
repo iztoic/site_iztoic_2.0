@@ -20,7 +20,7 @@
 			<li><strong>3</strong> Post Feed por semana</li>
 			<li><strong>1</strong> Reels por semana</li>
 		</ul>
-		<button class="btn-primary">Get Started</button>
+		<button class="btn-primary">Adquira Já</button>
 	</div>
 
 	<div class="pricing-box pricing-box-medium text-center">
@@ -36,7 +36,7 @@
 			<li><strong>3</strong> Post Feed por semana</li>
 			<li><strong>2</strong> Reels por semana</li>
 		</ul>
-		<button class="btn-primary">Get Started</button>
+		<button class="btn-primary">Adquira Já</button>
 	</div>
 
 	<div class="pricing-box pricing-box-high text-center">
@@ -55,7 +55,7 @@
 			<li><strong>2</strong> Reels por semana</li>
       <li><strong>1</strong> Reels/Storytelling por semana</li>
 		</ul>
-		<button class="btn-primary">Get Started</button>
+		<button class="btn-primary">Adquira Já</button>
 	</div>
 </div>
 

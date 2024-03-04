@@ -38,7 +38,9 @@ export default {
 }
 
 #section-books{
+  width: 100%;
   padding-bottom: 20px;
+
 }
 
 h1, h2, h3, h4, h5, h6 {

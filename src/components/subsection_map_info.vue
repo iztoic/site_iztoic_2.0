@@ -28,7 +28,7 @@ export default {
         {
           name: "Casa Ministro",
           address: "R. Dr. Plácido Gomes, 320 - Anita Garibaldi, Joinville - SC, 89202-050",
-          extraText: "Informações extras para o Casa Ministro.",
+          extraText: "Charuteria",
           logo: "src/assets/img/logo/casa_ministro_logo.png",
           backgroundImage: "url('src/assets/img/card_background_1.png')",
           localcoordenades: [-48.846131066078904, -26.310174216183405],
@@ -36,7 +36,7 @@ export default {
         {
           name: "7 Grãos",
           address: "R. Quinze de Novembro, 8862 - Vila Nova, Joinville - SC, 89237-680",
-          extraText: "Informações extras para o 7 Grãos.",
+          extraText: "Padaria",
           logo: "src/assets/img/logo/7_graos_logo.png",
           backgroundImage: "url('src/assets/img/card_background_1.png')",
           localcoordenades: [-48.920667672345175, -26.287165020260446],
@@ -44,7 +44,7 @@ export default {
         {
           name: "Agência Seu Destino",
           address: "R. Quinze de Novembro, 7009-6981 - Vila Nova, Joinville - SC, 89237-680",
-          extraText: "Informações extras para a Agência Seu Destino.",
+          extraText: "Agência de Viajens",
           logo: "src/assets/img/logo/agencia_seu_destino_logo.png",
           backgroundImage: "url('src/assets/img/card_background_1.png')",
           localcoordenades: [-48.90221016272976, -26.287978372930052],
@@ -52,7 +52,7 @@ export default {
         {
           name: "Neudorf Choperia",
           address: "R. Quinze de Novembro, 8691 - Vila Nova, Joinville - SC, 89237-002",
-          extraText: "Informações extras para o Neudorf Choperia.",
+          extraText: "Bar",
           logo: "src/assets/img/logo/neudorf_logo.png",
           backgroundImage: "url('src/assets/img/card_background_1.png')",
           localcoordenades: [-48.91875157359281, -26.287266018376062],
@@ -60,7 +60,7 @@ export default {
         {
           name: "Quinze Minutos",
           address: "R. Mal. Hermes, 250 - Glória, Joinville - SC, 89217-200",
-          extraText: "Informações extras para a Quinze Minutos.",
+          extraText: "Loja",
           logo: "src/assets/img/logo/quinze_minutos_logo.png",
           backgroundImage: "url('src/assets/img/card_background_1.png')",
           localcoordenades: [-48.872563761471085, -26.29339946894952],
@@ -68,7 +68,7 @@ export default {
         {
           name: "Sabores do Sul",
           address: "R. Leopoldo Beninca, 22 - Vila Nova, Joinville - SC, 89237-150",
-          extraText: "Informações extras para o Sabores do Sul.",
+          extraText: "Lancheria",
           logo: "src/assets/img/logo/sabores_do_sul_logo.png",
           backgroundImage: "url('src/assets/img/card_background_1.png')",
           localcoordenades: [-48.901370894604256, -26.292276301129796],
@@ -76,7 +76,7 @@ export default {
         {
           name: "Padilha AgroPet",
           address: "R. Quinze de Novembro, 7718 - Vila Nova, Joinville - SC, 89237-001",
-          extraText: "Informações extras para Padilha AgroPet.",
+          extraText: "Pet-shop",
           logo: "src/assets/img/logo/agropet_padilha_logo.png",
           backgroundImage: "url('src/assets/img/card_background_1.png')",
           localcoordenades: [-48.90982112355096, -26.286743308298952],

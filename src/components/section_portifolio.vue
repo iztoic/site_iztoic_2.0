@@ -192,8 +192,6 @@ main {
   background-position: center;
   background-size: cover;
   border-radius: 20px;
-  border: 3px solid #d7a449;
-  box-shadow: 0 20px 30px rgba(255,255,255,0.3) inset;
   transition: transform 0.1s, left 0.75s, top 0.75s, width 0.75s, height 0.75s;
 
   &:nth-child(1), &:nth-child(2) {

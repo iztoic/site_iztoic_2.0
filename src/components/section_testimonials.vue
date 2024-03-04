@@ -130,6 +130,10 @@ blockquote {
 
 }
 
+.title{
+  text-align: center;
+}
+
 .snip1386 {
   font-family: 'Playfair Display', Arial, sans-serif;
   position: relative;
@@ -224,8 +228,6 @@ blockquote {
   z-index: 1;
   -webkit-transform: translate(50%, -50%);
   transform: translate(50%, -50%);
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
-  border: 2px solid #d7a449;
 }
 
 .credibility {
@@ -262,17 +264,17 @@ blockquote {
 .ver-mais-btn {
     padding: 10px 20px;
     font-size: 16px;
-    background-color: #36424b;
+    background-color: #d7a449;
     color: #fff;
     border: none;
     cursor: pointer;
     transition: background-color 0.3s ease;
-    border: 2px solid #d7a449; /* Adicione uma borda ao redor do logo */
+    border: 2px solid #1a2125; /* Adicione uma borda ao redor do logo */
   }
 
   .ver-mais-btn:hover {
-    background-color: #1a2125;
-    border: 2px solid #d7a449; /* Adicione uma borda ao redor do logo */
+    background-color: #d7a449;
+    border: 2px solid #1a2125; /* Adicione uma borda ao redor do logo */
 
   }
 

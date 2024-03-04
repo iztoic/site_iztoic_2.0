@@ -1,9 +1,9 @@
 <template>
   <div>
     <section id="section-contact">
-      <h1 class="section-header">Contato</h1>
+      <h3 class="title-text-center">Contato</h3>
       <div class="contact-wrapper">
-        <form id="contact-form" class="form-horizontal" role="form" @submit.prevent="submitForm">
+          <form id="contact-form" class="form-horizontal" role="form" action="https://formspree.io/f/xbjnynng" method="POST">
           <div class="form-group">
             <div class="col-sm-12">
               <input type="text" class="form-control" v-model="formData.name" placeholder="NOME" name="name" required>
@@ -52,7 +52,7 @@ export default {
       },
       contactInfo: {
         location: "Joinville, SC",
-        phone: "(212) 555-2368",
+        phone: "(47) 99717-2238",
         email: "contato@iztoic.com",
         linkedin: "#",
         instagram: "https://www.instagram.com/iztoic"
@@ -71,23 +71,11 @@ export default {
 </script>
     
 <style scoped>
-section {
-  border: 3px solid #d7a449;
-  border-right: 3px solid transparent;
-  margin: 0;
-  padding: 0;
-  background-color: #1f2029;
-  padding-bottom: 50px;
-}
-
-.section-header {
+.title-text-center{
   text-align: center;
-  margin: 0 auto;
-  padding: 40px 0;
-  font: 300 60px 'Oswald', sans-serif;
-  color: #d7a449;
-  text-transform: uppercase;
-  letter-spacing: 6px;
+  color: var(--primary_gold_color);
+  text-shadow: var(--all_page_text_shadow);
+  font-size: var(--all_text_size_h3);
 }
 
 .contact-wrapper {
@@ -307,10 +295,6 @@ hr {
     width: 50px;
     height: 50px;
     line-height: 50px;
-  }
-  .send-button,
-  .alt-send-button {
-    height: 44px; /* Ajuste a altura conforme necessário */
   }
 
   .send-text {

@@ -4,9 +4,11 @@
     --all_section_components_border_right_transparent: 3px solid transparent;
 
     --primary_gold_color: #d7a449;
+    --secundary_gray_color: #837878;
     --all_page_text_shadow: 3px 3px 0 hsl(0, 0%, 0%, 0.25);
 
 
+    --all_text_font_family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     --all_text_size_h1: 7vh;
     --all_text_size_h2: 6vh;
     --all_text_size_h3: 5vh;
@@ -18,5 +20,10 @@
 
         /* SECTION TEAM */
     --all_full_section_container_width: 100vw;
+    --section_team_cards_grayscale_filter: grayscale(90%) contrast(1.7) brightness(0.7);
+    --section_team_cards_background_size: 130%;
+    --section_team_cards_background_size_hoover: 260%;
+    --section_team_cards_background_before: center center no-repeat;
+    --section_team_cards_background_after: left center no-repeat;
       /* END SECTION TEAM */
 }
