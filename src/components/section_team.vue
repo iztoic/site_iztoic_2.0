@@ -128,9 +128,9 @@ h2 {
   transition: opacity 1s;
 }
 
-.row {
-  justify-content: center;
-}
+.row{
+    justify-content: center
+  }
 
 </style>
 
@@ -243,6 +243,7 @@ h2 {
 .team-member{
   padding-bottom: 10%;
   width: 250px;
+  margin: 2vw;
 }
 
 @media (max-width: 768px) {
@@ -253,9 +254,48 @@ h2 {
     margin-bottom: 30px;
   }
 
+  .team-member{
+  width: calc(250px/1.8);
+  margin: 2vw;
+}
   .card {
-    max-width: 300px;
+  height: calc(50vh/2.2);
+  width: calc(40vh/2.2);
+  border-radius: calc(10px/2.2);
+}
+
+
+.icons {
+  height: calc(130px/1.3);
+  top: calc(166px/1.3);
+  width: calc(50px/1.3);
+  padding-bottom: calc(15px/1.3);
+}
+
+  h3 { 
+  font-size: calc(var(--all_text_size_h3)/1.2);
+}
+
+h2 { 
+  font-size: calc(var(--all_text_size_h2)/3.0);
+}
+
+h4 { 
+  font-size: calc(var(--all_text_size_h3)/1.9);
+  text-wrap: nowrap;
+}
+
+p{ 
+  font-size: calc(var(--all_text_size_p)/1.2);
+}
+
+.row{
+  justify-content: space-around;
   }
+
+  .container{
+  width: 660px;
+}
 }
 
 @media (max-width: 575px) {
@@ -266,12 +306,46 @@ h2 {
     margin-bottom: 30px;
   }
 
-  .card {
-    max-width: 300px;
+  .row{
+    justify-content: center
   }
 
-  .row{
-    justify-items: flex-start;
-  }
+  .card {
+  height: calc(50vh/2.3);
+  width: calc(40vh/2.3);
+  border-radius: calc(10px/2.3);
+}
+
+.team-member{
+  width: calc(250px/2);
+  margin: 2vw;
+}
+
+.icons {
+  height: calc(130px/1.9);
+  top: calc(166px/1.7);
+  width: calc(50px/1.9);
+  padding-bottom: calc(15px/1.9);
+}
+
+h2 { 
+  font-size: calc(var(--all_text_size_h2)/3.4);
+}
+
+h3 { 
+  font-size: calc(var(--all_text_size_h3)/2.1);
+}
+h4 { 
+  font-size: calc(var(--all_text_size_h3)/2.5);
+  text-wrap: nowrap;
+}
+
+ p{ 
+  font-size: calc(var(--all_text_size_p)/2.1);
+}
+
+.container{
+  width: 330px;
+}
 }
 </style>

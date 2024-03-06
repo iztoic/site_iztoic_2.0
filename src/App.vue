@@ -443,9 +443,12 @@ a:hover {
 	font-weight: 700;
 }
 
-@media screen and (max-width: 580px) {
+@media (max-width: 580px) {
 	.main-section .dancing {
 		font-size: 18px;
+	}
+	.main-section p {
+	font-size: 2rem;
 	}
 }
 .text-center{
@@ -1187,5 +1190,9 @@ ul.social-buttons li a:active {
 top: 40px;
 right: 30px;
 background-size: 10vh 10vw;
+}
+
+@media (max-width: 575px) {
+
 }
 </style>
