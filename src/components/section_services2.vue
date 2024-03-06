@@ -181,6 +181,7 @@ div{
 .game-section .item-card-desc h3 {
   color: #d7a449; /* Cor do título */
   font-size: 22px; /* Tamanho da fonte do título */
+  text-wrap: nowrap;
 }
 
 .game-section .item-card-desc p {
