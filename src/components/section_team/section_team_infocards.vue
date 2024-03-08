@@ -269,7 +269,6 @@ h2 {
   }
 
   .team-member {
-    width: calc(200px/2);
     margin: 0vw 2vw 0vw 2vw;
   }
 
