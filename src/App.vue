@@ -131,7 +131,7 @@ import SectionAbout from './components/section_about/section_about.vue';
 import SectionTeam from './components/section_team/section_team.vue';
 import SectionContact from './components/section_contact.vue';
 import SectionTestimonials from './components/section_testimonials.vue';
-import SectionServices from './components/section_services2.vue';
+import SectionServices from './components/section_services.vue';
 import SectionPlans from './components/section_plans.vue';
 import SectionPortifolio from './components/section_portifolio.vue';
 import SectionBooks from './components/section_books.vue';
