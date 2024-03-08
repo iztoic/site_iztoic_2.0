@@ -126,9 +126,9 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
 <script src="https://raw.githubusercontent.com/IronSummitMedia/startbootstrap/gh-pages/templates/agency/js/bootstrap.min.js"></script>
 <script>
-import SectionAbout from './components/section_about.vue';
+import SectionAbout from './components/section_about/section_about.vue';
 // import PortifolioGallery from './components/portifolio_gallery.vue';
-import SectionTeam from './components/section_team.vue';
+import SectionTeam from './components/section_team/section_team.vue';
 import SectionContact from './components/section_contact.vue';
 import SectionTestimonials from './components/section_testimonials.vue';
 import SectionServices from './components/section_services2.vue';
@@ -313,7 +313,7 @@ export default {
 @import url('https://startbootstrap.com/templates/agency/font-awesome-4.1.0/css/font-awesome.min.css');
 @import url('https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css');
 @import url('https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/themes/smoothness/jquery-ui.css');
-@import url('./styles.css');
+@import url('./src/assets/style/styles.css');
 
 body {
 	font-family: 'Poppins', sans-serif;
@@ -1146,7 +1146,6 @@ ul.social-buttons li a:active {
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.5)), url('src/assets/portifolio/wine_bar.jpg');
     transition: background-color 0.75s;
     z-index: 1;
 }

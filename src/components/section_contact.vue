@@ -29,8 +29,8 @@
           </ul>
           <hr>
           <ul class="social-media-list">
-            <li><a :href="contactInfo.linkedin" target="_blank" class="contact-icon"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
-            <li><a :href="contactInfo.instagram" target="_blank" class="contact-icon"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+            <li onclick="window.open('https://www.linkedin.com/company/iztoic', '_blank');"><a class="contact-icon"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+            <li onclick="window.open('https://www.instagram.com/iztoic', '_blank');"><a class="contact-icon"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
           </ul>
           <hr>
           <div class="copyright">&copy; TODOS OS DIREITOS RESERVADOS</div>
@@ -54,7 +54,7 @@ export default {
         location: "Joinville, SC",
         phone: "(47) 99717-2238",
         email: "contato@iztoic.com",
-        linkedin: "#",
+        linkedin: "https://www.instagram.com/iztoic",
         instagram: "https://www.instagram.com/iztoic"
       }
     };
