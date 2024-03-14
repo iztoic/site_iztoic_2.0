@@ -48,7 +48,7 @@ export default {
           },
         },
         {
-          name: "Gabriel Oliveira",
+          name: "Gabriel",
           occupation: "Ocupation",
           background: "src/assets/img/perfil_desc.png",
           socialLinks: {
@@ -94,7 +94,6 @@ export default {
 </script>
 
 <style scoped>
-@import url('./src/assets/style/styles.css');
 
 p {
   font-size: var(--all_text_size_p);

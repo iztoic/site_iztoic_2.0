@@ -20,14 +20,12 @@ export default {
       books: [
         { image: 'src/assets/img/book_1.jpg' },
         { image: 'src/assets/img/book_2.jpg' },
-        // Adicione mais objetos para representar mais livros
       ]
     };
   },
   methods: {},
 };
 </script>
-
 <style scoped>
 /* Variáveis */
 :root {
@@ -35,12 +33,6 @@ export default {
   --book-color-bg: lighten(var(--color-bg), 20%);
   --book-color-border: lighten(#000, 85%);
   --book-border: 1px solid var(--book-color-border);
-}
-
-#section-books{
-  width: 100%;
-  padding-bottom: 20px;
-
 }
 
 h1, h2, h3, h4, h5, h6 {

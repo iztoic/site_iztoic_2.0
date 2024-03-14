@@ -30,15 +30,12 @@ export default {
   },
 };
 </script>
-
 <style scoped>
-@import url('./src/assets/style/styles.css');
 
 .row{
   display: flex;
   justify-content: space-evenly;
 }
-
 @media (max-width: 767px) {
 
 }

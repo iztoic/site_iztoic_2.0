@@ -27,7 +27,6 @@ export default {
 </script>
 
 <style scoped>
-@import url('./src/assets/style/styles.css');
 
 .content-column {
     position: relative;
@@ -48,10 +47,9 @@ export default {
 }
 
 .title-about {
-    position: relative;
-    color: #d7a449;
-    text-shadow: 3px 3px 0 hsl(0, 0%, 0%, 0.25);
-    font-size: 34px;
+    color: var(--primary_gold_color);
+    text-shadow: var(--all_page_text_shadow);
+    font-size: var(--all_text_size_h1);
     font-weight: 700;
     padding-left: 50px;
     margin-bottom: 15px;
@@ -60,10 +58,9 @@ export default {
 }
 
 .title-about-description {
-    position: relative;
-    color: #d7a449;
-    text-shadow: 3px 3px 0 hsl(0, 0%, 0%, 0.25);
-    font-size: 28px;
+    color: var(--primary_gold_color);
+    text-shadow: var(--all_page_text_shadow);
+    font-size: var(--all_text_size_h3);;
     font-weight: 700;
     padding-right: 50px;
     margin-bottom: 15px;
@@ -128,12 +125,12 @@ export default {
     }
 
     .title-about {
-        font-size: 30px;
+        font-size: calc(var(--all_text_size_h1) - 40%);
         white-space: nowrap;
     }
 
     .title-about-description {
-        font-size: 25px;
+        font-size: calc(var(--all_text_size_h3) - 40%);
     }
 }
 
@@ -159,12 +156,12 @@ export default {
     }
 
     .title-about {
-        font-size: 20px;
+        font-size: calc(var(--all_text_size_h3) - 60%);
         white-space: nowrap;
     }
 
     .title-about-description {
-        font-size: 15px;
+        font-size: calc(var(--all_text_size_h3) - 60%);
     }
 }
 </style>

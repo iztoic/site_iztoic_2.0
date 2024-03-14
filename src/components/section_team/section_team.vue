@@ -28,7 +28,6 @@ export default {
 </script>
 
 <style scoped>
-@import url('./src/assets/style/styles.css');
 
 h3 { 
   font-size: var(--all_text_size_h3);

@@ -7,7 +7,7 @@
           </div>
         </div>
     <div class="owl-carousel custom-carousel owl-theme">
-      <div v-for="(game, index) in games" :key="index" :class="{ 'item-card': true, 'active': index === activeIndex }" :style="{ 'background-image': 'url(' + game.image + ')' }" @click="toggleActive(index)">
+      <div v-for="(game, index) in games" :key="index" :class="{ 'item-card': true, 'active': index === activeIndex }" :style="{ 'background-image': 'url(' + game.image + ')' } " @click="toggleActive(index)">
         <div class="item-card-desc">
           <h3>{{ game.name }}</h3>
           <p>{{ game.description }}</p>
@@ -125,6 +125,8 @@ div{
   cursor: pointer;
   margin-right: 5px; 
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  
+  
 }
 .game-section .item-card.active {
   width: calc(100% / 4 - 5px);

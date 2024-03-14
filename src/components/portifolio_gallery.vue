@@ -1,5 +1,5 @@
 <template>
-	<div>
+	<section id="section-galery">
 	  <div class="container">
 		<div
         class="panel"
@@ -80,7 +80,7 @@
 		  <h3>Headphone</h3>
 		</div>
 	  </div>
-	</div>
+	</section>
   </template>
   
   <script>

@@ -41,7 +41,6 @@ export default {
 </script>
 
 <style scoped>
-@import url('./src/assets/style/styles.css');
 
 .image-column {
     position: relative;
