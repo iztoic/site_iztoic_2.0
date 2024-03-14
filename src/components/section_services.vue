@@ -24,10 +24,10 @@ export default {
     return {
       activeIndex: null,
       games: [
-        { name: "Copyright", description: "O copyright, muitas vezes conhecido como `copy`, é a arte de desenvolver textos persuasivos que cativam o publico e o levam a tomar a ação. É a linguagem que vende produtos, idéias e histórias.", image: "src/assets/img/VFX.png" },
-        { name: "Video Maker", description: "O Video Maker é o Profissional da produção de videos, que contam histórias de forma vizual e envolvente. O video se tornou uma ferramenta de comunicação primordial, e sua produção envolve a criação de conteudo impactante, atraindo a atenção do publico.", image: "src/assets/img/Videography.png" },
-        { name: "Social Media", description: "As redes sociais desempenham um papel criticona construção e manutenção do publico. Os profissionais de Social Media são especialistas em gerenciar a presença de uma marca em plataformas como Instagram e Facebook.", image: "src/assets/img/photography.png" },
-        { name: "Marketing Digital", description: "O Marketing Digital é o guarda-chuva sob o qual todas essas disciplinas se reunem. Ele abrange estratégias e táticas para promover e comercializar produtos ou serviços online. Desde anuncios pagos e otimização de mecanismos de busca até o uso eficaz de redes sociais, o marketing digital envolve a criação de estratégias que maximizam a visibilidade e o alcance online.", image: "src/assets/img/Videography.png" },
+        { name: "Copyright", description: "O copyright, muitas vezes conhecido como `copy`, é a arte de desenvolver textos persuasivos que cativam o publico e o levam a tomar a ação. É a linguagem que vende produtos, idéias e histórias.", image: "src/assets/img/copywright.png" },
+        { name: "Video Maker", description: "O Video Maker é o Profissional da produção de videos, que contam histórias de forma vizual e envolvente. O video se tornou uma ferramenta de comunicação primordial, e sua produção envolve a criação de conteudo impactante, atraindo a atenção do publico.", image: "src/assets/img/videomaker.png" },
+        { name: "Social Media", description: "As redes sociais desempenham um papel criticona construção e manutenção do publico. Os profissionais de Social Media são especialistas em gerenciar a presença de uma marca em plataformas como Instagram e Facebook.", image: "src/assets/img/equipment.png" },
+        { name: "Marketing Digital", description: "O Marketing Digital é o guarda-chuva sob o qual todas essas disciplinas se reunem. Ele abrange estratégias e táticas para promover e comercializar produtos ou serviços online. Desde anuncios pagos e otimização de mecanismos de busca até o uso eficaz de redes sociais, o marketing digital envolve a criação de estratégias que maximizam a visibilidade e o alcance online.", image: "src/assets/img/perfil01.png" },
       ]
     };
   },

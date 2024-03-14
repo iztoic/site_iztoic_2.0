@@ -7,7 +7,6 @@
             <h3 class="section-subheading">Conheça nossa equipe</h3>
           </div>
         </div>
-        
           <SubSectionInfoCards />
       </div>
     </section>
