@@ -44,3 +44,23 @@
 }
 
 /* == END SECTION == */
+
+.page-top{
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    margin-bottom: 20px;
+}
+
+.page-title{
+    color:var(--primary_gold_color); /* Cor do título principal */
+    text-shadow: var(--all_page_text_shadow);
+    text-align: center;
+    font-size: var(--all_text_size_h2);
+}
+
+.page-description{
+    color: var(--secundary_gray_color); /* Cor do sub-título */
+    font-size: var(--all_text_size_h3);
+    text-align: center;
+}

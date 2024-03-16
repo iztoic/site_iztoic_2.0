@@ -1,6 +1,6 @@
 <template>
   <section id="section-books">
-    <h1 class="pen-title">Ebooks</h1>
+    <h3 class="pen-title page-title">Ebooks</h3>
 
     <section id="main">
       <ul class='list-inline'>
@@ -39,12 +39,6 @@ h1, h2, h3, h4, h5, h6 {
   font-family: var(--ff-display);
   line-height: 120%;
 }
-h1.pen-title {
-  font-size: 3rem;
-  margin: 0 0 1rem 0;
-  text-align: center;
-  text-shadow: 3px 3px 0 hsl(0, 0%, 0%, 0.25);
-}
 
 /* TECHNIQUE STYLES START HERE
 -------------------------------------------------------- */
@@ -57,9 +51,6 @@ h1.pen-title {
   width: fit-content;
 }
 
-.pen-title{
-  color:#d7a449;
-}
 
 
 /* Mixin */

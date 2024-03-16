@@ -1,8 +1,8 @@
 <template>
   <section id="section-map">
     <div class="title">
-      <p>clientes</p>
-      <p>mapa</p>
+      <h2 class="page-title">Clientes</h2>
+      <h2 class="page-title">Mapa</h2>
     </div>
     <div class="maps">
     <div id="map"></div>
@@ -474,9 +474,6 @@ export default {
 .maps{
   display: flex;
   flex-direction: row-reverse;
-}
-
-p{
-  margin: 0px;
+  margin: 0px 0px 40px 0px;
 }
 </style>

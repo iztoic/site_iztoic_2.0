@@ -1,7 +1,7 @@
 <template>
   <div>
     <section id="section-contact">
-      <h3 class="title-text-center">Contato</h3>
+      <h2 class="page-title">Contato</h2>
       <div class="contact-wrapper">
           <form id="contact-form" class="form-horizontal" role="form" action="https://formspree.io/f/xbjnynng" method="POST">
           <div class="form-group">
@@ -71,12 +71,6 @@ export default {
 </script>
     
 <style scoped>
-.title-text-center{
-  text-align: center;
-  color: var(--primary_gold_color);
-  text-shadow: var(--all_page_text_shadow);
-  font-size: var(--all_text_size_h3);
-}
 
 .contact-wrapper {
   display: flex;

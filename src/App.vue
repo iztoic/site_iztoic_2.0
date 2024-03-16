@@ -304,7 +304,9 @@ export default {
 	},
 };
 </script>
-
+<style>
+@import url('./src/assets/style/styles.css');
+</style>
 <style scoped>
 @import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
 @import url('https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i');
@@ -313,7 +315,6 @@ export default {
 @import url('https://startbootstrap.com/templates/agency/font-awesome-4.1.0/css/font-awesome.min.css');
 @import url('https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css');
 @import url('https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/themes/smoothness/jquery-ui.css');
-@import url('./src/assets/style/styles.css');
 
 body {
 	font-family: 'Poppins', sans-serif;

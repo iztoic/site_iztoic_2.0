@@ -32,6 +32,10 @@ export default {
 </script>
 <style scoped>
 
+.container{
+  width: 100%;
+}
+
 .row{
   display: flex;
   justify-content: space-evenly;

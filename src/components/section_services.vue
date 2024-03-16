@@ -1,11 +1,9 @@
 <template>
   <section class="game-section">
-    <div class="row-list">
-          <div class="services-title text-center">
-            <h2 class="section-heading">Serviços</h2>
-            <h3 class="section-subheading text-muted">Verifique as opções.</h3>
+          <div class="page-top">
+            <h2 class="page-title">Serviços</h2>
+            <h3 class="page-description">Verifique as opções.</h3>
           </div>
-        </div>
     <div class="owl-carousel custom-carousel owl-theme">
       <div v-for="(game, index) in games" :key="index" :class="{ 'item-card': true, 'active': index === activeIndex }" :style="{ 'background-image': 'url(' + game.image + ')' } " @click="toggleActive(index)">
         <div class="item-card-desc">
@@ -46,18 +44,8 @@ export default {
 </script>
 
 <style scoped>
-@charset "utf-8";
-
-/******* Fonts Import Start **********/
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
-/********* Fonts Face CSS End **********/
 
-/******* Common Element CSS Start ******/
-
-body {
-  font-family: "Roboto", sans-serif;
-  font-size: 16px;
-}
 .clear {
   clear: both;
 }
@@ -94,20 +82,8 @@ div{
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  align-content: flex-end
 }
-/******* Common Element CSS End *********/
 
-
-/* -------- Landing page ------- */
-.game-section {
-  padding-top: 0px;
-}
-.game-section .owl-stage {
-  display: flex;
-  flex-wrap: nowrap; /* Evita que os elementos quebrem para a próxima linha */
-  margin: 0; /* Remove the margin */
-}
 .game-section .item-card {
   margin: 0 5px 30px;
   width: calc(75% / 4 - 5px);
@@ -192,22 +168,6 @@ div{
 }
 
 
-.section-heading {
-  color:#d7a449; /* Cor do título principal */
-  text-shadow: 3px 3px 0 hsl(0, 0%, 0%, 0.25);
-}
-
-.section-subheading {
-  color: #777; /* Cor do sub-título */
-}
-
-.services-title{
-  display: flex;
-  flex-direction: column;
-}
-.row-list {
-  margin-bottom: 5px; /* Adiciona espaço entre as linhas (rows) */
-}
 
 /* -------- Landing page ------- */
 .game-section {

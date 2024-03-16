@@ -1,79 +1,77 @@
 <template>
-    <section id="section-plans">
-        <div>
-            <h2 class="section-heading text-center">Planos</h2>
-            <h3 class="section-subheading text-muted text-center">Selecione o plano que melhor se encaixa com o seu empreendimento!</h3>
-          <div class="container">
-          
+	<section id="section-plans">
+		<div class="page-top">
+			<h2 class="page-title">Planos</h2>
+			<h3 class="page-description">Selecione o plano que melhor se encaixa com o seu empreendimento!</h3>
+		</div>
+		<div class="container">
+			<div class="pricing-box-container">
+				<div class="pricing-box pricing-box-low text-center">
+					<h5>PRIMEIROS PASSOS PRO</h5>
+					<p class="price"><sup>R$</sup>1.500<sub>/mês</sub></p>
+					<ul class="features-list">
+						<li><strong></strong> Anúncio Pago</li>
+						<li><strong></strong> Social Media</li>
+						<li><strong></strong> Copyright</li>
+						<li><strong></strong> Filmmaker</li>
+						<li><strong></strong> Plano Estratégico</li>
+						<li><strong>21</strong> Stories por semana</li>
+						<li><strong>3</strong> Post Feed por semana</li>
+						<li><strong>1</strong> Reels por semana</li>
+					</ul>
+					<button class="btn-primary">Adquira Já</button>
+				</div>
 
-<div class="pricing-box-container">
-	<div class="pricing-box pricing-box-low text-center">
-		<h5>PRIMEIROS PASSOS PRO</h5>
-		<p class="price"><sup>R$</sup>1.500<sub>/mês</sub></p>
-		<ul class="features-list">
-      <li><strong></strong> Anúncio Pago</li>
-      <li><strong></strong> Social Media</li>
-      <li><strong></strong> Copyright</li>
-      <li><strong></strong> Filmmaker</li>
-			<li><strong></strong> Plano Estratégico</li>
-			<li><strong>21</strong> Stories por semana</li>
-			<li><strong>3</strong> Post Feed por semana</li>
-			<li><strong>1</strong> Reels por semana</li>
-		</ul>
-		<button class="btn-primary">Adquira Já</button>
-	</div>
+				<div class="pricing-box pricing-box-medium text-center">
+					<h5>STRATEGIA MOMENTUM</h5>
+					<p class="price"><sup>R$</sup>2.957<sub>/mês</sub></p>
+					<ul class="features-list">
+						<li><strong></strong> Anúncio Pago</li>
+						<li><strong></strong> Social Media</li>
+						<li><strong></strong> Copyright</li>
+						<li><strong></strong> Filmmaker</li>
+						<li><strong></strong> Plano Estratégico</li>
+						<li><strong>28</strong> Stories por semana</li>
+						<li><strong>3</strong> Post Feed por semana</li>
+						<li><strong>2</strong> Reels por semana</li>
+					</ul>
+					<button class="btn-primary">Adquira Já</button>
+				</div>
 
-	<div class="pricing-box pricing-box-medium text-center">
-		<h5>STRATEGIA MOMENTUM</h5>
-		<p class="price"><sup>R$</sup>2.957<sub>/mês</sub></p>
-		<ul class="features-list">
-			<li><strong></strong> Anúncio Pago</li>
-      <li><strong></strong> Social Media</li>
-      <li><strong></strong> Copyright</li>
-      <li><strong></strong> Filmmaker</li>
-			<li><strong></strong> Plano Estratégico</li>
-			<li><strong>28</strong> Stories por semana</li>
-			<li><strong>3</strong> Post Feed por semana</li>
-			<li><strong>2</strong> Reels por semana</li>
-		</ul>
-		<button class="btn-primary">Adquira Já</button>
-	</div>
+				<div class="pricing-box pricing-box-high text-center">
+					<h5>SUCESSO SUPREMO</h5>
+					<p class="price"><sup>R$</sup>6.450<sub>/mês</sub></p>
+					<ul class="features-list">
+						<li><strong></strong> Social Media</li>
+						<li><strong></strong> Copyright</li>
+						<li><strong></strong> Tráfego Pago</li>
+						<li><strong></strong> Plano Estratégico</li>
+						<li><strong></strong> Design</li>
+						<li><strong></strong> Filmmaker</li>
+						<li><strong></strong> Storytelling</li>
+						<li><strong>35</strong> Stories por semana</li>
+						<li><strong>4</strong> Post Feed por semana</li>
+						<li><strong>2</strong> Reels por semana</li>
+						<li><strong>1</strong> Reels/Storytelling por semana</li>
+					</ul>
+					<button class="btn-primary">Adquira Já</button>
+				</div>
+			</div>
 
-	<div class="pricing-box pricing-box-high text-center">
-		<h5>SUCESSO SUPREMO</h5>
-		<p class="price"><sup>R$</sup>6.450<sub>/mês</sub></p>
-		<ul class="features-list">
-      <li><strong></strong> Social Media</li>
-      <li><strong></strong> Copyright</li>
-      <li><strong></strong> Tráfego Pago</li>
-			<li><strong></strong> Plano Estratégico</li>
-      <li><strong></strong> Design</li>
-      <li><strong></strong> Filmmaker</li>
-      <li><strong></strong> Storytelling</li>
-			<li><strong>35</strong> Stories por semana</li>
-			<li><strong>4</strong> Post Feed por semana</li>
-			<li><strong>2</strong> Reels por semana</li>
-      <li><strong>1</strong> Reels/Storytelling por semana</li>
-		</ul>
-		<button class="btn-primary">Adquira Já</button>
-	</div>
-</div>
-
-    </div>
-    </div>
-  </section>
+		</div>
+	</section>
 </template>
 
-  <script>
+<script>
 export default {
-  name: "SectionPlans",
-  data() {
-    return {
-    };
-  },
-  methods: {
-    
-  },
+	name: "SectionPlans",
+	data() {
+		return {
+		};
+	},
+	methods: {
+
+	},
 };
 </script>
 
@@ -93,11 +91,7 @@ body {
 
 .text-center {
 	text-align: center;
-	
-}
-.section-heading{
-	color:#d7a449;
-	text-shadow: 3px 3px 0 hsl(0, 0%, 0%, 0.25);
+
 }
 
 .pricing-box-container {
@@ -109,7 +103,7 @@ body {
 
 .pricing-box {
 	background-color: #ffffff;
-	box-shadow: 0px 2px 15px 0px rgba(0,0,0,0.5);
+	box-shadow: 0px 2px 15px 0px rgba(0, 0, 0, 0.5);
 	border-radius: 4px;
 	flex: 1;
 	padding: 0 30px 30px;
@@ -129,7 +123,8 @@ body {
 	font-weight: 900;
 }
 
-.price sub, .price sup {
+.price sub,
+.price sup {
 	font-size: 16px;
 	font-weight: 100;
 }
@@ -150,9 +145,10 @@ body {
 }
 
 .pricing-box:hover {
-  box-shadow: 0px 2px 20px 0px rgba(0,0,0,0.8);
-  transform: scale(1.02);
+	box-shadow: 0px 2px 20px 0px rgba(0, 0, 0, 0.8);
+	transform: scale(1.02);
 }
+
 .btn-primary {
 	border-radius: 25px;
 	border: none;
@@ -166,7 +162,7 @@ body {
 }
 
 .btn-primary:hover {
-	box-shadow: 0px 2px 15px 0px rgba(0,0,0,0.5);
+	box-shadow: 0px 2px 15px 0px rgba(0, 0, 0, 0.5);
 	transform: translateY(-3px);
 }
 
@@ -183,6 +179,7 @@ body {
 	background-position: center center;
 	color: #ffffff;
 }
+
 .pricing-box-high {
 	background-image: url("src/assets/img/background_plan.png");
 	background-size: cover;

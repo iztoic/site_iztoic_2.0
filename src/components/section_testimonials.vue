@@ -1,17 +1,21 @@
 <template>
   <section id="section-testimonials">
-    <p class="title">O que nossos clientes tem a dizer sobre nosso serviço!</p>
+    <div class="page-top">
+      <h2 class="page-title">Clientes</h2>
+      <h3 class="page-description">O que nossos clientes tem a dizer sobre nosso serviço!</h3>
+    </div>
     <div class="figures">
-    <figure v-for="(testimonial, index) in displayedTestimonials" :key="index" :class="'snip1386 ' + (index === activeIndex ? 'hover' : '')">
-      <img :src="testimonial.backgroundImage" class="background" />
-      <figcaption>
-        <blockquote>{{ testimonial.quote }}</blockquote>
-        <h5>{{ testimonial.clientName }}</h5>
-      </figcaption>
-      <img :src="testimonial.logo" class="profile" />
-    </figure>
-    <button @click="loadMore" v-if="showLoadMoreButton" class="ver-mais-btn">Ver mais</button>
-  </div>
+      <figure v-for="(testimonial, index) in displayedTestimonials" :key="index"
+        :class="'snip1386 ' + (index === activeIndex ? 'hover' : '')">
+        <img :src="testimonial.backgroundImage" class="background" />
+        <figcaption>
+          <blockquote>{{ testimonial.quote }}</blockquote>
+          <h5>{{ testimonial.clientName }}</h5>
+        </figcaption>
+        <img :src="testimonial.logo" class="profile" />
+      </figure>
+      <button @click="loadMore" v-if="showLoadMoreButton" class="ver-mais-btn">Ver mais</button>
+    </div>
   </section>
 </template>
 
@@ -70,45 +74,25 @@ export default {
   },
   methods: {
     loadTestimonials() {
-      // Randomly shuffle the testimonials array
       const shuffledTestimonials = this.testimonials.sort(() => Math.random() - 0.5);
-
-      // Take the first 'itemsToShow' testimonials for display
       this.displayedTestimonials = shuffledTestimonials.slice(0, this.itemsToShow);
-
-      // Check if there are more testimonials to show
       this.showLoadMoreButton = shuffledTestimonials.length > this.itemsToShow;
     },
     async loadMore() {
-    // Adicione um pequeno delay antes de trocar os cards
-    await new Promise(resolve => setTimeout(resolve, 300)); // Tempo em milissegundos
-
-    // Remova depoimentos já exibidos
-    const remainingTestimonials = this.testimonials.filter(testimonial => !this.displayedTestimonials.includes(testimonial));
-
-    // Verifique se há depoimentos restantes suficientes para manter dois cards
-    if (remainingTestimonials.length >= this.itemsToShow) {
-      // Embaralhe os depoimentos restantes
-      const shuffledTestimonials = remainingTestimonials.sort(() => Math.random() - 0.5);
-
-      // Define a direção do carrossel
-      this.slideDirection = "right-to-left";
-
-      // Adicione dois novos depoimentos à lista existente
-      this.displayedTestimonials = shuffledTestimonials.slice(0, this.itemsToShow);
-
-      // Aguarde o término da transição e, em seguida, redefina a direção do carrossel
-      setTimeout(() => {
-        this.slideDirection = "";
-      }, 600); // Ajuste conforme necessário
-
-      // Atualize a flag de botão de carga
-      this.showLoadMoreButton = remainingTestimonials.length > this.itemsToShow;
-    } else {
-      // Se não houver depoimentos suficientes, mantenha os já exibidos
-      this.showLoadMoreButton = false;
-    }
-  },
+      await new Promise(resolve => setTimeout(resolve, 300));
+      const remainingTestimonials = this.testimonials.filter(testimonial => !this.displayedTestimonials.includes(testimonial));
+      if (remainingTestimonials.length >= this.itemsToShow) {
+        const shuffledTestimonials = remainingTestimonials.sort(() => Math.random() - 0.5);
+        this.slideDirection = "right-to-left";
+        this.displayedTestimonials = shuffledTestimonials.slice(0, this.itemsToShow);
+        setTimeout(() => {
+          this.slideDirection = "";
+        }, 600);
+        this.showLoadMoreButton = remainingTestimonials.length > this.itemsToShow;
+      } else {
+        this.showLoadMoreButton = false;
+      }
+    },
   },
 };
 </script>
@@ -128,10 +112,6 @@ blockquote {
   padding: 0;
   border-left: 0px;
 
-}
-
-.title{
-  text-align: center;
 }
 
 .snip1386 {
@@ -261,56 +241,58 @@ blockquote {
   transform: translate(50%, -50%) scale(1.1);
   box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
 }
+
 .ver-mais-btn {
-    padding: 10px 20px;
-    font-size: 16px;
-    background-color: #d7a449;
-    color: #fff;
-    border: none;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-    border: 2px solid #1a2125; /* Adicione uma borda ao redor do logo */
-  }
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #d7a449;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  border: 2px solid #1a2125;
+  /* Adicione uma borda ao redor do logo */
+}
 
-  .ver-mais-btn:hover {
-    background-color: #d7a449;
-    border: 2px solid #1a2125; /* Adicione uma borda ao redor do logo */
+.ver-mais-btn:hover {
+  background-color: #d7a449;
+  border: 2px solid #1a2125;
+  /* Adicione uma borda ao redor do logo */
 
-  }
+}
 
-  .right-to-left-enter-active,
+.right-to-left-enter-active,
 .right-to-left-leave-active {
   transition: transform 0.6s ease;
 }
 
-.right-to-left-enter, .right-to-left-leave-to /* .right-to-left-leave-active in <2.1.8 */ {
+.right-to-left-enter,
+.right-to-left-leave-to
+
+/* .right-to-left-leave-active in <2.1.8 */
+  {
   transform: translateX(100%);
 }
 
-.title {
-  display: flex;
-  width: 70%; /* Define a largura como 70% da largura total da página */
-  margin: auto; /* Centraliza horizontalmente */
-  font-size: 24px; /* Aumenta o tamanho da fonte para 24 pixels */
-  color: #d7a449; /* Altera a cor do texto para verde */
-  text-shadow: 2px 2px 4px rgba(0,0,0,0.5); /* Adiciona uma sombra ao texto */
-}
 
-
-.figures{
+.figures {
   display: flex;
   justify-content: space-evenly;
 }
 
 @media screen and (max-width: 768px) {
-    .figures {
-      flex-direction: column; /* Muda a direção do flex container para coluna */
-      align-items: center; /* Alinha os itens ao centro */
-    }
-
-    .snip1386 {
-      width: 80%; /* Define a largura dos cards para 80% da largura da tela */
-      margin-bottom: 20px; /* Adiciona margem inferior para separar os cards */
-    }
+  .figures {
+    flex-direction: column;
+    /* Muda a direção do flex container para coluna */
+    align-items: center;
+    /* Alinha os itens ao centro */
   }
-  </style>
+
+  .snip1386 {
+    width: 80%;
+    /* Define a largura dos cards para 80% da largura da tela */
+    margin-bottom: 20px;
+    /* Adiciona margem inferior para separar os cards */
+  }
+}
+</style>
