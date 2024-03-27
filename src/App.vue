@@ -79,7 +79,7 @@
 		<div class="layerindex page_services-section">
 			<div class="page_services-close hover-target exit-target"></div>
 			<SectionServices />
-			<PortifolioGallery />
+			<!-- <PortifolioGallery /> -->
 		</div>
 
 		<div class="layerindex page_plans-section">

@@ -111,6 +111,8 @@ section {
 blockquote {
   padding: 0;
   border-left: 0px;
+  color: #d7a449;
+  background-color: #fff;
 
 }
 
@@ -278,6 +280,7 @@ blockquote {
 .figures {
   display: flex;
   justify-content: space-evenly;
+  align-items: center;
 }
 
 @media screen and (max-width: 768px) {
