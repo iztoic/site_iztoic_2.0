@@ -121,13 +121,11 @@ h2 {
 
 .info-card {
   display: flex;
-  justify-content: center;
-  padding: 5px;
 }
 
 .card {
-  height: 50vh;
-  width: 40vh;
+  height: calc(45vh - 70px);
+  width: calc(35vh - 70px);
   background: grey;
   border-radius: 10px;
   transition: background 0.8s;
@@ -219,21 +217,34 @@ h2 {
 
 .team-member {
   padding-bottom: 10%;
-  width: 250px;
+  width: 100%;
   margin: 0vw 2vw 0vw 2vw;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1200px) {
+  .card {
+    height: calc(50vh * 0.65); /* Reduce height for tablets */
+    width: calc(40vh * 0.65); /* Reduce width for tablets */
+    border-radius: 10px;
+  }
+}
 
-  .team-member {
-    width: calc(230px/1.8);
-    margin: 0vw 2vw 0vw 2vw;
+@media (max-width: 991px) {
+  .card {
+    height: calc(50vh * 0.6); /* Further reduce height for smaller tablets */
+    width: calc(40vh * 0.6); /* Further reduce width for smaller tablets */
+  }
+}
+
+@media (max-width: 768px) {
+  .info-card {
+    flex-basis: 33.33%; /* Display 3 cards per row on notebooks */
   }
 
   .card {
-    height: calc(50vh/1.4);
-    width: calc(40vh/1.4);
-    border-radius: calc(10px/1.4);
+    height: calc(50vh * 0.5);
+    width: calc(40vh * 0.5);
+    border-radius: calc(10px * 0.5);
   }
 
   .icons {
@@ -261,21 +272,21 @@ h2 {
 
 @media (max-width: 575px) {
 
-  .card {
-    height: calc(50vh/2);
-    width: calc(40vh/2);
-    border-radius: calc(10px/2);
+  .info-card {
+    flex-basis: 50%; /* Display 2 cards per row on mobile */
   }
 
-  .team-member {
-    margin: 0vw 2vw 0vw 2vw;
+  .card {
+    height: calc(50vh * 0.45); /* Reduce height for mobile */
+    width: calc(40vh * 0.45); /* Reduce width for mobile */
+    border-radius: calc(10px/0.65);
   }
 
   .icons {
-    height: calc(130px/2.3);
+    height: calc(130px/1.6);
     bottom: 5%;
-    width: calc(50px/1.9);
-    padding-bottom: calc(15px/1.9);
+    width: calc(50px/1.6);
+    padding-bottom: calc(15px/1.6);
   }
 
   h2 {

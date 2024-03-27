@@ -68,7 +68,7 @@
 		<div class="layerindex page_about-section">
 			<div class="about-close hover-target exit-target"></div>
 			<SectionAbout />
-			<!-- <SectionTeam /> -->
+			<SectionTeam />
 		</div>
 
 		<div class="layerindex page_contact-section">
@@ -126,7 +126,7 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
 <script src="https://raw.githubusercontent.com/IronSummitMedia/startbootstrap/gh-pages/templates/agency/js/bootstrap.min.js"></script>
 <script>
-import SectionAbout from './components/section_about/section_about.vue';
+import SectionAbout from './components/section_about.vue';
 import PortifolioGallery from './components/portifolio_gallery.vue';
 import SectionTeam from './components/section_team/section_team.vue';
 import SectionContact from './components/section_contact.vue';
